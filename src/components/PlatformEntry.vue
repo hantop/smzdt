@@ -36,7 +36,7 @@
         </div>
         <div class="line" data-reactid="261"></div>
         <div class="button-container" data-reactid="262">
-          <a class="toDetail btn btn-blue button" pid="4525" id="pjb">去返现</a>
+          <router-link :to="'/detail/'+data.pid" class="toDetail btn btn-blue button">去返现</router-link>
         </div>
         <div class="item-seperator" data-reactid="264"></div>
       </div>
@@ -51,5 +51,6 @@ export default {
   //   }
   // },
   props: ['data']
+
 }
 </script>
