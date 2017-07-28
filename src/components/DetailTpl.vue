@@ -46,24 +46,35 @@
 <style scoped src="../assets/css/base.css"></style>
 <style scoped src="../assets/css/detail.css"></style>
 <script>
-export default {
-  created () {
-    fetch('/forward.php', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/x-www-form-urlencoded',
-        'Accept': 'application/json, text/plain, */*'
-      },
-      body: 'url=/CaiyuPartner/api/v1/invest/platform/valid&data[pid]=' + this.$route.params.pid
+  import { toUrlQuery } from '../assets/js/tool'
 
-    }).then(function (res) {
-      return res.json()
-    })
-      .then(function (data) {
-        console.log(data)
-        console.log(data.code)
+  export default {
+    created () {
+      const data = {
+        'url': '/CaiyuPartner/api/v1/invest/platform/valid',
+        'data': {
+          'pid': this.$route.params.pid
+        }
+      }
+      console.log(data)
+
+      fetch('/forward.php', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+          'Accept': 'application/json, text/plain, */*'
+        },
+        // body: 'url=/CaiyuPartner/api/v1/invest/platform/valid&data[pid]=' + this.$route.params.pid
+        body: toUrlQuery(data)
+
+      }).then(function (res) {
+        return res.json()
       })
+        .then(function (data) {
+          console.log(data)
+          console.log(data.code)
+        })
+    }
   }
-}
 </script>
 
