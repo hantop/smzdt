@@ -1,32 +1,94 @@
+
+
+
 <template>
   <div>
     <header>
       <router-link style="display: block;" :to="'/riskscore/'+this.$route.params.pid">
         <div class="xbox">
-          <img :src="platform_logo" class="xlogo" alt="">
+          <img :src="ddata.name" class="xlogo" alt="">
           <div class="xright">
             <div class="xtitle">
-              <span class="xspan1">{{platform_name}}</span>
-              <span class="xspan2">{{platform_type}}</span>
+              <span class="xspan1">{{ddata.namecn}}</span>
+              <span class="xspan2">{{ddata.cat}}</span>
             </div>
-            <p class="xtext">{{platform_text}}</p>
-            <p class="xtext2">首投综合年化收益率可达{{platform_percent}}%</p>
+            <p class="xtext">{{ddata.describe}}</p>
+            <p class="xtext2">首投综合年化收益率可达{{ddata.rate}}</p>
             <span class="xfengkong">
-              <span class="xfengkong_span1">风控指标：{{riskscore}}级</span>
-              <span class="xfengkong_span2">平台监控：{{monitor?'正常':'异常'}}</span>
+              <span class="xfengkong_span1">风控指标：{{ddata.grade}}</span>
+              <span class="xfengkong_span2">平台监控：{{ddata.risk}}</span>
             </span>
           </div>
         </div>
       </router-link>
       <div class="xcoupon">
-        <coupon></coupon>
-        <take-care></take-care>
+        <coupon :data="item" v-for="(item, i) in items" :key="i" @click="alertBox"></coupon>
+        <h6 style="color: #909090;padding: 0 1.19444em;">
+          <br>注意：
+          <br> 已经通过财鱼管家注册的用户，可以直接去汇盈金服官网或app中投资。
+          <br> ＊通过本页面进行注册的理财平台新用户有资格获得返现，首投满足奖励的条件与对应的奖励以本页面活动规则为准。
+          <br> ＊符合条件的用户，财鱼管家将在7个工作日内会发放返现红包至财鱼管家“我的-提醒”页面中。
+          <br> ＊禁止任何形式的刷单行为，如果发现（如同一IP刷单等），平台将不予结算。
+          <br> ＊如果活动期间奖励规则变动，则以注册时间（且注册后24小时内完成投资）的奖励规则为准。
+          <br>
+        </h6>
       </div>
     </header>
     <section>
-      <yutang></yutang>
-      <qa></qa>
+      <div class="delivery-order">
+        <h6 class="title relative" id="see-delivery-order">
+          <span class="benift-plan">投资晒单</span>
+          <!--<span style="left:80px" class="title-right">共15人晒单</span>-->
+          <a style="color:gray!important" class="toShare title-right">查看全部晒单
+            <i></i>
+          </a>
+          <hr class="divider divider-horizontal divider-bottom">
+        </h6>
+        <div style="display: none" class="item clearfix">
+          <div class="userinfo clearfix relative">
+            <div class="left avatar">
+              <img src="https://sns.91caiyu.com/data/upload/avatar/2e/7e/c0/original_100_100.jpg?v1499411863" alt="avatar">
+            </div>
+            <div class="right info">
+              <div class="info_top clearfix">
+                <h4 class="left" style="font-weight:600;">城市猎人</h4>
+                <h6 class="right"></h6>
+              </div>
+              <div class="info_bottom">
+                <!--<h4 class="tips"><span class="tips_icon">投资收益</span><span class="reward_tips">20%年化+350元返现+100元新手红包</span></h4>-->
+              </div>
+            </div>
   
+          </div>
+          <div class="content">
+            <h5 class="center">#钱保姆返现#</h5>
+          </div>
+          <div class="screenshot">
+            <ul class="clearfix">
+              <li class="left thumb relative">
+                <img class="_thumb thumb-img" src="https://sns.91caiyu.com/data/upload/2017/0704/18/595b6e996b9c359bc104.jpg" alt="thumb">
+  
+              </li>
+              <li class="left thumb relative">
+                <img class="_thumb thumb-img" src="https://sns.91caiyu.com/data/upload/2017/0704/18/595b6e996bdfb184f56c.jpg" alt="thumb">
+  
+              </li>
+            </ul>
+          </div>
+          <!--<div class="time relative">
+                                                                        <h6>投资豆包金服90天标10000元</h6>
+                                                                        <h6 class="appreciate" data-likenum="3" data-id="2724"><i class=""></i>点赞(<span>3</span>)</h6>
+                                                                      </div>-->
+        </div>
+      </div>
+      <div class="extra setnone" id="extra" style="display: block">
+        <h6 class="title relative" id="hidden-title">
+          <span>常见问题</span>
+        </h6>
+        <div style="padding-top:20px">
+          <qa></qa>
+        </div>
+      </div>
     </section>
   
     <div class="fixed_button relative" id="fixed_button">
@@ -47,33 +109,83 @@
 <style scoped src="../assets/css/detail.css"></style>
 <script>
   import { toUrlQuery } from '../assets/js/tool'
-
+  import { Indicator, Toast } from 'mint-ui'
+  import coupon from './coupon'
   export default {
     created () {
-      const data = {
-        'url': '/CaiyuPartner/api/v1/invest/platform/valid',
-        'data': {
-          'pid': this.$route.params.pid
-        }
-      }
-      console.log(data)
+      const _this = this
+      Indicator.open({
+        text: '加载中...',
+        spinnerType: 'fading-circle'
+      })
 
+      // fetch('/forward.php?url=/CaiyuPartner/invest/partner/10', {
+      //   headers: {
+      //     'Content-Type': 'application/x-www-form-urlencoded',
+      //     'Accept': 'application/json, text/plain, */*'
+      //   }
+
+      // }).then(function (res) {
+      //   return res.json()
+      // })
+      //   .then(function (data) {
+      //     if (data.status === 0) {
+      //       _this.ddata = data.data
+      //       _this.items = data.data.items
+      //     } else {
+      //       Toast({
+      //         message: '加载失败',
+      //         position: 'bottom',
+      //         duration: 5000
+      //       })
+      //     }
+      //     Indicator.close()
+      //   })
+
+      const body = {
+        'url': '/CaiyuPartner/api/v1/invest/partner/10',
+        'data': {
+          'uid': '1c8091d23c104502b51bd9d0961d1705'
+        }
+
+      }
       fetch('/forward.php', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/x-www-form-urlencoded',
           'Accept': 'application/json, text/plain, */*'
         },
-        // body: 'url=/CaiyuPartner/api/v1/invest/platform/valid&data[pid]=' + this.$route.params.pid
-        body: toUrlQuery(data)
-
+        body: toUrlQuery(body)
       }).then(function (res) {
         return res.json()
       })
         .then(function (data) {
-          console.log(data)
-          console.log(data.code)
+          if (data.status === 0) {
+            _this.ddata = data.data
+            _this.items = data.data.items
+          } else {
+            Toast({
+              message: '加载失败',
+              position: 'bottom',
+              duration: 5000
+            })
+          }
+          Indicator.close()
         })
+    },
+    data () {
+      return {
+        ddata: {},
+        items: []
+      }
+    },
+    components: {
+      coupon
+    },
+    methods: {
+      alertBox () {
+        alert(1)
+      }
     }
   }
 </script>
