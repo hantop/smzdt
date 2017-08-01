@@ -1,4 +1,5 @@
 function a (data, name) {
+  console.log(name)
   let str = ''
   for (var key in data) {
     if (typeof data[key] === 'object') {
@@ -6,7 +7,7 @@ function a (data, name) {
     } else if (!name) {
       str += `${key}=${data[key]}&`
     } else {
-      str += `name[${key}]=${data[key]}&`
+      str += `${name}[${key}]=${data[key]}&`
     }
   }
   if (name) {
@@ -16,9 +17,11 @@ function a (data, name) {
   }
 }
 const data = {
-  'url': '/CaiyuPartner/api/v1/invest/platform/valid',
+  'url': '/CaiyuPartner/invest/partner/10',
   'data': {
-    'pid': '47'
+    'uid': '1c8091d23c104502b51bd9d0961d1705'
   }
+
 }
+
 console.log(a(data))

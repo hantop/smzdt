@@ -187,11 +187,6 @@
   background-color: #5287e3;
 }
 
-body,
-html {
-  height: auto;
-}
-
 section {
   padding-bottom: 3em;
 }
@@ -205,10 +200,6 @@ section {
 
 
 /*}*/
-
-body {
-  background-color: #f0f0f0;
-}
 
 .arrowtem,
 .extra .rule h5 i,
@@ -288,12 +279,6 @@ header .title-container {
 .intro .active.arrow {
   transform: rotate(180deg);
   -webkit-transform: rotate(180deg);
-}
-
-header {
-  padding-bottom: .25em;
-  background: #fff;
-  position: relative;
 }
 
 header .img-intro-container {
@@ -2453,14 +2438,6 @@ p.red {
   position: relative;
 }
 
-.xh5 {
-  width: 67vw;
-  font-size: 4.5vw;
-  text-align: center;
-  color: #374259;
-  margin-bottom: 2vw;
-}
-
 .xmoney {
   font-size: 11.2vw;
   font-weight: 600;
@@ -2491,26 +2468,6 @@ p.red {
   line-height: 14vw;
 }
 
-.xfz11 {
-  font-size: 3vw;
-}
-
-.xarrow {
-  width: 9vw;
-  height: 4.5vw;
-  vertical-align: middle;
-  margin-left: 1vw;
-}
-
-.xfz9 {
-  font-size: 2.4vw;
-  font-weight: 500;
-  position: absolute;
-  top: 0;
-  right: -5em;
-  line-height: normal;
-}
-
 .xbottom_right {
   position: absolute;
   font-weight: 500;
@@ -2532,12 +2489,10 @@ p.red {
   opacity: 0.9;
 }
 
-header {
-  border-bottom: 9.5px solid #f0f0f0;
-}
-
 body {
   font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif !important;
+  display: none;
+  background-color: #f0f0f0;
 }
 
 .xbottom {
@@ -2552,6 +2507,9 @@ body {
 }
 
 header {
+  padding-bottom: .25em;
+  position: relative;
+  border-bottom: 9.5px solid #f0f0f0;
   background: rgb(239, 239, 240);
 }
 
@@ -2674,10 +2632,6 @@ b {
   color: #e8be3f;
 }
 
-body {
-  display: none;
-}
-
 .xitem_box2 {
   background: url('../img/yellow_bg.png');
   background-size: contain;
@@ -2693,11 +2647,11 @@ body {
 }
 
 .invite_btn {
-    position: fixed;
-    width: 80px;
-    right: -3.5px;
-    top: 55%;
-    padding: 2px;
-    cursor: pointer;
-    z-index: 99999;
+  position: fixed;
+  width: 80px;
+  right: -3.5px;
+  top: 55%;
+  padding: 2px;
+  cursor: pointer;
+  z-index: 99999;
 }

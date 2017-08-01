@@ -6,7 +6,7 @@ export function toUrlQuery (data, name) {
     } else if (!name) {
       str += `${key}=${data[key]}&`
     } else {
-      str += `name[${key}]=${data[key]}&`
+      str += `${name}[${key}]=${data[key]}&`
     }
   }
   if (name) {
