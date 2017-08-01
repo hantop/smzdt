@@ -1,20 +1,20 @@
 
 <template>
-  <a>
+  <a v-on:click="promptShow">
     <div class="xshadow">
       <div class="xitem_box">
         <h5 class="xh5 ">首投{{data.money}}元—{{data.term}}天及以上标的</h5>
         <div class="xmoney">返现
-          <span>{{data.reward}}</span>元</div>
+          <span>{{data.reward|formatMoney(-1)}}</span>元</div>
         <p v-if="data.text" style="color: #e64d3f;position: relative;top: -2px;">{{data.text}}</p>
         <p>投资收益:{{data.investBonus}}元，合计收益{{data.totalBonus}}元</p>
         <div class="xbottom">
-          <b style="position: relative">{{data.officialrate}}
+          <b style="position: relative">{{data.officialrate|formatMoney(1)}}
             <span class="xfz9">官网收益率</span>
           </b>
           <span class="xfz11">%</span>
           <img class="xarrow" src="../assets/img/arrow.png" alt="">
-          <b style="position: relative">{{data.totalrate}}
+          <b style="position: relative">{{data.totalrate|formatMoney(1)}}
             <span class="xfz9 ">活动收益率</span>
           </b>
           <span class="xfz11">%</span>
@@ -28,8 +28,22 @@
   </a>
 </template>
 <script>
+  import { formatMoney } from '../assets/js/tool'
   export default {
-    props: ['data']
+    props: ['data'],
+    methods: {
+      promptShow () {
+        this.$emit('childClick')
+      }
+    },
+    filters: {
+      formatMoney
+    }
+    // computed: {
+    //   officialrate: formatMoney(this.data.officialrate, 1),
+    //   totalrate: formatMoney(this.data.totalrate, 1),
+    //   reward: formatMoney(this.data.reward, 1)
+    // }
   }
 
 </script>

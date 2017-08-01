@@ -6,7 +6,7 @@ export function toUrlQuery (data, name) {
     } else if (!name) {
       str += `${key}=${data[key]}&`
     } else {
-      str += `name[${key}]=${data[key]}&`
+      str += `${name}[${key}]=${data[key]}&`
     }
   }
   if (name) {
@@ -14,4 +14,11 @@ export function toUrlQuery (data, name) {
   } else {
     return encodeURI(str.slice(0, -1))
   }
+}
+
+export function formatMoney (money, length) {
+  money = '' + money
+  const dot = money.indexOf('.')
+  if (!dot) return
+  return money.substring(0, dot + length + 1)
 }
