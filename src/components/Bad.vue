@@ -3,7 +3,7 @@
   404
   </div>
 </template>
-<style>
+<style scoped>
   div{
     font-size: 40px;
   }

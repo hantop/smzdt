@@ -23,7 +23,7 @@
       </router-link>
       <div class="xcoupon">
         <coupon :data="item" v-for="(item, i) in items" :key="i" v-on:childClick="alertBox"></coupon>
-        <h6 v-on:click="alertBox" style="color: #909090;padding: 0 1.19444em;">
+        <h6 style="color: #909090;padding: 0 1.19444em;">
           <br>注意：
           <br> 已经通过财鱼管家注册的用户，可以直接去汇盈金服官网或app中投资。
           <br> ＊通过本页面进行注册的理财平台新用户有资格获得返现，首投满足奖励的条件与对应的奖励以本页面活动规则为准。
