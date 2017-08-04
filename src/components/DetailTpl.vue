@@ -102,10 +102,10 @@
       </a>
     </div>
   
-    </b>
+    
   </div>
 </template>
-<style scoped src="../assets/css/base.css"></style>
+<style scoped src="../../static/css/base.css"></style>
 <style scoped src="../assets/css/detail.css"></style>
 <script>
   import { toUrlQuery } from '../assets/js/tool'

@@ -2,37 +2,54 @@
   <div class="item_box">
     <div class="top">
       <div class="logo">
-        <img width="100%" src="../assets/img/logo_jfqb.png" alt="">
+        <img width="100%" :src="data.logoimg" alt="">
       </div>
       <div class="right">
         <div class="r_top">
-          <h5 class="namecn">PPmoney</h5>
-          <span class="grade">AAAA</span>
-          <span class="re_invest">复投</span>
+          <h5 class="namecn">{{data.namecn}}</h5>
+          <span class="grade">{{data.grade}}</span>
+          <span v-if="data.reinvest" class="re_invest">复投</span>
         </div>
-        <p class="describe">浙商银行资金存管，注册资本5000w元</p>
+        <p class="describe">{{data.describe}}</p>
       </div>
     </div>
     <div class="bottom">
       <div class="rate">
-        <div class="red num">7.50<span style="font-size: 1.2rem">%</span>
+        <div class="red num">{{data.totalrate}}
+          <span style="font-size: 1.2rem">%</span>
         </div>
         <div class="gray">活动最高年化</div>
       </div>
       <div class="money">
-        <div class="red num">100~800<span style="font-size: 1.2rem">元</span>
+        <div class="red num">{{data.money}}
+          <span style="font-size: 1.2rem">元</span>
         </div>
         <div class="gray">返现金额</div>
       </div>
       <router-link :to="'/detail/'+data.pid" class="to_detail">
-        <img width="100%" src="../assets/new_img/ljf.png" alt="">
+        <img width="100%" :src="url" alt="">
       </router-link>
     </div>
   </div>
 </template>
 <script>
   export default {
-    props: ['data']
+    props: ['data'],
+    computed: {
+      url () {
+        switch (this.data.type) {
+          case '0':
+            return '/static/img/qfx.png'
+          case '1':
+            return '/static/img/ljf.png'
+          case '2':
+            return '/static/img/cjf.png'
+          case '3':
+            return '/static/img/yqg.png'
+
+        }
+      }
+    }
   }
 </script>
 <style scoped>

@@ -11,50 +11,11 @@
   
     </header>
     <platform-list v-for="(obj, i) in objs" :key="i" :data="obj"></platform-list>
-    <div style="margin-bottom:56px" class="nav_2">
-      <a class="left" href="">
-        <div class="p_head">
-          <img src="http://img.caiyu.in/data/rank_finance_f4f9705f25f774f5.png" />
-        </div>
-        <div class="p_name">
-          货基月收益排行
-        </div>
-        <div class="p_int">
-          动态监测
-        </div>
-        <div class="p_line"></div>
-        <div class="p_pri">
-          4.4-5.8
-          <span>%</span>
-        </div>
-        <div class="p_good">
-          安全灵活
-        </div>
-      </a>
-      <a class="right" href="">
-        <div class="p_head">
-          <img src="http://img.caiyu.in/data/rank_finance_00476b1ba7d272f5.png" />
-        </div>
-        <div class="p_name">
-          银行理财产品优选
-        </div>
-        <div class="p_int">
-          多个维度筛选
-        </div>
-        <div class="p_line"></div>
-        <div class="p_pri">
-          4.6-5.1
-          <span>%</span>
-        </div>
-        <div class="p_good">
-          保本浮动收益
-        </div>
-      </a>
-    </div>
+  
     <!--<div slot="top" class="mint-loadmore-top">
-              <span v-show="topStatus === 'loading'" :class="{ 'rotate': topStatus === 'drop' }">↓</span>
-              <span v-show="topStatus === 'loading'">Loading...</span>
-            </div>-->
+                      <span v-show="topStatus === 'loading'" :class="{ 'rotate': topStatus === 'drop' }">↓</span>
+                      <span v-show="topStatus === 'loading'">Loading...</span>
+                    </div>-->
   
   </loadmore>
 </template>
@@ -67,155 +28,7 @@
     data () {
       return {
         topStatus: '',
-        objs: [
-          {
-            'arr': [
-              {
-                'imgurl': 'http://h5test.caiyu.in/dashboard/img/logo_lcf.png',
-                'name': '名称',
-                'type': '上市',
-                'score': 'A',
-                'summary': 'lalalal',
-                'percent': '12%',
-                'top': '123',
-                'min_limit': '32',
-                'pid': '47'
-              },
-              {
-                'imgurl': 'http://h5test.caiyu.in/dashboard/img/logo_lcf.png',
-                'name': '名称',
-                'type': '上市',
-                'score': 'A',
-                'summary': 'lalalal',
-                'percent': '12%',
-                'top': '123',
-                'min_limit': '32',
-                'pid': '47'
-              },
-              {
-                'imgurl': 'http://h5test.caiyu.in/dashboard/img/logo_lcf.png',
-                'name': '名称',
-                'type': '上市',
-                'score': 'A',
-                'summary': 'lalalal',
-                'percent': '12%',
-                'top': '123',
-                'min_limit': '32',
-                'pid': '47'
-              },
-              {
-                'imgurl': 'http://h5test.caiyu.in/dashboard/img/logo_lcf.png',
-                'name': '名称',
-                'type': '上市',
-                'score': 'A',
-                'summary': 'lalalal',
-                'percent': '12%',
-                'top': '123',
-                'min_limit': '32',
-                'pid': '47'
-              }
-            ],
-            'type': 'adfasdfsdfasdf'
-          },
-          {
-            'arr': [
-              {
-                'imgurl': 'http://h5test.caiyu.in/dashboard/img/logo_lcf.png',
-                'name': '名称',
-                'type': '上市',
-                'score': 'A',
-                'summary': 'lalalal',
-                'percent': '12%',
-                'top': '123',
-                'min_limit': '32',
-                'pid': '47'
-              },
-              {
-                'imgurl': 'http://h5test.caiyu.in/dashboard/img/logo_lcf.png',
-                'name': '名称',
-                'type': '上市',
-                'score': 'A',
-                'summary': 'lalalal',
-                'percent': '12%',
-                'top': '123',
-                'min_limit': '32',
-                'pid': '47'
-              },
-              {
-                'imgurl': 'http://h5test.caiyu.in/dashboard/img/logo_lcf.png',
-                'name': '名称',
-                'type': '上市',
-                'score': 'A',
-                'summary': 'lalalal',
-                'percent': '12%',
-                'top': '123',
-                'min_limit': '32',
-                'pid': '47'
-              },
-              {
-                'imgurl': 'http://h5test.caiyu.in/dashboard/img/logo_lcf.png',
-                'name': '名称',
-                'type': '上市',
-                'score': 'A',
-                'summary': 'lalalal',
-                'percent': '12%',
-                'top': '123',
-                'min_limit': '32',
-                'pid': '47'
-              }
-            ],
-            'type': 'adfasdfsdfasdf'
-          },
-          {
-            'arr': [
-              {
-                'imgurl': 'http://h5test.caiyu.in/dashboard/img/logo_lcf.png',
-                'name': '名称',
-                'type': '上市',
-                'score': 'A',
-                'summary': 'lalalal',
-                'percent': '12%',
-                'top': '123',
-                'min_limit': '32',
-                'pid': '47'
-              },
-              {
-                'imgurl': 'http://h5test.caiyu.in/dashboard/img/logo_lcf.png',
-                'name': '名称',
-                'type': '上市',
-                'score': 'A',
-                'summary': 'lalalal',
-                'percent': '12%',
-                'top': '123',
-                'min_limit': '32',
-                'pid': '47'
-              },
-              {
-                'imgurl': 'http://h5test.caiyu.in/dashboard/img/logo_lcf.png',
-                'name': '名称',
-                'type': '上市',
-                'score': 'A',
-                'summary': 'lalalal',
-                'percent': '12%',
-                'top': '123',
-                'min_limit': '32',
-                'pid': '47'
-              },
-              {
-                'imgurl': 'http://h5test.caiyu.in/dashboard/img/logo_lcf.png',
-                'name': '名称',
-                'type': '上市',
-                'score': 'A',
-                'summary': 'lalalal',
-                'percent': '12%',
-                'top': '123',
-                'min_limit': '32',
-                'pid': '47'
-              }
-            ],
-            'type': 'adfasdfsdfasdf'
-          }
-        ]
+        objs: []
       }
     },
     components: {
@@ -235,6 +48,7 @@
     },
 
     created: function () {
+      const _this = this
       Indicator.open({
         text: '加载中...',
         spinnerType: 'fading-circle'
@@ -242,24 +56,17 @@
       setTimeout(function () {
         Indicator.close()
       }, 2000)
-      // const data = {
-      //   'url': '/CaiyuPartner/api/v1/invest/partner?uid=1c8091d23c104502b51bd9d0961d1705'
-      // }
 
-      // fetch('/forward.php', {
-      //   method: 'POST',
-      //   headers: {
-      //     'Content-Type': 'application/x-www-form-urlencoded',
-      //     'Accept': 'application/json, text/plain, */*'
-      //   },
-      //   body: toUrlQuery(data)
+      fetch('/static/test.json').then(function (res) {
+        console.log(res[0])
 
-      // }).then(function (res) {
-      //   return res.json()
-      // })
-      //   .then(function (res) {
-      //     Indicator.close()
-      //   })
+        return res.json()
+      })
+        .then(function (res) {
+          console.log(res[0].type)
+          _this.objs = res
+          Indicator.close()
+        })
     }
   }
 
@@ -349,6 +156,10 @@
     overflow: hidden;
     /*设置超过的隐藏*/
   }
+  
+  
+  
+  
   
   
   

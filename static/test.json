@@ -1,145 +1,53 @@
 [{
-    'arr': [{
-        'imgurl': 'http://h5test.caiyu.in/dashboard/img/logo_lcf.png',
-        'name': '名称',
-        'type': '上市',
-        'score': 'A',
-        'summary': 'lalalal',
-        'percent': '12%',
-        'top': '123',
-        'min_limit': '32',
-        'pid': '47'
+    "arr": [{
+        "namecn": "平台名",
+        "grade": "AAA",
+        "reinvest": true,
+        "describe": "平台一句话介绍",
+        "totalrate": "12.00",
+        "money": "100~500",
+        "pid": "12",
+        "logoimg": "http://h5test.caiyu.in/dashboard/img/logo_lmw.png",
+        "type": "1"
       },
       {
-        'imgurl': 'http://h5test.caiyu.in/dashboard/img/logo_lcf.png',
-        'name': '名称',
-        'type': '上市',
-        'score': 'A',
-        'summary': 'lalalal',
-        'percent': '12%',
-        'top': '123',
-        'min_limit': '32',
-        'pid': '47'
-      },
-      {
-        'imgurl': 'http://h5test.caiyu.in/dashboard/img/logo_lcf.png',
-        'name': '名称',
-        'type': '上市',
-        'score': 'A',
-        'summary': 'lalalal',
-        'percent': '12%',
-        'top': '123',
-        'min_limit': '32',
-        'pid': '47'
-      },
-      {
-        'imgurl': 'http://h5test.caiyu.in/dashboard/img/logo_lcf.png',
-        'name': '名称',
-        'type': '上市',
-        'score': 'A',
-        'summary': 'lalalal',
-        'percent': '12%',
-        'top': '123',
-        'min_limit': '32',
-        'pid': '47'
+        "namecn": "平台名",
+        "grade": "AAA",
+        "reinvest": true,
+        "describe": "平台一句话介绍",
+        "totalrate": "12.00",
+        "money": "100~500",
+        "pid": "12",
+        "logoimg": "http://h5test.caiyu.in/dashboard/img/logo_lmw.png",
+        "type": "2"
       }
     ],
-    'type': 'adfasdfsdfasdf'
+    "type": "adfasdfsdfasdf"
   },
   {
-    'arr': [{
-        'imgurl': 'http://h5test.caiyu.in/dashboard/img/logo_lcf.png',
-        'name': '名称',
-        'type': '上市',
-        'score': 'A',
-        'summary': 'lalalal',
-        'percent': '12%',
-        'top': '123',
-        'min_limit': '32',
-        'pid': '47'
+    "arr": [{
+        "namecn": "平台名",
+        "grade": "AAA",
+        "reinvest": true,
+        "describe": "平台一句话介绍",
+        "totalrate": "12.00",
+        "money": "100~500",
+        "pid": "12",
+        "logoimg": "http://h5test.caiyu.in/dashboard/img/logo_lmw.png",
+        "type": "3"
       },
       {
-        'imgurl': 'http://h5test.caiyu.in/dashboard/img/logo_lcf.png',
-        'name': '名称',
-        'type': '上市',
-        'score': 'A',
-        'summary': 'lalalal',
-        'percent': '12%',
-        'top': '123',
-        'min_limit': '32',
-        'pid': '47'
-      },
-      {
-        'imgurl': 'http://h5test.caiyu.in/dashboard/img/logo_lcf.png',
-        'name': '名称',
-        'type': '上市',
-        'score': 'A',
-        'summary': 'lalalal',
-        'percent': '12%',
-        'top': '123',
-        'min_limit': '32',
-        'pid': '47'
-      },
-      {
-        'imgurl': 'http://h5test.caiyu.in/dashboard/img/logo_lcf.png',
-        'name': '名称',
-        'type': '上市',
-        'score': 'A',
-        'summary': 'lalalal',
-        'percent': '12%',
-        'top': '123',
-        'min_limit': '32',
-        'pid': '47'
+        "namecn": "平台名",
+        "grade": "AAA",
+        "reinvest": true,
+        "describe": "平台一句话介绍",
+        "totalrate": "12.00",
+        "money": "100~500",
+        "pid": "12",
+        "logoimg": "http://h5test.caiyu.in/dashboard/img/logo_lmw.png",
+        "type": "0"
       }
     ],
-    'type': 'adfasdfsdfasdf'
-  },
-  {
-    'arr': [{
-        'imgurl': 'http://h5test.caiyu.in/dashboard/img/logo_lcf.png',
-        'name': '名称',
-        'type': '上市',
-        'score': 'A',
-        'summary': 'lalalal',
-        'percent': '12%',
-        'top': '123',
-        'min_limit': '32',
-        'pid': '47'
-      },
-      {
-        'imgurl': 'http://h5test.caiyu.in/dashboard/img/logo_lcf.png',
-        'name': '名称',
-        'type': '上市',
-        'score': 'A',
-        'summary': 'lalalal',
-        'percent': '12%',
-        'top': '123',
-        'min_limit': '32',
-        'pid': '47'
-      },
-      {
-        'imgurl': 'http://h5test.caiyu.in/dashboard/img/logo_lcf.png',
-        'name': '名称',
-        'type': '上市',
-        'score': 'A',
-        'summary': 'lalalal',
-        'percent': '12%',
-        'top': '123',
-        'min_limit': '32',
-        'pid': '47'
-      },
-      {
-        'imgurl': 'http://h5test.caiyu.in/dashboard/img/logo_lcf.png',
-        'name': '名称',
-        'type': '上市',
-        'score': 'A',
-        'summary': 'lalalal',
-        'percent': '12%',
-        'top': '123',
-        'min_limit': '32',
-        'pid': '47'
-      }
-    ],
-    'type': 'adfasdfsdfasdf'
+    "type": "adfasdfsdfasdf"
   }
 ]
