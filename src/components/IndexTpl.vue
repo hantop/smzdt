@@ -8,14 +8,28 @@
           <swipe-item>3</swipe-item>
         </swipe>
       </div>
-  
+      <div class="nav">
+        <div class="entry">
+          <router-link to="/tuhao/">
+            <img style="float: left" src="../assets/new_img/tuhao_entry.png" alt="">
+          </router-link>
+          <router-link to="/xiaozhong/">
+            <img style="float: right" src="../assets/new_img/xiaozhong_entry.png" alt="">
+          </router-link>
+        </div>
+        <p class="total_money">
+          已返现到账
+          <span class="num org">{{data.totalmoney}}</span>元
+        </p>
+        <router-link :to="'/prize/'+uid" class="speed">查看最新返现进度</router-link>
+      </div>
     </header>
-    <platform-list v-for="(obj, i) in objs" :key="i" :data="obj"></platform-list>
+    <platform-list v-for="(obj, i) in data.platforms" :key="i" :data="obj"></platform-list>
   
     <!--<div slot="top" class="mint-loadmore-top">
-                      <span v-show="topStatus === 'loading'" :class="{ 'rotate': topStatus === 'drop' }">↓</span>
-                      <span v-show="topStatus === 'loading'">Loading...</span>
-                    </div>-->
+                <span v-show="topStatus === 'loading'" :class="{ 'rotate': topStatus === 'drop' }">↓</span>
+                <span v-show="topStatus === 'loading'">Loading...</span>
+              </div>-->
   
   </loadmore>
 </template>
@@ -28,7 +42,8 @@
     data () {
       return {
         topStatus: '',
-        objs: []
+        data: {},
+        uid: '123'
       }
     },
     components: {
@@ -38,11 +53,7 @@
       Loadmore
     },
     methods: {
-      // handleTopChange (status) {
-      //   this.topStatus = status
-      // },
       loadTop () {
-        // this.$refs.loadmore.onTopLoaded()
         location.reload()
       }
     },
@@ -53,18 +64,12 @@
         text: '加载中...',
         spinnerType: 'fading-circle'
       })
-      setTimeout(function () {
-        Indicator.close()
-      }, 2000)
 
-      fetch('/static/test.json').then(function (res) {
-        console.log(res[0])
-
+      fetch('../../static/index.json').then(res => {
         return res.json()
       })
-        .then(function (res) {
-          console.log(res[0].type)
-          _this.objs = res
+        .then(res => {
+          _this.data = res
           Indicator.close()
         })
     }
@@ -72,130 +77,52 @@
 
 </script>
 <style scoped>
-  /*两个的*/
-  
-  .nav_2 {
-    width: 100%;
-    margin-bottom: 20px;
-    padding-top: -1px;
-    display: block;
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .nav_2 a {
-    width: 50vw;
-    height: 34.6vw;
-    position: relative;
-    display: block;
-    background-color: white;
-    border: inset 1px solid red;
-  }
-  
-  .nav_2 .left {
-    float: left;
-    /*left: -0.5px;*/
-  }
-  
-  .nav_2 .right {
-    float: right;
-    /*right: -0.5px;*/
-  }
-  
-  .nav_2 a .p_head {
-    width: 9.3vw;
-    height: 9.3vw;
-    border-radius: 10px;
-    border: 1px solid rgb(230, 230, 230);
-    position: absolute;
-    top: 2.1vw;
-    left: 1.86vw;
-    overflow: hidden;
-  }
-  
-  .nav_2 a .p_head img {
-    width: 100%;
-  }
-  
-  .nav_2 a .p_name {
-    height: 4.5vw;
-    line-height: 4.5vw;
-    font-size: 4.26vw;
-    position: absolute;
-    top: 3vw;
-    left: 12.5vw;
-    color: rgb(98, 110, 130);
-    width: 36vw;
-    /*设置宽度*/
-    white-space: nowrap;
-    /*设置不折行*/
-    -o-text-overflow: ellipsis;
-    /*兼容opera*/
-    text-overflow: ellipsis;
-    /*这就是省略号喽*/
-    overflow: hidden;
-    /*设置超过的隐藏*/
-  }
-  
-  .nav_2 a .p_int {
-    height: 3.2vw;
-    line-height: 3.2vw;
-    font-size: 3vw;
-    position: absolute;
-    color: rgba(98, 110, 130, .7);
-    top: 8.2vw;
-    left: 12.5vw;
-    width: 36vw;
-    /*设置宽度*/
-    white-space: nowrap;
-    /*设置不折行*/
-    -o-text-overflow: ellipsis;
-    /*兼容opera*/
-    text-overflow: ellipsis;
-    /*这就是省略号喽*/
-    overflow: hidden;
-    /*设置超过的隐藏*/
-  }
-  
-  
-  
-  
-  
-  
-  
-  /*下面的部分*/
-  
-  .nav_2 a .p_pri {
-    width: 100%;
+  .nav {
     text-align: center;
-    font-size: 9.6vw;
-    position: absolute;
-    top: 16.8vw;
-    color: #eb6a60;
-    font-weight: 700;
-    line-height: initial;
+    padding: 0.8rem;
   }
   
-  .nav_2 a .p_pri span {
-    font-size: 24px;
+  .entry {
+    overflow: hidden;
+    margin-bottom: 2.4rem;
   }
   
-  .nav_2 a .p_good {
-    width: 100%;
+  .entry img {
+    height: 7rem;
+    vertical-align: middle;
+  }
+  
+  .total_money {
+    font-size: 1.65rem;
+    font-weight: 500;
+    color: #374259;
+    margin-bottom: 0.3rem;
+  }
+  
+  .org {
+    font-size: 1.8rem;
+    font-weight: 600;
     text-align: center;
-    font-size: 3.2vw;
-    position: absolute;
-    top: 27.5vw;
-    color: #eb6a60;
-    font-weight: 800;
+    color: #ea6e24;
   }
   
-  .nav_2 a .p_line {
-    width: 44.1vw;
-    height: 1px;
-    background-color: rgb(230, 230, 230);
+  .speed {
+    font-size: 1.3rem;
+    color: #0076ff;
+    display: inline-block;
+    margin-bottom: 1.4rem;
+    position: relative;
+  }
+  
+  .speed::after {
+    content: '';
+    background: url('../assets/new_img/arrow.png') no-repeat;
     position: absolute;
-    top: 13.9vw;
-    left: 2.1vw;
+    right: -1.5rem;
+    top: 0.31rem;
+    height: 1.3rem;
+    width: 1.3rem;
+    -webkit-background-size: cover;
+    background-size: cover;
   }
 </style>

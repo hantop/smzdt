@@ -6,17 +6,17 @@
     <header>
       <router-link style="display: block;" :to="'/riskscore/'+this.$route.params.pid">
         <div class="xbox">
-          <img :src="ddata.name" class="xlogo" alt="">
+          <img :src="data.logo" class="xlogo" alt="">
           <div class="xright">
             <div class="xtitle">
-              <span class="xspan1">{{ddata.namecn}}</span>
-              <span class="xspan2">{{ddata.cat}}</span>
+              <span class="xspan1">{{data.title}}</span>
+              <span v-for="(item,index) in data.tag" :key="index" class="xspan2">{{item}}</span>
             </div>
-            <p class="xtext">{{ddata.describe}}</p>
-            <p class="xtext2">首投综合年化收益率可达{{ddata.rate}}</p>
+            <p class="xtext">{{data.desc}}</p>
+            <p class="xtext2">首投综合年化收益率可达{{data.rate}}</p>
             <span class="xfengkong">
-              <span class="xfengkong_span1">风控指标：{{ddata.grade}}</span>
-              <span class="xfengkong_span2">平台监控：{{ddata.risk}}</span>
+              <span class="xfengkong_span1">风控指标：{{data.grade}}</span>
+              <span class="xfengkong_span2">平台监控：{{data.detectlevel}}</span>
             </span>
           </div>
         </div>
@@ -76,9 +76,9 @@
             </ul>
           </div>
           <!--<div class="time relative">
-                                                                                          <h6>投资豆包金服90天标10000元</h6>
-                                                                                          <h6 class="appreciate" data-likenum="3" data-id="2724"><i class=""></i>点赞(<span>3</span>)</h6>
-                                                                                        </div>-->
+                                                                                                    <h6>投资豆包金服90天标10000元</h6>
+                                                                                                    <h6 class="appreciate" data-likenum="3" data-id="2724"><i class=""></i>点赞(<span>3</span>)</h6>
+                                                                                                  </div>-->
         </div>
       </div>
       <div class="extra setnone" id="extra" style="display: block">
@@ -102,80 +102,33 @@
       </a>
     </div>
   
-    
   </div>
 </template>
-<style scoped src="../../static/css/base.css"></style>
 <style scoped src="../assets/css/detail.css"></style>
 <script>
-  import { toUrlQuery } from '../assets/js/tool'
-  import { Indicator, Toast, MessageBox } from 'mint-ui'
+  import { Indicator, MessageBox } from 'mint-ui'
   import coupon from './coupon'
   export default {
-    created () {
+    created: function () {
       const _this = this
       Indicator.open({
         text: '加载中...',
         spinnerType: 'fading-circle'
       })
 
-      // fetch('/forward.php?url=/CaiyuPartner/invest/partner/10', {
-      //   headers: {
-      //     'Content-Type': 'application/x-www-form-urlencoded',
-      //     'Accept': 'application/json, text/plain, */*'
-      //   }
-
-      // }).then(function (res) {
-      //   return res.json()
-      // })
-      //   .then(function (data) {
-      //     if (data.status === 0) {
-      //       _this.ddata = data.data
-      //       _this.items = data.data.items
-      //     } else {
-      //       Toast({
-      //         message: '加载失败',
-      //         position: 'bottom',
-      //         duration: 5000
-      //       })
-      //     }
-      //     Indicator.close()
-      //   })
-
-      const body = {
-        'url': '/CaiyuPartner/api/v1/invest/partner/10',
-        'data': {
-          'uid': '1c8091d23c104502b51bd9d0961d1705'
-        }
-
-      }
-      fetch('/forward.php', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/x-www-form-urlencoded',
-          'Accept': 'application/json, text/plain, */*'
-        },
-        body: toUrlQuery(body)
-      }).then(function (res) {
+      fetch('/static/detail.json').then(res => {
         return res.json()
       })
-        .then(function (data) {
-          if (data.status === 0) {
-            _this.ddata = data.data
-            _this.items = data.data.items
-          } else {
-            Toast({
-              message: '加载失败',
-              position: 'bottom',
-              duration: 5000
-            })
-          }
+        .then(res => {
+          _this.data = res.platform
+          _this.items = res.tasklist
+          window.g_data = '234'
           Indicator.close()
         })
     },
     data () {
       return {
-        ddata: {},
+        data: {},
         items: []
       }
     },

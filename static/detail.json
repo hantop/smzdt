@@ -1,0 +1,45 @@
+{
+  "platform": {
+    "title":"利民网",
+    "pid": "12",
+    "logo": "http://h5test.caiyu.in/dashboard/img/logo_lmw.png",
+    "grade": "AAA",
+    "tag": [
+      "风投系",
+      "银行存管"
+    ],
+    "detectlevel": "未评级",
+    "desc": "一句话介绍",
+    "rate":"12.00"
+  },
+  "tasklist": [{
+      "fanlitype": "1",
+      "title": "首投10000元—20天及以上标的",
+      "fanlimoney":"234",
+      "fanlimoneydesc": "投资收益:123元，合计收益123元",
+      "fanlistat": "",
+      "baserate": "12.3",
+      "fanlirate": "32.3",
+      "fanlipeople": "123",
+      "fanlistart": "",
+      "fanliend": "",
+      "fanlistatus": true,
+      "jiaxi": {
+        "jiaxititle": "60克纯银锭",
+        "jiaxitype": ""
+      }
+    },
+    {
+      "fanlitype": "",
+      "title": "",
+      "fanlimoneydesc": "",
+      "fanlistat": "",
+      "baserate": "",
+      "fanlirate": "",
+      "fanlipeople": "",
+      "fanlistart": "",
+      "fanliend": "",
+      "fanlistatus": ""
+    }
+  ]
+}

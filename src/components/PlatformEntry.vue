@@ -2,20 +2,20 @@
   <div class="item_box">
     <div class="top">
       <div class="logo">
-        <img width="100%" :src="data.logoimg" alt="">
+        <img width="100%" :src="data.logo" alt="">
       </div>
       <div class="right">
         <div class="r_top">
-          <h5 class="namecn">{{data.namecn}}</h5>
+          <h5 class="namecn">{{data.title}}</h5>
           <span class="grade">{{data.grade}}</span>
-          <span v-if="data.reinvest" class="re_invest">复投</span>
+          <span v-if="data.isfutou" class="re_invest">复投</span>
         </div>
-        <p class="describe">{{data.describe}}</p>
+        <p class="describe">{{data.desc}}</p>
       </div>
     </div>
     <div class="bottom">
       <div class="rate">
-        <div class="red num">{{data.totalrate}}
+        <div class="red num">{{data.rate}}
           <span style="font-size: 1.2rem">%</span>
         </div>
         <div class="gray">活动最高年化</div>
@@ -37,7 +37,7 @@
     props: ['data'],
     computed: {
       url () {
-        switch (this.data.type) {
+        switch (this.data.fanxiantype) {
           case '0':
             return '/static/img/qfx.png'
           case '1':
@@ -46,7 +46,6 @@
             return '/static/img/cjf.png'
           case '3':
             return '/static/img/yqg.png'
-
         }
       }
     }

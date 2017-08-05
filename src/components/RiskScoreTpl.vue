@@ -1,127 +1,230 @@
 <template>
-  <section>
-    <div class="score">
-      <h6 class="title relative">
-        <span class="font_weight">风控评级</span>
-        <span class="level">AA</span>
-      </h6>
-      <div class="content">
-        <h5 class="relative">
-          <span class="text">2015年上线，运营时间超过1年</span>
-          <span class="min-score">+2</span>
-        </h5>
-        <h5 class="relative">
-          <span class="text">注册资本5000万</span>
-          <span class="min-score">+2</span>
-        </h5>
-        <h5 class="relative">
-          <span class="text">平台老板与香港上市公司投融长富(00850. HK)为同一实际控制人</span>
-          <span class="min-score">+2</span>
-        </h5>
-        <h5 class="relative">
-          <span class="text">2016年10月完成与浙商银行存管系统的对接</span>
-          <span class="min-score">+2</span>
-        </h5>
-        <h5 class="relative">
-          <span class="text">每月披露平台简要的运营报告，实时披露交易数据</span>
-          <span class="min-score">+2</span>
-        </h5>
-        <h5 class="relative">
-          <span class="text">累计成交量超过50亿</span>
-          <span class="min-score">+2</span>
-        </h5>
-      </div>
+  <div>
+  
+    <div class="pj_banner">
+      <img src="../assets//new_img/level_banner.png">
     </div>
   
-    <div class="score monitor">
-      <h6 class="title relative">
-        <span class="font_weight">平台监控</span>
-      </h6>
-      <div class="content">
-        <h5 class="relative">
-          <span class="text">网贷之家评级及状态</span>
-          <span style="color: green;" class="min-score">正常</span>
-        </h5>
-        <h5 class="relative">
-          <span class="text">网贷天眼评级及状态</span>
-          <span style="color: green;" class="min-score">正常</span>
-        </h5>
-        <h5 class="relative">
-          <span class="text">贷罗盘健康度评分</span>
-          <span style="color: green;" class="min-score">正常</span>
-        </h5>
-        <h5 class="relative">
-          <span class="text">平台标的是否正常</span>
-          <span style="color: green;" class="min-score">正常</span>
-        </h5>
-        <h5 class="relative">
-          <span class="text">提现速率及时效</span>
-          <span style="color: green;" class="min-score">正常</span>
-        </h5>
-        <h5 class="relative">
-          <span class="text">是否出现逾期情况</span>
-          <span style="color: green;" class="min-score">正常</span>
-        </h5>
-        <h5 class="relative">
-          <span class="text">官网连续登录情况</span>
-          <span style="color: green;" class="min-score">正常</span>
-        </h5>
-        <h5 class="relative">
-          <span class="text">客服联系方式接通</span>
-          <span style="color: green;" class="min-score">正常</span>
-        </h5>
-        <h5 class="relative">
-          <span class="text">平台人事调动频繁</span>
-          <span style="color: green;" class="min-score">正常</span>
-        </h5>
-        <h5 class="relative">
-          <span class="text">QQ群无故解散</span>
-          <span style="color: green;" class="min-score">正常</span>
-        </h5>
-      </div>
-    </div>
+    <div class="big_cell" style="margin-top: -8px">
   
-    <div style="display: none" class="material">
-      <h6 class="title relative">
-        <span class="font_weight">理财师评价</span>
-      </h6>
-      <div class="content pingjia">
+      <div class="title">
+        风控评级
+        <span class="level orange">未评级</span>
   
       </div>
+      <div>
+        <table cellspacing="0" cellpadding="0" class="table_3">
+          <tr>
+            <td>2014年上线，运营时间超过3年</td>
+            <td class="orange">+2</td>
+          </tr>
+          <tr>
+            <td>2014年上线，运营时间超过3年</td>
+            <td class="orange">+2</td>
+          </tr>
+          <tr>
+            <td>2014年上线，运营时间超过3年</td>
+            <td class="orange">+2</td>
+          </tr>
+  
+        </table>
+      </div>
+  
     </div>
   
-    <div class="material">
-      <h6 class="title relative">
-        <span class="font_weight">引用资料</span>
-      </h6>
-      <div class="content">
-        <h5 class="relative">
-          <i class="point"></i>
-          <a style="margin-left: 10px" href="http://www.wdzj.com/dangan/trj/" class="openurl">投融家档案</a>
-        </h5>
-        <h5 class="relative">
-          <i class="point"></i>
-          <a style="margin-left: 10px" href="http://www.sohu.com/a/129408358_429979" class="openurl">投融家白皮书||汽车金融与个人信贷产品盛大发布</a>
-        </h5>
-        <h5 class="relative">
-          <i class="point"></i>
-          <a style="margin-left: 10px" href="http://finance.591hx.com/article/2017-06-27/0000664818s.shtml" class="openurl">投融家CEO胡德华获2017 中国互联网金融管理创新人物荣誉</a>
-        </h5>
+    <div class="big_cell">
+  
+      <div class="title">
+        平台监控
+  
       </div>
+      <div>
+        <table cellspacing="0" cellpadding="0" class="table_3">
+          <tr>
+            <td>网贷天眼评级</td>
+            <td class="skyblue">正常</td>
+          </tr>
+          <tr>
+            <td>网贷天眼评级</td>
+            <td class="">-</td>
+          </tr>
+          <tr>
+            <td>网贷天眼评级</td>
+            <td class="red">异常</td>
+          </tr>
+  
+        </table>
+      </div>
+  
     </div>
-  </section>
+    <div class="big_cell">
+  
+      <div class="title">
+        理财师评价
+      </div>
+      <div>
+        <div class="content pingjia">
+          <p>钱保姆成立于14年，注册资本1亿元，近期又获得了1亿元的战略融资，表现出了较强的资本实力。2月获得北京银行的存管资格，ICP证也拿到了，监管部门的硬性规定，差不多齐了。 </p>
+          <p>平台累计用户超百万，成交金额超百亿，这反映出平台良好的发展态势。平台项目聚焦于车贷和供应链贷，但目前并未有可投标的。近期与资产管理公司合作推出新资产项目，项目披露信息尚可。借款企业承诺到期回购，华夏鑫航（厦门）担保有限公司提供担保。</p>
+        </div>
+      </div>
+  
+    </div>
+    <div class="big_cell">
+  
+      <div class="title">
+        引用资料
+      </div>
+      <div>
+        <div class="content">
+          <h5 class="relative">
+            <i class="point"></i>
+            <a style="margin-left: 10px" href="http://www.wdzj.com/dangan/trj/" class="openurl">投融家档案</a>
+          </h5>
+          <h5 class="relative">
+            <i class="point"></i>
+            <a style="margin-left: 10px" href="http://www.sohu.com/a/129408358_429979" class="openurl">投融家白皮书||汽车金融与个人信贷产品盛大发布</a>
+          </h5>
+          <h5 class="relative">
+            <i class="point"></i>
+            <a style="margin-left: 10px" href="http://finance.591hx.com/article/2017-06-27/0000664818s.shtml" class="openurl">投融家CEO胡德华获2017 中国互联网金融管理创新人物荣誉</a>
+          </h5>
+        </div>
+      </div>
+  
+    </div>
+  
+  </div>
 </template>
-<style scoped>
+<script>
+  export default {
+    created () {
+      console.log(window.g_data)
+    }
+  }
+</script>
 
-  body {
-    background-color: #f0f0f0;
+
+<style scoped>
+  .pj_banner {
+    padding: 15px 6px 0;
+    background-color: #fff;
   }
   
+  .pj_banner img {
+    display: block;
+    width: 100%
+  }
+  
+  .big_cell {
+    background-color: #fff;
+    padding: 0 15px;
+    margin-top: 10px;
+  }
+  
+  .big_cell>.title {
+    padding: 12px 0 10px;
+    position: relative;
+    font-weight: bold;
+    font-size: 15px;
+    border-bottom: 1px solid rgb(220, 220, 220);
+  }
+  
+  .big_cell>.title span {
+    float: right;
+  }
+  
+  .big_cell>.title p {
+    font-weight: normal;
+    font-size: 12px;
+  }
+  
+  
+  
+  .table_1,
+  .table_2,
+  .table_3 {
+    display: table;
+    width: 100%;
+    padding-bottom: 6px;
+  }
+  
+  .table_1 tbody,
+  .table_2 tbody.table_3 {
+    display: table;
+    width: 100%;
+  }
+  
+  .table_1 .link {
+    color: #289cf5 !important;
+    text-decoration: underline;
+  }
+  
+  .table_1 .link_done {
+    color: #374259 !important;
+    text-decoration: underline;
+  }
+  
+  .table_1 .title {
+    font-weight: 400 !important;
+    font-size: 12.5px;
+    opacity: 0.7;
+  }
+  
+  .table_1 tr td,
+  .table_2 tr td,
+  .table_3 tr td {
+    text-align: center;
+    font-size: 12.5px;
+    padding: 8px 0;
+  }
+  
+  .table_1 tr td:nth-child(1) {
+    width: 20%;
+  }
+  
+  .table_1 tr td:nth-child(2) {
+    width: 25%;
+  }
+  
+  .table_1 tr td:nth-child(2) {
+    width: 25%;
+  }
+  
+  .table_1 tr td:nth-child(4) {
+    width: 20%;
+  }
+  
+  .table_2 td {
+    background: #FBFBFB;
+    border-right: 1px solid #DCDCDC;
+    border-bottom: 1px solid #DCDCDC;
+    padding: 12px 5px !important;
+    vertical-align: middle;
+  }
+  
+  .table_2 tr td:first-child {
+    border-left: 1px solid #DCDCDC;
+  }
+  
+  .table_3 tr td:first-child {
+    text-align: left;
+  }
+  
+  .table_3 tr:first-child td {
+    padding-top: 14px;
+  }
+  
+  .table_3 tr td:last-child {
+    text-align: right;
+  }
+</style>
+<style scoped>
   .font_weight {
     font-weight: 700;
   }
   
-  .title {
+  .title2 {
     color: #343434;
     padding-left: 1rem;
     font-size: .9125em;
@@ -129,7 +232,7 @@
     line-height: 3rem;
   }
   
-  .title>i {
+  .title2>i {
     display: inline-block;
     width: 1.25em;
     height: 1.25em;
@@ -137,76 +240,26 @@
     background-size: 100% 100%;
   }
   
-  
-  section .score {
-    background: #fff;
-  }
-  
-  section .score .title i {
-    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAMAAACfWMssAAAAdVBMVEUAAABsmOVsmOVsmOVsmOVsmOVsmOVsmOVsmOVsmOVsmOVsmOVsmOVsmOVsmOVsmOVsmOVsmOVsmOVsmOVsmOVsmOVsmOVsmOVsmOVsmOVsmOVsmOVsmOVsmOVsmOVsmOVsmOVsmOVsmOVsmOVsmOVsmOVsmOWHoAqvAAAAJnRSTlMA8uaLIxTb0dY6EAu+Bd+cW28pGy6XlZBQya56aVWjYcW46kFM7XyLrX8AAAHhSURBVEjHnZfpdoJADIUvDNuwCIi4IJRq27z/I7ZHrWVMBuh8/zgaJrkmdyIkGl3v89j7Ic73tW6wirAqfTLwyyrEEoFKSCBRAeZIDz5Z8FUGK0NCMyRH23ElLbAvILCNaZH3LRi7Da1gs2Pn+bQK/+XMIKKVRIGhS0Kriac/S0n/4IAnR/oXx2eicoHXvr/KZf4meyCRERhJRD0U9UgiKYBMzsW7K6tI5IwfzjNHhhu5R8Lbh75cZQqgshw4W/8A4E1urYdyDYm8Gclw4ezvDaFl3Zrn1JCIRi1EnUqNJ59d7BGjRmtqeVGVDlIYhIEeDxdT/Bb5NExnBSwUmZ6qkSOWFJHZ0x8neNOnAjMYyV2NQLo0sJJ2hoBmIEUfsNDkNBdIXg2Rj4heApmbtlKhlUcmMXJ6JQ9ZXM+/hJYYPTNdYrRSy1XM5aWW08RgNh/GvMmFsUpS1m4dHyth4DowlDDIqLhpLKs6/JkVN+r0fE4tVh+lQh7eXZtiTIii/t4NwYsQSjLkU3Zrscvjqbq95Z0ZMrfAGMCunWj1CcAMVPKl043qi6aUVetJl477Ned+sSJMaDWnzHV5cFtXksBxQdq6rmSuS6Db2jnASqbmFl2X1TpWAZZohGV+CMFw/fvwDVDrIIo1y/R0AAAAAElFTkSuQmCC);
-  }
-  
-  section .score .title .level {
-    background-image: url("http://img.xmiles.cn/AAAji.png");
-    background-size: 100% 100%;
-    right: 1em;
-    top: .275em;
-    font-size: .75em;
-    color: #fff;
-    padding-right: .3rem;
-    position: absolute;
-    display: inline-block;
-    width: 3.56rem;
-    height: 1.25rem;
-    line-height: 1.35rem;
-    text-align: center;
-    top: 50%;
-    transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-  }
-  
-  section .score .content {
-    padding-bottom: .3125em;
-  }
-  
-  section .score .content h5 {
-    padding: 0 1rem;
-    padding-bottom: .875rem;
-  }
-  
-  section .score .content h5 span.text {
-    width: 93%;
-    display: inline-block;
-  }
-  
-  section .score .content h5>span.min-score {
-    position: absolute;
-    right: 1.19444em;
-    color: #ff621e;
-    top: 0;
-  }
-  
-  section .material {
+  {
     border-top: .625em solid #f0f0f0;
     background: #fff;
   }
   
-  section .material .title i {
+  .title i {
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADYAAAA2CAMAAAC7m5rvAAAAV1BMVEUAAABsmOVsmOVsmOVsmOVsmOVsmOVsmOVsmOVsmOVsmOVsmOVsmOVsmOVsmOVsmOVsmOVsmOVsmOVsmOVsmOVsmOVsmOVsmOVsmOVsmOVsmOVsmOVsmOWl/qMPAAAAHHRSTlMA8ArSXUmAQSfz6NnLZOM7GRAGp3JXUvu2kkU1fPPVKwAAAK5JREFUSMft1rsOwyAMQFEDKQQCJKRJn/7/7ywRCn0swUwduAsS0mEwiyE2d+eBlfWA3CiwuFNWimEFmzTWMIlVzNYxRmXzU6kRNJVxE09gZCYQWWONNdZYY439Jbv8MHGXJfVfzKwcSnszEx+pYC5dhP4w/sEMT8zRJmmBzjSi54ktxA9YE5vUYWFnNrIhkCcpcXOK4Gxk+2J4W7rCnN8YKI3kWFp6qV3zik3KvwBfOOwcLSWXCwAAAABJRU5ErkJggg==);
   }
   
-  section .material .content {
+  .content {
     padding: .875em 1.9375em;
-    padding-top: 0;
-    padding-bottom: .3125rem;
+    font-size: 12.5px;
   }
   
-  section .material .content h5 {
+  .content h5 {
     margin-bottom: .875rem;
     text-indent: -1em;
   }
   
-  section .material .content h5 i.point {
+  .content h5 i.point {
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJBAMAAAASvxsjAAAAGFBMVEUAd9EAd9EAd9EAd9EAd9EAd9EAAAAAd9H478M7AAAAB3RSTlPdgfnFCgkAkn5dJwAAACtJREFUCNdjSBVQEE1gcC4vL3ZgEC8vLxdgYAeSDAzqQFIBwoaIQ9RA1AMAbFENeXgEETQAAAAASUVORK5CYII=);
     display: inline-block;
     width: .35em;
@@ -218,18 +271,19 @@
     position: absolute;
   }
   
-  section .material .content h5 span {
+  .content h5 span {
     text-decoration: underline;
     color: #0079ce;
     padding-left: 1em;
   }
-
-
-
   
   p {
     text-indent: 2em;
     font-size: 14px;
+  }
+  
+  .openurl {
+    font-size: 12.5px;
   }
 </style>
 

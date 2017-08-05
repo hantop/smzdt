@@ -5,11 +5,13 @@ import detailTpl from '../components/detailTpl'
 import PrizeTpl from '../components/PrizeTpl'
 import RiskScoreTpl from '../components/RiskScoreTpl'
 import Bad from '../components/Bad'
+import Xiaozhong from '../components/Xiaozhong'
+import Tuhao from '../components/Tuhao'
 
 Vue.use(Router)
 
 export default new Router({
-  mode: 'history',
+  // mode: 'history',
   base: '/smzdt/',
   routes: [
     {
@@ -21,6 +23,16 @@ export default new Router({
       path: '/detail/:pid',
       name: 'detail',
       component: detailTpl
+    },
+    {
+      path: '/xiaozhong',
+      name: 'xiaozhong',
+      component: Xiaozhong
+    },
+    {
+      path: '/tuhao',
+      name: 'tuhao',
+      component: Tuhao
     },
     {
       path: '/prize/:uid',

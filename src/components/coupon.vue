@@ -1,27 +1,27 @@
 
 <template>
   <a v-on:click="promptShow">
-    <div class="xshadow">
+    <div :style="shadow" :class="hasshadow?'xshadow':''">
       <div class="xitem_box">
-        <h5 class="xh5 ">首投{{data.money}}元—{{data.term}}天及以上标的</h5>
+        <h5 class="xh5 ">{{data.title}}</h5>
         <div class="xmoney">返现
-          <span>{{data.reward|formatMoney(-1)}}</span>元</div>
-        <p v-if="data.text" style="color: #e64d3f;position: relative;top: -2px;">{{data.text}}</p>
-        <p>投资收益:{{data.investBonus}}元，合计收益{{data.totalBonus}}元</p>
+          <span>{{data.fanlimoney}}</span>元</div>
+        <p v-if="data.fanlitype=='1'" style="color: #e64d3f;position: relative;top: -2px;">{{data.text}}</p>
+        <p>{{data.fanlimoneydesc}}</p>
         <div class="xbottom">
-          <b style="position: relative">{{data.officialrate|formatMoney(1)}}
+          <b style="position: relative">{{data.baserate|formatMoney(1)}}
             <span class="xfz9">官网收益率</span>
           </b>
           <span class="xfz11">%</span>
           <img class="xarrow" src="../assets/img/arrow.png" alt="">
-          <b style="position: relative">{{data.totalrate|formatMoney(1)}}
+          <b style="position: relative">{{data.fanlirate|formatMoney(1)}}
             <span class="xfz9 ">活动收益率</span>
           </b>
           <span class="xfz11">%</span>
         </div>
         <div class="xbottom_right">
-          <div>去返现</div>
-          <p> (已有77人选择)</p>
+          <div>{{fanxian}}</div>
+          <p> (已有{{data.fanlipeople}}人选择)</p>
         </div>
       </div>
     </div>
@@ -30,26 +30,52 @@
 <script>
   import { formatMoney } from '../assets/js/tool'
   export default {
+    data () {
+      return {
+        data: this.data,
+        hasshadow: false,
+        shadow: ''
+
+      }
+    },
     props: ['data'],
     methods: {
       promptShow () {
         this.$emit('childClick')
       }
     },
+    computed: {
+      fanxian () {
+        return this.data.fanlistatus ? '去返现' : '已结束'
+      }
+    },
     filters: {
       formatMoney
+    },
+    created () {
+      switch (this.data.fanlitype) {
+        case '0':
+          this.bg = '/static/img/detail_item_bg.png'
+          this.shadow = 'background: url(/static/img/shadow.png) no-repeat center bottom;'
+          this.hasshadow = true
+          break
+        case '1':
+          this.bg = '/static/img/yellow_bg.png'
+          this.shadow = 'background: url(/static/img/yellow_shadow.png) no-repeat center bottom;'
+          this.hasshadow = true
+          break
+        case '4':
+          this.data.bg = '/static/img/.png'
+          break
+
+      }
     }
-    // computed: {
-    //   officialrate: formatMoney(this.data.officialrate, 1),
-    //   totalrate: formatMoney(this.data.totalrate, 1),
-    //   reward: formatMoney(this.data.reward, 1)
-    // }
   }
 
 </script>
 <style scoped>
   .xshadow {
-    background: url(../assets/img/shadow.png) no-repeat center bottom;
+  
     background-size: contain;
     margin: 0 auto;
     padding-bottom: 20px;
