@@ -9,24 +9,15 @@
   
       <div class="title">
         风控评级
-        <span class="level orange">未评级</span>
+        <span class="level orange">{{grade.score}}</span>
   
       </div>
       <div>
         <table cellspacing="0" cellpadding="0" class="table_3">
-          <tr>
-            <td>2014年上线，运营时间超过3年</td>
-            <td class="orange">+2</td>
+          <tr :key="i" v-for="(v, k, i) in grade.list">
+            <td>{{k}}</td>
+            <td class="orange">{{v}}</td>
           </tr>
-          <tr>
-            <td>2014年上线，运营时间超过3年</td>
-            <td class="orange">+2</td>
-          </tr>
-          <tr>
-            <td>2014年上线，运营时间超过3年</td>
-            <td class="orange">+2</td>
-          </tr>
-  
         </table>
       </div>
   
@@ -40,17 +31,9 @@
       </div>
       <div>
         <table cellspacing="0" cellpadding="0" class="table_3">
-          <tr>
-            <td>网贷天眼评级</td>
-            <td class="skyblue">正常</td>
-          </tr>
-          <tr>
-            <td>网贷天眼评级</td>
-            <td class="">-</td>
-          </tr>
-          <tr>
-            <td>网贷天眼评级</td>
-            <td class="red">异常</td>
+          <tr :key="i" v-for="(v, k, i) in monitor">
+            <td>{{k}}</td>
+            <td :class="v=='-'?'':v=='0'?'skyblue':'red'">{{v=='-'?'-':v=='0'?'正常':'异常'}}</td>
           </tr>
   
         </table>
@@ -64,8 +47,7 @@
       </div>
       <div>
         <div class="content pingjia">
-          <p>钱保姆成立于14年，注册资本1亿元，近期又获得了1亿元的战略融资，表现出了较强的资本实力。2月获得北京银行的存管资格，ICP证也拿到了，监管部门的硬性规定，差不多齐了。 </p>
-          <p>平台累计用户超百万，成交金额超百亿，这反映出平台良好的发展态势。平台项目聚焦于车贷和供应链贷，但目前并未有可投标的。近期与资产管理公司合作推出新资产项目，项目披露信息尚可。借款企业承诺到期回购，华夏鑫航（厦门）担保有限公司提供担保。</p>
+          <p :key="i" v-for="(v, i) in comment">{{v}} </p>
         </div>
       </div>
   
@@ -77,18 +59,11 @@
       </div>
       <div>
         <div class="content">
-          <h5 class="relative">
+          <h5 :key="i" v-for="(v, k, i) in link" class="relative">
             <i class="point"></i>
-            <a style="margin-left: 10px" href="http://www.wdzj.com/dangan/trj/" class="openurl">投融家档案</a>
+            <a style="margin-left: 10px" :href="v" class="openurl">{{k}}</a>
           </h5>
-          <h5 class="relative">
-            <i class="point"></i>
-            <a style="margin-left: 10px" href="http://www.sohu.com/a/129408358_429979" class="openurl">投融家白皮书||汽车金融与个人信贷产品盛大发布</a>
-          </h5>
-          <h5 class="relative">
-            <i class="point"></i>
-            <a style="margin-left: 10px" href="http://finance.591hx.com/article/2017-06-27/0000664818s.shtml" class="openurl">投融家CEO胡德华获2017 中国互联网金融管理创新人物荣誉</a>
-          </h5>
+
         </div>
       </div>
   
@@ -97,9 +72,32 @@
   </div>
 </template>
 <script>
+  import { Indicator } from 'mint-ui'
   export default {
-    created () {
-      console.log(window.g_data)
+    data () {
+      return {
+        grade: {},
+        monitor: {},
+        comment: [],
+        link: {}
+      }
+    },
+    created: function () {
+      const _this = this
+      Indicator.open({
+        text: '加载中...',
+        spinnerType: 'fading-circle'
+      })
+      fetch(`../../static/json/riskscore/riskscore_${_this.$route.params.pid}.json`).then(res => {
+        return res.json()
+      })
+        .then(res => {
+          _this.grade = res.grade
+          _this.monitor = res.monitor
+          _this.comment = res.comment
+          _this.link = res.link
+          Indicator.close()
+        })
     }
   }
 </script>

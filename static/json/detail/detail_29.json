@@ -1,0 +1,88 @@
+{
+  "platform": {
+    "title": "利民网",
+    "pid": "29",
+    "logo": "http://h5test.caiyu.in/dashboard/img/logo_lmw.png",
+    "grade": "AAA",
+    "tag": [
+      "风投系",
+      "银行存管"
+    ],
+    "detectlevel": "未评级",
+    "desc": "一句话介绍",
+    "rate": "12.00"
+  },
+  "tasklist": [{
+      "fanlitype": "1",
+      "title": "首投10000元—20天及以上标的",
+      "fanlimoney": "234",
+      "fanlimoneydesc": "投资收益:123元，合计收益123元",
+      "futoudesc": "首投6000元及以上的用户可以参与",
+      "fanlistat": "",
+      "baserate": "12.3",
+      "fanlirate": "32.3",
+      "fanlipeople": "123",
+      "fanlistart": "",
+      "fanliend": "",
+      "fanlistatus": true,
+      "jiaxi": {
+        "jiaxititle": "60克纯银锭",
+        "jiaxitype": ""
+      }
+    },
+    {
+      "fanlitype": "0",
+      "title": "首投10000元—20天及以上标的",
+      "fanlimoney": "234",
+      "fanlimoneydesc": "投资收益:123元，合计收益123元",
+      "futoudesc": "首投6000元及以上的用户可以参与",
+      "fanlistat": "",
+      "baserate": "12.3",
+      "fanlirate": "32.3",
+      "fanlipeople": "123",
+      "fanlistart": "",
+      "fanliend": "",
+      "fanlistatus": true,
+      "jiaxi": {
+        "jiaxititle": "60克纯银锭",
+        "jiaxitype": ""
+      }
+    },
+    {
+      "fanlitype": "4",
+      "title": "首投10000元—20天及以上标的",
+      "fanlimoney": "234",
+      "fanlimoneydesc": "投资收益:123元，合计收益123元",
+      "futoudesc": "首投6000元及以上的用户可以参与",
+      "fanlistat": "",
+      "baserate": "12.3",
+      "fanlirate": "32.3",
+      "fanlipeople": "123",
+      "fanlistart": "2017/08/06 11:35:10",
+      "fanliend": "",
+      "fanlistatus": true,
+      "jiaxi": {
+        "jiaxititle": "60克纯银锭",
+        "jiaxitype": ""
+      }
+    },
+    {
+      "fanlitype": "4",
+      "title": "首投10000元—20天及以上标的",
+      "fanlimoney": "234",
+      "fanlimoneydesc": "投资收益:123元，合计收益123元",
+      "futoudesc": "首投6000元及以上的用户可以参与",
+      "fanlistat": "",
+      "baserate": "12.3",
+      "fanlirate": "32.3",
+      "fanlipeople": "123",
+      "fanlistart": "2017/08/06 15:15:00",
+      "fanliend": "",
+      "fanlistatus": true,
+      "jiaxi": {
+        "jiaxititle": "60克纯银锭",
+        "jiaxitype": ""
+      }
+    }
+  ]
+}

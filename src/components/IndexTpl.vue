@@ -65,7 +65,7 @@
         spinnerType: 'fading-circle'
       })
 
-      fetch('../../static/index.json').then(res => {
+      fetch('../../static/json/index.json').then(res => {
         return res.json()
       })
         .then(res => {

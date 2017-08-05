@@ -22,15 +22,14 @@
         </div>
       </router-link>
       <div class="xcoupon">
-        <coupon :data="item" v-for="(item, i) in items" :key="i" v-on:childClick="alertBox"></coupon>
+        <coupon :props="item" v-for="(item, i) in items" :key="i" v-on:childClick="alertBox"></coupon>
         <h6 style="color: #909090;padding: 0 1.19444em;">
           <br>注意：
-          <br> 已经通过财鱼管家注册的用户，可以直接去汇盈金服官网或app中投资。
-          <br> ＊通过本页面进行注册的理财平台新用户有资格获得返现，首投满足奖励的条件与对应的奖励以本页面活动规则为准。
-          <br> ＊符合条件的用户，财鱼管家将在7个工作日内会发放返现红包至财鱼管家“我的-提醒”页面中。
-          <br> ＊禁止任何形式的刷单行为，如果发现（如同一IP刷单等），平台将不予结算。
-          <br> ＊如果活动期间奖励规则变动，则以注册时间（且注册后24小时内完成投资）的奖励规则为准。
-          <br>
+          <li> 已经通过财鱼管家注册的用户，可以直接去汇盈金服官网或app中投资。</li>
+          <li> ＊通过本页面进行注册的理财平台新用户有资格获得返现，首投满足奖励的条件与对应的奖励以本页面活动规则为准。</li>
+          <li> ＊符合条件的用户，财鱼管家将在7个工作日内会发放返现红包至财鱼管家“我的-提醒”页面中。</li>
+          <li> ＊禁止任何形式的刷单行为，如果发现（如同一IP刷单等），平台将不予结算。</li>
+          <li> ＊如果活动期间奖励规则变动，则以注册时间（且注册后24小时内完成投资）的奖励规则为准。</li>
         </h6>
       </div>
     </header>
@@ -75,10 +74,6 @@
               </li>
             </ul>
           </div>
-          <!--<div class="time relative">
-                                                                                                    <h6>投资豆包金服90天标10000元</h6>
-                                                                                                    <h6 class="appreciate" data-likenum="3" data-id="2724"><i class=""></i>点赞(<span>3</span>)</h6>
-                                                                                                  </div>-->
         </div>
       </div>
       <div class="extra setnone" id="extra" style="display: block">
@@ -104,6 +99,9 @@
   
   </div>
 </template>
+<style scoped src="../assets/css/base.css">
+</style>
+
 <style scoped src="../assets/css/detail.css"></style>
 <script>
   import { Indicator, MessageBox } from 'mint-ui'
@@ -116,7 +114,7 @@
         spinnerType: 'fading-circle'
       })
 
-      fetch('/static/detail.json').then(res => {
+      fetch(`/static/json/detail/detail_${_this.$route.params.pid}.json`).then(res => {
         return res.json()
       })
         .then(res => {
@@ -140,19 +138,6 @@
         MessageBox.prompt('为了追踪您的投资信息进行返现奖励请输入您将用于注册投资的手机号码：', '首投登记').then(({ value, action }) => {
           alert(value + '====123====' + action)
         })
-        // MessageBox({
-        //   title: '首投登记',
-        //   message: '为了追踪您的投资信息进行返现奖励请输入您将用于注册投资的手机号码：',
-        //   confirmButtonText: '去投资',
-        //   confirmButtonHighlight: 'true',
-        //   showCancelButton: 'true',
-        //   cancelButtonText: '再想想',
-        //   showInput: 'true',
-        //   inputType: 'tel',
-        //   inputPlaceholder: '请输入注册投资的手机号'
-        // }).then(({ value, action }) => {
-        //   alert(value + '====123====' + action)
-        // })
       }
     }
   }
