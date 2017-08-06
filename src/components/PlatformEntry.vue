@@ -1,4 +1,5 @@
 <template>
+      <router-link :to="'/detail/'+data.pid+'/?uid='+uid">
   <div class="item_box">
     <div class="top">
       <div class="logo">
@@ -26,15 +27,16 @@
         </div>
         <div class="gray">返现金额</div>
       </div>
-      <router-link :to="'/detail/'+data.pid" class="to_detail">
-        <img width="100%" :src="url" alt="">
-      </router-link>
+
+        <img  class="to_detail" width="100%" :src="url" alt="">
+
     </div>
   </div>
+        </router-link>
 </template>
 <script>
   export default {
-    props: ['data'],
+    props: ['data', 'uid'],
     computed: {
       url () {
         switch (this.data.fanxiantype) {
@@ -53,7 +55,7 @@
 </script>
 <style scoped>
   .item_box {
-    border-top: rgba(225, 225, 225, .4) .5px solid;
+    border-top: rgba(225, 225, 225, .4) 1px solid;
     padding: 0 1.5rem;
     padding-bottom: 1.8rem;
   }

@@ -1,0 +1,78 @@
+{
+  "platform": {
+    "fanxianurl": "https://www.pj.com/mobile/zhuce.do?f=cygj",
+    "shoutoustatus":true, 
+    "share":"",
+
+    "title": "票据宝",
+    "pid": "4525",
+    "logo": "http://h5test.caiyu.in/img/logo_4525.png",
+    "grade": "AA",
+    "tag": [
+      "上市公司系"
+    ],
+    "detectlevel": "正常",
+    "desc": "广东华兴银行资金存管 人人网2000万美元融资",
+    "rate": "13.08%",
+    "specialqa":{
+      "可以投资新手标吗？":"不可以的，票据宝新手标和活期标不参加本次返利活动。"
+    },
+    "specilarule":["特别注意：票据宝新手标、活期标不参加返利活动"]
+
+  },
+  "tasklist": [{
+      "fanlitype": "0",
+      "title": "首投10000元——180天及以上标的",
+      "fanlimoney": "350",
+      "fanlimoneydesc": "投资收益:523.84 元，合计收益:873.84 元",
+      "futoudesc": "",
+      "fanlistat": "",
+      "baserate": "8.0",
+      "fanlirate": "13.4",
+      "fanlipeople": "33",
+      "fanlistart": "",
+      "fanliend": "",
+      "fanlistatus": true,
+      "jiaxi": {
+        "jiaxititle": "",
+        "jiaxitype": ""
+      }
+    },
+   {
+      "fanlitype": "0",
+      "title": "首投10000元——90天及以上标的",
+      "fanlimoney": "200",
+      "fanlimoneydesc": "投资收益:195.62元，合计收益:395.62 元",
+      "futoudesc": "",
+      "fanlistat": "",
+      "baserate": "7.0",
+      "fanlirate": "14.2",
+      "fanlipeople": "94",
+      "fanlistart": "",
+      "fanliend": "",
+      "fanlistatus": true,
+      "jiaxi": {
+        "jiaxititle": "",
+        "jiaxitype": ""
+      }
+    },
+  {
+      "fanlitype": "0",
+      "title": "首投10000元——31天及以上标的",
+      "fanlimoney": "90",
+      "fanlimoneydesc": "投资收益:88.77 元，合计收益178.77 元",
+      "futoudesc": "",
+      "fanlistat": "",
+      "baserate": "6.0",
+      "fanlirate": "12.1",
+      "fanlipeople": "174",
+      "fanlistart": "",
+      "fanliend": "",
+      "fanlistatus": true,
+      "jiaxi": {
+        "jiaxititle": "",
+        "jiaxitype": ""
+      }
+    }
+  ]
+}

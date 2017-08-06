@@ -1,0 +1,77 @@
+{
+  "platform": {
+    "fanxianurl": "https://m.ppmoney.com/commonregister/cygj?utm_source=WAP_BD_Gzcygjfl&u_id",
+    "shoutoustatus":true, 
+    "share":"",
+
+    "title": "PPmoney",
+    "pid": "10",
+    "logo": "http://h5test.caiyu.in/img/logo_10.png",
+    "grade": "AAA",
+    "tag": [
+      "风投系"
+    ],
+    "detectlevel": "正常",
+    "desc": "厦门银行资金存管 3.75亿元B轮融资",
+    "rate": "24.75%",
+    "specialqa":{
+    },
+    "specilarule":[]
+
+  },
+  "tasklist": [{
+      "fanlitype": "0",
+      "title": "首投5000元—60天及以上标的",
+      "fanlimoney": "150",
+      "fanlimoneydesc": "投资收益: 53.42元 合计收益: 203.42元",
+      "futoudesc": "",
+      "fanlistat": "",
+      "baserate": "6.5",
+      "fanlirate": "24.8",
+      "fanlipeople": "201",
+      "fanlistart": "",
+      "fanliend": "",
+      "fanlistatus": true,
+      "jiaxi": {
+        "jiaxititle": "",
+        "jiaxitype": ""
+      }
+    },
+   {
+      "fanlitype": "0",
+      "title": "首投10000元—60天及以上标的",
+      "fanlimoney": "200",
+      "fanlimoneydesc": "投资收益: 128.22元 合计收益: 328.22元",
+      "futoudesc": "",
+      "fanlistat": "",
+      "baserate": "7.8",
+      "fanlirate": "20.0",
+      "fanlipeople": "241",
+      "fanlistart": "",
+      "fanliend": "",
+      "fanlistatus": true,
+      "jiaxi": {
+        "jiaxititle": "",
+        "jiaxitype": ""
+      }
+    },
+   {
+      "fanlitype": "0",
+      "title": "首投40000元—60天及以上标的",
+      "fanlimoney": "500",
+      "fanlimoneydesc": "投资收益: 558.90元 合计收益: 1058.90元",
+      "futoudesc": "",
+      "fanlistat": "",
+      "baserate": "8.5",
+      "fanlirate": "16.1",
+      "fanlipeople": "96",
+      "fanlistart": "",
+      "fanliend": "",
+      "fanlistatus": true,
+      "jiaxi": {
+        "jiaxititle": "",
+        "jiaxitype": ""
+      }
+    }
+  ]
+}

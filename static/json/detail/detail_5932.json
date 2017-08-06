@@ -1,0 +1,150 @@
+{
+  "platform": {
+    "fanxianurl": "https://www.zyxr.com/wapactivity/activity/activityKuayear.html?chl=caiyuguanjia",
+    "shoutoustatus":true, 
+    "share":"",
+
+    "title": "中业兴融",
+    "pid": "4525",
+    "logo": "http://h5test.caiyu.in/img/logo_4525.png",
+    "grade": "A",
+    "tag": [
+      "民营系"
+    ],
+    "detectlevel": "正常",
+    "desc": "上海华瑞银行存管 注册资本5000万",
+    "rate": "28.0%",
+    "specialqa":{
+      "复投有什么限制吗？":"首投6000元及以上的用户可以参与。"
+    },
+    "specilarule":["［复投规则］只有之前成功通过财鱼管家参加过中业兴融平台首投，且首投6000元及以上的用户，才能参加复投，需要点击'去复投'按钮参加复投登记，登记成功之后需要在24小时之内进行投资。每天名额有限，满额即关闭活动入口。可以使用平台的红包和加息券，复投奖励每个账号只能领取一次！"]
+
+  },
+  "tasklist": [{
+      "fanlitype": "0",
+      "title": "首投6000元—3个月及以上标的",
+      "fanlimoney": "150",
+      "fanlimoneydesc": "投资收益:170.14 元，合计收益:320.14 元",
+      "futoudesc": "",
+      "fanlistat": "",
+      "baserate": "11.5",
+      "fanlirate": "21.6",
+      "fanlipeople": "94",
+      "fanlistart": "",
+      "fanliend": "",
+      "fanlistatus": true,
+      "jiaxi": {
+        "jiaxititle": "",
+        "jiaxitype": ""
+      }
+    },
+   {
+      "fanlitype": "0",
+      "title": "首投10000元—1个月及以上标的",
+      "fanlimoney": "160",
+      "fanlimoneydesc": "投资收益:69.86元，合计收益229.86 元",
+      "futoudesc": "",
+      "fanlistat": "",
+      "baserate": "8.5",
+      "fanlirate": "28.0",
+      "fanlipeople": "51",
+      "fanlistart": "",
+      "fanliend": "",
+      "fanlistatus": true,
+      "jiaxi": {
+        "jiaxititle": "",
+        "jiaxitype": ""
+      }
+    },
+  {
+      "fanlitype": "0",
+      "title": "首投10000元—3个月及以上标的",
+      "fanlimoney": "260",
+      "fanlimoneydesc": "投资收益:283.56元，合计收益543.56 元",
+      "futoudesc": "",
+      "fanlistat": "",
+      "baserate": "11.5",
+      "fanlirate": "22.0",
+      "fanlipeople": "63",
+      "fanlistart": "",
+      "fanliend": "",
+      "fanlistatus": true,
+      "jiaxi": {
+        "jiaxititle": "",
+        "jiaxitype": ""
+      }
+    },
+      {
+      "fanlitype": "0",
+      "title": "首投30000元—1个月及以上标的",
+      "fanlimoney": "450",
+      "fanlimoneydesc": "投资收益:209.59 元，合计收益659.59 元",
+      "futoudesc": "",
+      "fanlistat": "",
+      "baserate": "8.5",
+      "fanlirate": "26.8",
+      "fanlipeople": "54",
+      "fanlistart": "",
+      "fanliend": "",
+      "fanlistatus": true,
+      "jiaxi": {
+        "jiaxititle": "",
+        "jiaxitype": ""
+      }
+    },
+      {
+      "fanlitype": "0",
+      "title": "首投30000元—3个月及以上标的",
+      "fanlimoney": "700",
+      "fanlimoneydesc": "投资收益:850.68元，合计收益1550.68 元",
+      "futoudesc": "",
+      "fanlistat": "",
+      "baserate": "11.5",
+      "fanlirate": "21.0",
+      "fanlipeople": "37",
+      "fanlistart": "",
+      "fanliend": "",
+      "fanlistatus": true,
+      "jiaxi": {
+        "jiaxititle": "",
+        "jiaxitype": ""
+      }
+    },
+      {
+      "fanlitype": "1",
+      "title": "复投5000元及以上—1个月及以上标的",
+      "fanlimoney": "50",
+      "fanlimoneydesc": "投资收益:30.82元，合计收益80.82元",
+      "futoudesc": "首投6000元及以上的用户可以参与",
+      "fanlistat": "",
+      "baserate": "7.5",
+      "fanlirate": "19.7",
+      "fanlipeople": "77",
+      "fanlistart": "",
+      "fanliend": "",
+      "fanlistatus": true,
+      "jiaxi": {
+        "jiaxititle": "",
+        "jiaxitype": ""
+      }
+    },
+      {
+      "fanlitype": "1",
+      "title": "复投5000元及以上—3个月及以上标的",
+      "fanlimoney": "80",
+      "fanlimoneydesc": "投资收益:117.12元，合计收益197.12元",
+      "futoudesc": "首投6000元及以上的用户可以参与",
+      "fanlistat": "",
+      "baserate": "9.5",
+      "fanlirate": "16.0",
+      "fanlipeople": "85",
+      "fanlistart": "",
+      "fanliend": "",
+      "fanlistatus": true,
+      "jiaxi": {
+        "jiaxititle": "",
+        "jiaxitype": ""
+      }
+    }
+  ]
+}

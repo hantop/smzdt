@@ -1,0 +1,59 @@
+{
+  "platform": {
+    "fanxianurl": "https://web.u51.com/rpsw-register/?channel=rpsw_cygj",
+    "shoutoustatus":true, 
+    "share":"",
+
+    "title": "51人品",
+    "pid": "225",
+    "logo": "http://h5test.caiyu.in/img/logo_225.png",
+    "grade": "AAA",
+    "tag": [
+      "风投系"
+    ],
+    "detectlevel": "正常",
+    "desc": "新浪支付托管，小米京东1亿美金累计融资 5500万美金实缴，51信用卡出品",
+    "rate": "35.3%",
+    "specialqa":{
+    },
+    "specilarule":[]
+
+  },
+  "tasklist": [{
+      "fanlitype": "0",
+      "title": "首投5000元-30天人品宝",
+      "fanlimoney": "120",
+      "fanlimoneydesc": "投资收益: 25.07元 合计收益: 145.07元",
+      "futoudesc": "",
+      "fanlistat": "",
+      "baserate": "6.1",
+      "fanlirate": "35.3",
+      "fanlipeople": "223",
+      "fanlistart": "",
+      "fanliend": "",
+      "fanlistatus": true,
+      "jiaxi": {
+        "jiaxititle": "",
+        "jiaxitype": ""
+      }
+    },
+   {
+      "fanlitype": "0",
+      "title": "首投10000元-30天人品宝",
+      "fanlimoney": "170",
+      "fanlimoneydesc": "投资收益: 50.14元 合计收益: 220.14元",
+      "futoudesc": "",
+      "fanlistat": "",
+      "baserate": "6.1",
+      "fanlirate": "26.7",
+      "fanlipeople": "145",
+      "fanlistart": "",
+      "fanliend": "",
+      "fanlistatus": true,
+      "jiaxi": {
+        "jiaxititle": "",
+        "jiaxitype": ""
+      }
+    }
+  ]
+}

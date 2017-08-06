@@ -1,0 +1,95 @@
+{
+  "platform": {
+    "fanxianurl": "http://www.licaifan.com/index.php/site/index?refer=671",
+    "shoutoustatus":true, 
+    "share":"",
+
+    "title": "理财范",
+    "pid": "100",
+    "logo": "http://h5test.caiyu.in/img/logo_100.png",
+    "grade": "AA",
+    "tag": [
+      "风投系"
+    ],
+    "detectlevel": "正常",
+    "desc": "徽商银行资金存管 英达钢构领投3.3亿元C轮投资",
+    "rate": "15.98%",
+    "specialqa":{
+    },
+    "specilarule":[]
+
+  },
+  "tasklist": [{
+      "fanlitype": "0",
+      "title": "首投10000元—33天及以上标的",
+      "fanlimoney": "90",
+      "fanlimoneydesc": "投资收益:67.81 元，合计收益:157.81 元",
+      "futoudesc": "",
+      "fanlistat": "",
+      "baserate": "7.5",
+      "fanlirate": "17.4",
+      "fanlipeople": "123",
+      "fanlistart": "",
+      "fanliend": "",
+      "fanlistatus": true,
+      "jiaxi": {
+        "jiaxititle": "",
+        "jiaxitype": ""
+      }
+    },
+   {
+      "fanlitype": "0",
+      "title": "首投30000元—33天及以上标的",
+      "fanlimoney": "260",
+      "fanlimoneydesc": "投资收益:203.42元，合计收益463.42 元",
+      "futoudesc": "",
+      "fanlistat": "",
+      "baserate": "7.5",
+      "fanlirate": "17.1",
+      "fanlipeople": "91",
+      "fanlistart": "",
+      "fanliend": "",
+      "fanlistatus": true,
+      "jiaxi": {
+        "jiaxititle": "",
+        "jiaxitype": ""
+      }
+    },
+  {
+      "fanlitype": "0",
+      "title": "首投50000元—33天及以上标的",
+      "fanlimoney": "400",
+      "fanlimoneydesc": "投资收益:339.04 元，合计收益739.04 元",
+      "futoudesc": "",
+      "fanlistat": "",
+      "baserate": "7.5",
+      "fanlirate": "16.4",
+      "fanlipeople": "74",
+      "fanlistart": "",
+      "fanliend": "",
+      "fanlistatus": true,
+      "jiaxi": {
+        "jiaxititle": "",
+        "jiaxitype": ""
+      }
+    },
+      {
+      "fanlitype": "0",
+      "title": "首投100000元—33天及以上标的",
+      "fanlimoney": "800",
+      "fanlimoneydesc": "投资收益:678.08元，合计收益1478.08 元",
+      "futoudesc": "",
+      "fanlistat": "",
+      "baserate": "7.5",
+      "fanlirate": "16.4",
+      "fanlipeople": "27",
+      "fanlistart": "",
+      "fanliend": "",
+      "fanlistatus": true,
+      "jiaxi": {
+        "jiaxititle": "",
+        "jiaxitype": ""
+      }
+    }
+  ]
+}

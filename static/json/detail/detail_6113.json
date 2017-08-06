@@ -1,0 +1,95 @@
+{
+  "platform": {
+    "fanxianurl": "https://wx.hyjf.com/index.php?s=/Weixin/Activites/traffic/page_id/2167.html",
+    "shoutoustatus":false, 
+    "share":"",
+
+    "title": "汇盈金服",
+    "pid": "6113",
+    "logo": "http://h5test.caiyu.in/img/logo_6113.png",
+    "grade": "A",
+    "tag": [
+      "民营系"
+    ],
+    "detectlevel": "正常",
+    "desc": "江西银行存管 美国OTC市场上市",
+    "rate": "46.5%",
+    "specialqa":{
+    },
+    "specilarule":[]
+
+  },
+  "tasklist": [{
+      "fanlitype": "0",
+      "title": "首投1000元—30天及以上标的",
+      "fanlimoney": "30",
+      "fanlimoneydesc": "投资收益:8.22 元，合计收益:38.22 元",
+      "futoudesc": "",
+      "fanlistat": "",
+      "baserate": "10.0",
+      "fanlirate": "46.5",
+      "fanlipeople": "158",
+      "fanlistart": "",
+      "fanliend": "",
+      "fanlistatus":false,
+      "jiaxi": {
+        "jiaxititle": "",
+        "jiaxitype": ""
+      }
+    },
+   {
+      "fanlitype": "0",
+      "title": "首投5000元—30天及以上标的",
+      "fanlimoney": "100",
+      "fanlimoneydesc": "投资收益:41.1元，合计收益141.1 元",
+      "futoudesc": "",
+      "fanlistat": "",
+      "baserate": "10.0",
+      "fanlirate": "34.3",
+      "fanlipeople": "81",
+      "fanlistart": "",
+      "fanliend": "",
+      "fanlistatus":false,
+      "jiaxi": {
+        "jiaxititle": "",
+        "jiaxitype": ""
+      }
+    },
+  {
+      "fanlitype": "0",
+      "title": "首投3000元—90天及以上标的",
+      "fanlimoney": "100",
+      "fanlimoneydesc": "投资收益:73.97 元，合计收益173.97 元",
+      "futoudesc": "",
+      "fanlistat": "",
+      "baserate": "10.0",
+      "fanlirate": "23.5",
+      "fanlipeople": "74",
+      "fanlistart": "",
+      "fanliend": "",
+      "fanlistatus": false,
+      "jiaxi": {
+        "jiaxititle": "",
+        "jiaxitype": ""
+      }
+    },
+      {
+      "fanlitype": "0",
+      "title": "首投10000元—90天及以上标的",
+      "fanlimoney": "300",
+      "fanlimoneydesc": "投资收益:246.58元，合计收益546.58 元",
+      "futoudesc": "",
+      "fanlistat": "",
+      "baserate": "10.0",
+      "fanlirate": "22.2",
+      "fanlipeople": "27",
+      "fanlistart": "",
+      "fanliend": "",
+      "fanlistatus": false,
+      "jiaxi": {
+        "jiaxititle": "",
+        "jiaxitype": ""
+      }
+    }
+  ]
+}

@@ -11,7 +11,7 @@
             <br> 登记手机号：{{obj.mobile}}
           </p>
         </div>
-        <div v-if="obj.status=='0'" class="message_box doing">
+        <div v-if="obj.status=='0'" class="message_box">
           <h6>等待平台确认</h6>
           <p>
             一般0-7个工作人会确认
@@ -24,7 +24,7 @@
           </p>
         </div>
         <div class="message_box" :class="obj.status=='1'?'done':''">
-          <h6>{{obj.status=='0'?'未符合返现要求':'符合返现要求，返现已发放'}}</h6>
+          <h6>{{obj.status=='0'?'符合返现要求，发放返现':'符合返现要求，返现已发放'}}</h6>
           <p>
           </p>
         </div>
@@ -33,7 +33,7 @@
       <p v-if="cui" class="bottom_message tac">返现太慢？
         <a @click="cuidan">点此催单</a>
       </p>
-      <p v-if="!cui" class="bottom_message tac">催单成功
+      <p v-if="!cui" class="bottom_message tac">已催单，运营小妹辛苦处理中
       </p>
       <a @click="hideself" class="esc"></a>
     </div>
@@ -157,14 +157,14 @@
     position: relative;
   }
   
-  .message_box:not(:last-of-type)::before {
+  .message_box:not(:first-of-type)::before {
     content: '';
     display: block;
     position: absolute;
-    height: 100%;
+    height: 88.5px;
     border-left: solid 1px #e1e1e1;
     left: -12px;
-    top: 12px;
+    top: -80px;
   }
   
   .message_box h6::before {
@@ -174,6 +174,7 @@
     left: -15px;
     width: 7px;
     height: 7px;
+    z-index: 33;
   
     background-color: #d8d8d8;
     -webkit-border-radius: 50%;

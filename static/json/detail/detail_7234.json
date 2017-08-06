@@ -1,0 +1,131 @@
+{
+  "platform": {
+    "fanxianurl": "https://m.renrenaijia.com/app/channel/newuser.html?aj_channel=channel206",
+    "shoutoustatus":false, 
+    "share":"",
+
+    "title": "人人爱家",
+    "pid": "7234",
+    "logo": "http://h5test.caiyu.in/img/logo_7234.png",
+    "grade": "A",
+    "tag": [
+      "风投系"
+    ],
+    "detectlevel": "正常",
+    "desc": "恒丰银行存管 中欧国际集团1亿元B轮融资",
+    "rate": "36.33%",
+    "specialqa":{
+    },
+    "specilarule":["［复投规则］只有之前成功通过财鱼管家参加过人人爱家平台首投的用户，才能参加复投，需要点击'去复投'按钮参加复投登记，登记成功之后需要在24小时之内进行投资。每天名额有限，满额即关闭活动入口。可以使用平台的红包和加息券，复投奖励每个账号只能领取一次！"]
+
+  },
+  "tasklist": [{
+      "fanlitype": "0",
+      "title": "首投5000元—15天及以上标的",
+      "fanlimoney": "50",
+      "fanlimoneydesc": "投资收益:24.66 元，合计收益:74.66 元",
+      "futoudesc": "",
+      "fanlistat": "",
+      "baserate": "12.0",
+      "fanlirate": "36.3",
+      "fanlipeople": "93",
+      "fanlistart": "",
+      "fanliend": "",
+      "fanlistatus": false,
+      "jiaxi": {
+        "jiaxititle": "",
+        "jiaxitype": ""
+      }
+    },
+   {
+      "fanlitype": "0",
+      "title": "首投5000元—30天及以上标的",
+      "fanlimoney": "120",
+      "fanlimoneydesc": "投资收益:51.78元，合计收益:171.78 元",
+      "futoudesc": "",
+      "fanlistat": "",
+      "baserate": "10.8",
+      "fanlirate": "35.8",
+      "fanlipeople": "84",
+      "fanlistart": "",
+      "fanliend": "",
+      "fanlistatus": false,
+      "jiaxi": {
+        "jiaxititle": "",
+        "jiaxitype": ""
+      }
+    },
+  {
+      "fanlitype": "0",
+      "title": "首投10000元—30天及以上标的",
+      "fanlimoney": "200",
+      "fanlimoneydesc": "投资收益:103.56元，合计收益:303.56 元",
+      "futoudesc": "",
+      "fanlistat": "",
+      "baserate": "10.8",
+      "fanlirate": "31.7",
+      "fanlipeople": "84",
+      "fanlistart": "",
+      "fanliend": "",
+      "fanlistatus": false,
+      "jiaxi": {
+        "jiaxititle": "",
+        "jiaxitype": ""
+      }
+    },
+      {
+      "fanlitype": "0",
+      "title": "首投10000元—90天及以上标的",
+      "fanlimoney": "400",
+      "fanlimoneydesc": "投资收益:290.96 元，合计收益690.96 元",
+      "futoudesc": "",
+      "fanlistat": "",
+      "baserate": "11.8",
+      "fanlirate": "28.0",
+      "fanlipeople": "32",
+      "fanlistart": "",
+      "fanliend": "",
+      "fanlistatus": false,
+      "jiaxi": {
+        "jiaxititle": "",
+        "jiaxitype": ""
+      }
+    },
+   {
+      "fanlitype": "0",
+      "title": "首投30000元—180天及以上标的",
+      "fanlimoney": "800",
+      "fanlimoneydesc": "投资收益:1923.29元，合计收益2723.29元",
+      "futoudesc": "",
+      "fanlistat": "",
+      "baserate": "13.0",
+      "fanlirate": "18.4",
+      "fanlipeople": "23",
+      "fanlistart": "",
+      "fanliend": "",
+      "fanlistatus": false,
+      "jiaxi": {
+        "jiaxititle": "",
+        "jiaxitype": ""
+      }
+    },
+      {
+      "fanlitype": "1",
+      "title": "复投5000元—30天及以上标的",
+      "fanlimoney": "50",
+      "fanlimoneydesc": "投资收益:51.78元，合计收益101.78元",
+      "futoudesc": "复投前请仔细查阅复投规则",
+      "fanlistat": "",
+      "baserate": "10.8",
+      "fanlirate": "21.2",
+      "fanlipeople": "74",
+      "fanlistart": "",
+      "fanliend": "",
+      "fanlistatus": false,
+      "jiaxi": {
+        "jiaxititle": "",
+        "jiaxitype": ""
+      }
+    }
+  ]
+}

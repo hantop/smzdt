@@ -135,6 +135,10 @@ html {
   color: rgba(255, 255, 255, 0.8);
 }
 
+.disabled {
+  background: #d2d2d2!important;
+}
+
 button {
   border-radius: 3px;
   height: 44px;

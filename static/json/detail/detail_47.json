@@ -1,0 +1,59 @@
+{
+  "platform": {
+    "fanxianurl": "https://m.iqianjin.com/event/20160516.jsp?utmSource=5200",
+    "shoutoustatus":false, 
+    "share":"",
+
+    "title": "爱钱进",
+    "pid": "47",
+    "logo": "http://h5test.caiyu.in/img/logo_47.png",
+    "grade": "AAA",
+    "tag": [
+      "风投系"
+    ],
+    "detectlevel": "正常",
+    "desc": "华夏银行资金存管，高榕资本31000万元融资",
+    "rate": "32.13%",
+    "specialqa":{
+    },
+    "specilarule":[]
+
+  },
+  "tasklist": [{
+      "fanlitype": "0",
+      "title": "首投5000元—90天整存宝+",
+      "fanlimoney": "50",
+      "fanlimoneydesc": "投资收益: 102.95元 合计收益: 232.95元",
+      "futoudesc": "+80元抵扣券（复投可用）",
+      "fanlistat": "",
+      "baserate": "8.3",
+      "fanlirate": "18.8",
+      "fanlipeople": "143",
+      "fanlistart": "",
+      "fanliend": "",
+      "fanlistatus": false,
+      "jiaxi": {
+        "jiaxititle": "",
+        "jiaxitype": ""
+      }
+    },
+   {
+      "fanlitype": "0",
+      "title": "首投15000元－90天整存宝+",
+      "fanlimoney": "50",
+      "fanlimoneydesc": "投资收益: 308.84元 合计收益: 518.84元",
+      "futoudesc": "+160元抵扣券（复投可用）",
+      "fanlistat": "",
+      "baserate": "8.3",
+      "fanlirate": "14.0",
+      "fanlipeople": "124",
+      "fanlistart": "",
+      "fanliend": "",
+      "fanlistatus": false,
+      "jiaxi": {
+        "jiaxititle": "",
+        "jiaxitype": ""
+      }
+    }
+  ]
+}

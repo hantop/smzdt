@@ -1,0 +1,95 @@
+{
+  "platform": {
+    "fanxianurl": "http://m.htyd50.com/wap/register/activityRegister?csname=cygj",
+    "shoutoustatus":false, 
+    "share":"",
+
+    "title": "汇通易贷",
+    "pid": "3712",
+    "logo": "http://h5test.caiyu.in/img/logo_3712.png",
+    "grade": "A",
+    "tag": [
+      "民营系"
+    ],
+    "detectlevel": "正常",
+    "desc": "华兴银行资金存管 注册资本5000万",
+    "rate": "37.2%",
+    "specialqa":{
+    },
+    "specilarule":["汇通易贷新版网站（www.htyd50.com）可能存在标的投满的情况，也可以去旧版V3版网页（v3.htyd50.com）中投标。"]
+
+  },
+  "tasklist": [{
+      "fanlitype": "0",
+      "title": "首投5000元—30天标",
+      "fanlimoney": "120",
+      "fanlimoneydesc": "投资收益:32.88元，合计收益152.88元",
+      "futoudesc": "",
+      "fanlistat": "",
+      "baserate": "8.0",
+      "fanlirate": "37.2",
+      "fanlipeople": "213",
+      "fanlistart": "",
+      "fanliend": "",
+      "fanlistatus": false,
+      "jiaxi": {
+        "jiaxititle": "",
+        "jiaxitype": ""
+      }
+    },
+   {
+      "fanlitype": "0",
+      "title": "首投50000元—30天标",
+      "fanlimoney": "500",
+      "fanlimoneydesc": "投资收益:328.77元，合计收益828.77元",
+      "futoudesc": "",
+      "fanlistat": "",
+      "baserate": "8.0",
+      "fanlirate": "20.2",
+      "fanlipeople": "139",
+      "fanlistart": "",
+      "fanliend": "",
+      "fanlistatus": false,
+      "jiaxi": {
+        "jiaxititle": "",
+        "jiaxitype": ""
+      }
+    },
+  {
+      "fanlitype": "0",
+      "title": "首投10000元—90天标",
+      "fanlimoney": "200",
+      "fanlimoneydesc": "投资收益:295.89元，合计收益495.89元",
+      "futoudesc": "",
+      "fanlistat": "",
+      "baserate": "12.0",
+      "fanlirate": "20.1",
+      "fanlipeople": "105",
+      "fanlistart": "",
+      "fanliend": "",
+      "fanlistatus": false,
+      "jiaxi": {
+        "jiaxititle": "",
+        "jiaxitype": ""
+      }
+    },
+      {
+      "fanlitype": "0",
+      "title": "首投10000元—180天标",
+      "fanlimoney": "300",
+      "fanlimoneydesc": "投资收益:542.47元，合计收益842.47元",
+      "futoudesc": "",
+      "fanlistat": "",
+      "baserate": "11.0",
+      "fanlirate": "17.1",
+      "fanlipeople": "71",
+      "fanlistart": "",
+      "fanliend": "",
+      "fanlistatus": false,
+      "jiaxi": {
+        "jiaxititle": "",
+        "jiaxitype": ""
+      }
+    }
+  ]
+}

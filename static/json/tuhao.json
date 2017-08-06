@@ -1,29 +1,37 @@
 {
 
   "ppmoney": [{
-    "pid": "29",
-    "logo": "http://h5test.caiyu.in/dashboard/img/logo_lmw.png",
-    "title": "平台名",
-    "grade": "AAA",
-    "desc": "平台一句话介绍",
-    "rate": "12.00",
-    "money": "100~500",
-    "isfutou": true,
-    "fanxiantype": "0",
-    "fanxianbottom": "",
-    "fanxiantypetitle": ""
-  }],
+      "fanlitype": "0",
+      "title": "首投10000元—20天及以上标的",
+      "fanlimoney": "234",
+      "fanlimoneydesc": "邀请好友送金条",
+      "fanlistatus": true,
+      "fanlipeople": "123"
+    },
+    {
+      "fanlitype": "0",
+      "title": "首投10000元—20天及以上标的",
+      "fanlimoney": "234",
+      "fanlimoneydesc": "邀请好友送金条",
+      "fanlistatus": true,
+      "fanlipeople": "123"
+    }
+  ],
   "投融家": [{
-    "pid": "29",
-    "logo": "http://h5test.caiyu.in/dashboard/img/logo_lmw.png",
-    "title": "平台名",
-    "grade": "AAA",
-    "desc": "平台一句话介绍",
-    "rate": "12.00",
-    "money": "100~500",
-    "isfutou": true,
-    "fanxiantype": "0",
-    "fanxianbottom": "",
-    "fanxiantypetitle": ""
-  }]
+      "fanlitype": "0",
+      "title": "首投10000元—20天及以上标的",
+      "fanlimoney": "234",
+      "fanlimoneydesc": "邀请好友送金条",
+      "fanlistatus": true,
+      "fanlipeople": "123"
+    },
+    {
+      "fanlitype": "0",
+      "title": "首投10000元—20天及以上标的",
+      "fanlimoney": "234",
+      "fanlimoneydesc": "邀请好友送金条",
+      "fanlistatus": true,
+      "fanlipeople": "123"
+    }
+  ]
 }

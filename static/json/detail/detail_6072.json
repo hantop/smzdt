@@ -1,0 +1,113 @@
+{
+  "platform": {
+    "fanxianurl": "http://h5.9f.cn/download/cygjhd1",
+    "shoutoustatus":false, 
+    "share":"",
+
+    "title": "玖富钱包",
+    "pid": "6072",
+    "logo": "http://h5test.caiyu.in/img/logo_6072.png",
+    "grade": "AAA",
+    "tag": [
+      "风投系"
+    ],
+    "detectlevel": "正常",
+    "desc": "注册资本2亿元 玖富旗舰移动金融平台",
+    "rate": "55.45%",
+    "specialqa":{
+    },
+    "specilarule":["［复投规则］只有之前成功通过财鱼管家参加过玖富钱包平台首投的用户，才能参加复投，需要点击'去复投'按钮参加复投登记，登记成功之后需要在24小时之内进行投资。每天名额有限，满额即关闭活动入口。可以使用平台的红包和加息券，复投奖励每个账号只能领取一次！"]
+
+  },
+  "tasklist": [{
+      "fanlitype": "0",
+      "title": "首投2000元-21天标",
+      "fanlimoney": "50",
+      "fanlimoneydesc": "投资收益:13.81元，合计收益63.81元",
+      "futoudesc": "",
+      "fanlistat": "",
+      "baserate": "12.0",
+      "fanlirate": "55.5",
+      "fanlipeople": "237",
+      "fanlistart": "",
+      "fanliend": "",
+      "fanlistatus": false,
+      "jiaxi": {
+        "jiaxititle": "",
+        "jiaxitype": ""
+      }
+    },
+   {
+      "fanlitype": "0",
+      "title": "首投10000元-21天标",
+      "fanlimoney": "200",
+      "fanlimoneydesc": "投资收益:69.04元，合计收益269.04元",
+      "futoudesc": "",
+      "fanlistat": "",
+      "baserate": "12.0",
+      "fanlirate": "46.8",
+      "fanlipeople": "287",
+      "fanlistart": "",
+      "fanliend": "",
+      "fanlistatus": false,
+      "jiaxi": {
+        "jiaxititle": "",
+        "jiaxitype": ""
+      }
+    },
+  {
+      "fanlitype": "0",
+      "title": "首投5000元-90天标",
+      "fanlimoney": "200",
+      "fanlimoneydesc": "投资收益:86.30元，合计收益286.30元",
+      "futoudesc": "",
+      "fanlistat": "",
+      "baserate": "7.0",
+      "fanlirate": "23.2",
+      "fanlipeople": "203",
+      "fanlistart": "",
+      "fanliend": "",
+      "fanlistatus": false,
+      "jiaxi": {
+        "jiaxititle": "",
+        "jiaxitype": ""
+      }
+    },
+      {
+      "fanlitype": "0",
+      "title": "首投10000元-90天标",
+      "fanlimoney": "350",
+      "fanlimoneydesc": "投资收益:172.60元，合计收益522.60元",
+      "futoudesc": "",
+      "fanlistat": "",
+      "baserate": "7.0",
+      "fanlirate": "21.2",
+      "fanlipeople": "116",
+      "fanlistart": "",
+      "fanliend": "",
+      "fanlistatus": false,
+      "jiaxi": {
+        "jiaxititle": "",
+        "jiaxitype": ""
+      }
+    },
+      {
+      "fanlitype": "1",
+      "title": "复投5000元—90天及以上标的（限额50人）",
+      "fanlimoney": "100",
+      "fanlimoneydesc": "投资收益:86.3元，合计收益186.3元",
+      "futoudesc": "复投前请仔细查阅复投规则",
+      "fanlistat": "",
+      "baserate": "7.0",
+      "fanlirate": "15.1",
+      "fanlipeople": "167",
+      "fanlistart": "",
+      "fanliend": "",
+      "fanlistatus": false,
+      "jiaxi": {
+        "jiaxititle": "",
+        "jiaxitype": ""
+      }
+    }
+  ]
+}

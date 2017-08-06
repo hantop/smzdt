@@ -33,14 +33,14 @@
         <table cellspacing="0" cellpadding="0" class="table_3">
           <tr :key="i" v-for="(v, k, i) in monitor">
             <td>{{k}}</td>
-            <td :class="v=='-'?'':v=='0'?'skyblue':'red'">{{v=='-'?'-':v=='0'?'正常':'异常'}}</td>
+            <td :class="v=='-'?'':v=='正常'?'skyblue':'red'">{{v=='-'?'-':v=='正常'?'正常':'异常'}}</td>
           </tr>
   
         </table>
       </div>
   
     </div>
-    <div class="big_cell">
+    <div v-if="comment.length > 0" class="big_cell">
   
       <div class="title">
         理财师评价

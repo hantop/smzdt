@@ -1,10 +1,10 @@
 
 <template>
-  <a v-on:click="promptShow">
+  <a v-on:click="promptShow" :id="data.fanlistatus">
     <div class="xshadow" :class="'xshadow'+data.fanlitype">
       <div class="xitem_box" :class="'xitem_box'+data.fanlitype">
         <h5 class="xh5">{{data.title}}</h5>
-        <div class="xmoney" :class="'xmoney'+data.fanlitype">返现<span class="num">{{data.fanlimoney}}</span>元</div>
+        <div class="xmoney" :class="'xmoney'+data.fanlitype">返现<span class="num spa">{{data.fanlimoney}}</span>元<span v-if="data.fanlitype=='4'" class="item">{{data.jiaxi.jiaxititle}}</span></div>
         <p v-if="data.fanlitype=='1'" style="color: #e64d3f;position: relative;top: -2px;">{{data.futoudesc}}</p>
         <p>{{data.fanlimoneydesc}}</p>
         <div class="xbottom">
@@ -49,14 +49,19 @@
           this.s = this.timeout % 60
           this.m = parseInt(this.timeout / 60)
           if (this.m > 60) {
-            this.m = this.m % 60
             this.h = parseInt(this.m / 60)
+            console.log(this.h)
+            this.m = this.m % 60
             if (this.h < 10) this.h = '0' + this.h
+          } else {
+            this.h = '00'
+            if (this.m < 10) this.m = '0' + this.m
           }
-          if (this.m < 10) this.m = '0' + this.m
         } else {
           this.s = this.timeout
           if (this.s < 10) this.s = '0' + this.s
+          this.h = '00'
+          this.m = '00'
         }
         _this.clock = setInterval(function () {
           _this.timeout--
@@ -85,8 +90,8 @@
       }
     },
     methods: {
-      promptShow () {
-        this.$emit('childClick')
+      promptShow (e) {
+        this.$emit('childClick', e.currentTarget.id)
       }
     },
     computed: {
@@ -163,28 +168,40 @@
   }
   
   .xmoney4 {
-    font-size: 11.2vw;
+    font-size: 10.2vw;
     font-weight: 600;
-    color: #e64d3f;
+    color: #ea6e24;
     text-align: center;
     line-height: 16vw;
+    transform: translateX(-16vw);
+  }
+  .xmoney4 span.spa {
+    font-size: inherit;
+    vertical-align: inherit;
   }
   .xitem_box4 .xbottom_right{
     position: absolute;
     font-weight: 500;
     text-align: center;
     color: #ffffff;
-    right: 9.5vw;
+    right: 6.5vw;
     top: 31.5vw;
     line-height: normal;
-    width: 18vw;
+    width: 24vw;
+  }
+  .xmoney4 .item{
+    font-size: 5.5vw;
+    transform: translateY(2px);
+    position: absolute;
+    right: -11vw;
+    top: 2.5vw;
   }
   .xitem_box4 .xbottom_right div {
     height: 5.2vw;
     font-size: 4vw;
     font-weight: 600;
     color: #ea6e24;
-    width: 1vw;
+    width: 24vw;
   }
   
   .xitem_box4 .xbottom_right p {

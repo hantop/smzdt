@@ -1,0 +1,95 @@
+{
+  "platform": {
+    "fanxianurl": "https://m.limin.com/activity/201705/newuser/newcomer/m/index.html?origin=998322",
+    "shoutoustatus":true, 
+    "share":"",
+
+    "title": "利民网",
+    "pid": "4270",
+    "logo": "http://h5test.caiyu.in/img/logo_ 4270.png",
+    "grade": "A",
+    "tag": [
+      "民营系"
+    ],
+    "detectlevel": "正常",
+    "desc": "新网银行资金存管 注册资本5000万",
+    "rate": "28.06%",
+    "specialqa":{
+    },
+    "specilarule":[]
+
+  },
+  "tasklist": [{
+      "fanlitype": "0",
+      "title": "首投5000元—28天及以上标的",
+      "fanlimoney": "80",
+      "fanlimoneydesc": "投资收益27.62 元，合计收益107.62 元",
+      "futoudesc": "",
+      "fanlistat": "",
+      "baserate": "7.2",
+      "fanlirate": "28.1",
+      "fanlipeople": "91",
+      "fanlistart": "",
+      "fanliend": "",
+      "fanlistatus": true,
+      "jiaxi": {
+        "jiaxititle": "",
+        "jiaxitype": ""
+      }
+    },
+   {
+      "fanlitype": "0",
+      "title": "首投10000元—28天及以上标的",
+      "fanlimoney": "160",
+      "fanlimoneydesc": "投资收益55.23 元，合计收益215.23 元",
+      "futoudesc": "",
+      "fanlistat": "",
+      "baserate": "7.2",
+      "fanlirate": "28.1",
+      "fanlipeople": "73",
+      "fanlistart": "",
+      "fanliend": "",
+      "fanlistatus": true,
+      "jiaxi": {
+        "jiaxititle": "",
+        "jiaxitype": ""
+      }
+    },
+  {
+      "fanlitype": "0",
+      "title": "首投10000元—60天及以上标的",
+      "fanlimoney": "250",
+      "fanlimoneydesc": "投资收益:134.79元，合计收益384.79 元",
+      "futoudesc": "",
+      "fanlistat": "",
+      "baserate": "8.2",
+      "fanlirate": "23.4",
+      "fanlipeople": "51",
+      "fanlistart": "",
+      "fanliend": "",
+      "fanlistatus": true,
+      "jiaxi": {
+        "jiaxititle": "",
+        "jiaxitype": ""
+      }
+    },
+      {
+      "fanlitype": "0",
+      "title": "首投10000元—90天及以上标的",
+      "fanlimoney": "350",
+      "fanlimoneydesc": "投资收益234.25 元，合计收益584.25 元",
+      "futoudesc": "",
+      "fanlistat": "",
+      "baserate": "9.5",
+      "fanlirate": "23.7",
+      "fanlipeople": "54",
+      "fanlistart": "",
+      "fanliend": "",
+      "fanlistatus": true,
+      "jiaxi": {
+        "jiaxititle": "",
+        "jiaxitype": ""
+      }
+    }
+  ]
+}

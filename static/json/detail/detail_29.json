@@ -1,5 +1,12 @@
 {
   "platform": {
+    "fanxianurl": "https://www.zyxr.com/wapactivity/activity/activityKuayear.html?chl=caiyuguanjia",
+    "shoutoustatus": true,
+    "share": {
+      "avatar": "http://h5test.caiyu.in/dashboard/img/logo_lmw.png",
+      "content": "内容",
+      "imglist": ["链接", "链接"]
+    },
     "title": "利民网",
     "pid": "29",
     "logo": "http://h5test.caiyu.in/dashboard/img/logo_lmw.png",
@@ -10,7 +17,13 @@
     ],
     "detectlevel": "未评级",
     "desc": "一句话介绍",
-    "rate": "12.00"
+    "rate": "12.00",
+    "specialqa": {
+      "特殊问题": "标红",
+      "复投有什么限制吗？": "首投6000元及以上的用户可以参与。"
+    },
+    "specilarule": ["［复投规则］只有之前成功通过财鱼管家参加过中业兴融平台首投，且首投6000元及以上的用户，才能参加复投，需要点击“去复投”按钮参加复投登记，登记成功之后需要在24小时之内进行投资。每天名额有限，满额即关闭活动入口。可以使用平台的红包和加息券，复投奖励每个账号只能领取一次！"]
+
   },
   "tasklist": [{
       "fanlitype": "1",

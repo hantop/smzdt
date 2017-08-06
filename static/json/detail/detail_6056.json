@@ -1,0 +1,113 @@
+{
+  "platform": {
+    "fanxianurl": "https://m.tourongjia.com/#/channelTemplateFanli?hmsr=sccygj",
+    "shoutoustatus":false, 
+    "share":"",
+
+    "title": "投融家",
+    "pid": "6056",
+    "logo": "http://h5test.caiyu.in/img/logo_6056.png",
+    "grade": "AA",
+    "tag": [
+      "上市公司系"
+    ],
+    "detectlevel": "正常",
+    "desc": "浙商银行资金存管，注册资本5000万",
+    "rate": "33.33%",
+    "specialqa":{
+    },
+    "specilarule":["［复投规则］只有之前成功通过财鱼管家参加过投融家平台首投，且首投金额不低于5000的用户，才能参加复投，需要点击'去复投'按钮参加复投登记，登记成功之后需要在24小时之内进行投资。每天名额有限，满额即关闭活动入口。可以使用平台的红包和加息券，复投奖励每个账号只能领取一次！"]
+
+  },
+  "tasklist": [{
+      "fanlitype": "0",
+      "title": "首投6000元—30天及以上标的",
+      "fanlimoney": "120",
+      "fanlimoneydesc": "投资收益:44.38 元，合计收益164.38 元",
+      "futoudesc": "",
+      "fanlistat": "",
+      "baserate": "9.0",
+      "fanlirate": "33.3",
+      "fanlipeople": "323",
+      "fanlistart": "",
+      "fanliend": "",
+      "fanlistatus": false,
+      "jiaxi": {
+        "jiaxititle": "",
+        "jiaxitype": ""
+      }
+    },
+   {
+      "fanlitype": "0",
+      "title": "首投30000元—30天及以上标的",
+      "fanlimoney": "450",
+      "fanlimoneydesc": "投资收益:221.92元，合计收益671.92 元",
+      "futoudesc": "",
+      "fanlistat": "",
+      "baserate": "9.0",
+      "fanlirate": "27.2",
+      "fanlipeople": "251",
+      "fanlistart": "",
+      "fanliend": "",
+      "fanlistatus": false,
+      "jiaxi": {
+        "jiaxititle": "",
+        "jiaxitype": ""
+      }
+    },
+  {
+      "fanlitype": "0",
+      "title": "首投4000元—90天及以上标的",
+      "fanlimoney": "120",
+      "fanlimoneydesc": "投资收益:113.42 元，合计收益233.42 元",
+      "futoudesc": "",
+      "fanlistat": "",
+      "baserate": "11.5",
+      "fanlirate": "23.7",
+      "fanlipeople": "34",
+      "fanlistart": "",
+      "fanliend": "",
+      "fanlistatus": false,
+      "jiaxi": {
+        "jiaxititle": "",
+        "jiaxitype": ""
+      }
+    },
+      {
+      "fanlitype": "0",
+      "title": "首投10000元—90天及以上标的",
+      "fanlimoney": "250",
+      "fanlimoneydesc": "投资收益:283.56元，合计收益533.56 元",
+      "futoudesc": "",
+      "fanlistat": "",
+      "baserate": "11.5",
+      "fanlirate": "21.6",
+      "fanlipeople": "27",
+      "fanlistart": "",
+      "fanliend": "",
+      "fanlistatus": false,
+      "jiaxi": {
+        "jiaxititle": "",
+        "jiaxitype": ""
+      }
+    },
+      {
+      "fanlitype": "1",
+      "title": "复投3000元—30天及以上标的",
+      "fanlimoney": "30",
+      "fanlimoneydesc": "投资收益:18.49元，合计收益48.49元",
+      "futoudesc": "复投前请仔细查阅复投规则",
+      "fanlistat": "",
+      "baserate": "7.5",
+      "fanlirate": "19.7",
+      "fanlipeople": "92",
+      "fanlistart": "",
+      "fanliend": "",
+      "fanlistatus": false,
+      "jiaxi": {
+        "jiaxititle": "",
+        "jiaxitype": ""
+      }
+    }
+  ]
+}

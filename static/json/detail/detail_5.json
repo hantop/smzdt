@@ -1,0 +1,41 @@
+{
+  "platform": {
+    "fanxianurl": "http://m.invest.ppdai.com/landingredbag.html?regsourceid=caiyuguanjia",
+    "shoutoustatus":false, 
+    "share":"",
+
+    "title": "拍拍贷",
+    "pid": "5",
+    "logo": "http://h5test.caiyu.in/img/logo_5.png",
+    "grade": "AAA",
+    "tag": [
+      "风投系"
+    ],
+    "detectlevel": "正常",
+    "desc": "招商银行资金存管 C轮亿元美金融资",
+    "rate": "55.76%",
+    "specialqa":{
+    },
+    "specilarule":[]
+
+  },
+  "tasklist": [{
+      "fanlitype": "0",
+      "title": "首投1000元以上—30天标及以上",
+      "fanlimoney": "40",
+      "fanlimoneydesc": "投资收益:5.75元，合计收益45.75元",
+      "futoudesc": "",
+      "fanlistat": "",
+      "baserate": "7.0",
+      "fanlirate": "55.76",
+      "fanlipeople": "113",
+      "fanlistart": "",
+      "fanliend": "",
+      "fanlistatus": false,
+      "jiaxi": {
+        "jiaxititle": "",
+        "jiaxitype": ""
+      }
+    }
+  ]
+}

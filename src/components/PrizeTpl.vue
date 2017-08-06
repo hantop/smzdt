@@ -43,15 +43,10 @@
             <td> 返现时效</td>
             <td> 返现进度</td>
           </tr>
-          <tr>
-            <td>爱钱进</td>
-            <td>投资后7日内</td>
-            <td>8月1日前投资用户已返</td>
-          </tr>
-          <tr>
-            <td>爱钱进</td>
-            <td>投资后7日内</td>
-            <td>8月1日前投资用户已返</td>
+          <tr v-for="(v, i) in list" :key="i">
+            <td>{{v.name}}</td>
+            <td>{{v.time}}</td>
+            <td>{{v.info}}</td>
           </tr>
         </table>
       </div>
@@ -63,6 +58,7 @@
 <script>
   import Alertbox from './Alertbox'
   import { toUrlQuery } from '../assets/js/tool'
+  import { Indicator } from 'mint-ui'
   export default {
     data () {
       return {
@@ -90,12 +86,15 @@
       }
     },
     created () {
-      console.log(2)
       const _this = this
+      Indicator.open({
+        text: '加载中...',
+        spinnerType: 'fading-circle'
+      })
       const body = {
         'url': '/CaiyuPartner/api/v1/invest/list',
         'data': {
-          'uid': 'e8b73a50c77e4769977682d8ff8d26ac'
+          'uid': this.$route.params.uid
         }
 
       }
@@ -114,6 +113,13 @@
             _this.data = data.data
           } else {
           }
+        })
+      fetch('../../static/json/prize.json').then(res => {
+        return res.json()
+      })
+        .then(res => {
+          _this.list = res
+          Indicator.close()
         })
     }
   }
