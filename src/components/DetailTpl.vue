@@ -5,7 +5,7 @@
   <div style="background-color: #EFEFF0;">
   
     <header>
-      <a :href="'http://h5.caiyu.in/dashboard/invite.html?uid='+uid">
+      <a :href="'http://h5test.caiyu.in/dashboard/invite.html?uid='+uid">
         <img src="../assets/new_img/invite_icon_2.png" class="invite_btn">
       </a>
       <router-link style="display: block;" :to="'/riskscore/'+this.$route.params.pid">
@@ -17,7 +17,9 @@
               <span v-for="(item,index) in data.tag" :key="index" class="xspan2">{{item}}</span>
             </div>
             <p class="xtext">{{data.desc}}</p>
-            <p class="xtext2">首投综合年化收益率可达{{data.rate}}</p>
+            <p v-if="pid == '225'" class="xtext">5500万美金实缴，51信用卡出品</p>
+            <p v-else class="xtext2">首投综合年化收益率可达{{data.rate}}</p>
+  
             <span class="xfengkong">
               <span class="xfengkong_span1">风控指标：{{data.grade}}</span>
               <span class="xfengkong_span2">平台监控：{{data.detectlevel}}</span>
@@ -26,8 +28,26 @@
         </div>
       </router-link>
       <div class="xcoupon">
-        <coupon :status="status" :props="item" v-for="(item, i) in items" :key="i" v-on:childClick="alertBox"></coupon>
-        <h6 style="color: #909090;padding: 0 1.19444em;">
+        <coupon :f="status.first" :s="status.second" :su="status.super" :props="item" v-for="(item, i) in items" :key="i" v-on:childClick="alertBox"></coupon>
+        <h6 v-if="pid == '225'" style="color: #909090;padding: 0 1.19444em;">
+          <br>*特别注意——51人品宝操作流程：
+          <br>
+          <span style="color: red">1.需从财鱼管家活动页面跳转注册，充值成功后，进入51人品人品账户中心“我的福利”中激活财鱼管家渠道红包，以实现资金锁定；</span>
+          <br>
+          <span style="color: red">2.成功充值后必须要选择领取账户内的“1元”红包，并确认参与，否则无法获得返利；</span>
+          <br> 3.充值5000元的用户，选择使用“净充值5000元即送1元红包”，并确认参与；充值10000元的用户，选择使用“净充值10000元即送1元红包”，并确认参与。
+          <br> *返现需等标期结束后到账，请您耐心等待。（已经充值，但是没有点击财鱼专属红包的，再去点击一下就行） *如果活动期间奖励规则变动，则以注册时间（且在注册后24小时内完成投资）的奖励规则为准。
+          <br>*禁止任何形式的刷单行为，如果发现（如同一IP刷单等），平台将不予结算
+          <br>
+        </h6>
+        <h6 v-else-if="pid == '10'" style="color: #909090;padding: 0 1.19444em;">
+          <br>注意：
+          <br>＊通过本页面进行注册的理财平台新用户有资格获得返现，首投满足奖励的条件与对应的奖励以本页面活动规则为准。
+          <br>＊符合条件的用户，PPmoney将会在15个工作日内发放返现至PPmoney账户中。
+          <br> ＊禁止任何形式的刷单行为，如果发现（如同一IP刷单等），平台将不予结算
+          <br>
+        </h6>
+        <h6 v-else style="color: #909090;padding: 0 1.19444em;">
           <br>注意：
           <li> 已经通过财鱼管家注册的用户，可以直接去{{data.title}}官网或app中投资。</li>
           <li> ＊通过本页面进行注册的理财平台新用户有资格获得返现，首投满足奖励的条件与对应的奖励以本页面活动规则为准。</li>
@@ -85,6 +105,22 @@
         <h6 class="title relative" id="hidden-title">
           <span>活动规则说明</span>
         </h6>
+        <div v-if="pid == '10'" style="color: #909090;padding: 0 1.19444em; font-size: 13px">
+          1.本活动仅针对活动期间内通过该页面完成注册且满足首投≥5000元且期限≥60天的新用户（投资金额不包含红包、礼券、抵用券、体验金、满减券），即可获得活动返利奖励；
+          <br> 2.新手专享标、投资体验标、灵活宝、债权转让标、期限&lt;60天标的均不参与本活动；
+  
+          <br> 3.活动期间产生的任何提现费用及手续费用由用户自理；
+  
+          <br> 4.返利奖励发放：首投成功后15个工作日内由PPmoney官网发放，请前往PC端“我的账户-账户余额”或App端“我的-总资产-账户余额”查看；
+          <br>5.体验金请前往“PPmoney理财”App内使用；
+          <br> 6.券类将在首投成功后24小时内审核通过后由PPmoney官网发放，券类奖励请前往PC端“我的账户-我的赠券”或App端“我-优惠券”查看；
+          <br> 7.如出现但不仅限于以下情况：同一财鱼管家账户ID、同一理财平台ID、同一手机号码、同一设备、同一IP地址、恶意刷单、故意刷量、商业贿赂、非正常消费者等现象均认定为作弊用户，一经核实将取消活动资格，所得奖励将不予承兑。
+          <br> 8.如有疑问可以添加财鱼管家活动群467258481 进行咨询。
+          <br> 9.温馨提示：财鱼管家展示不同的理财产品供用户选择，不同的理财产品将承受不同的风险，投资前请仔细考虑平台信用等各方面因素。
+          <br>
+  
+          <br>
+        </div>
         <div style="color: #909090;padding: 0 1.19444em; font-size: 13px">
           1.点击活动按钮，在平台活动页面注册账号。注册成功后在24小时内投资活动标的。
           <br> 2.投资成功后，7个工作日内，将会在财鱼管家app“我的-提醒”中收到返现红包。
@@ -95,9 +131,9 @@
           <br>
         </div>
         <!--<div class="receive-gift relative btn-receive" data-canuser="0" id="btn-receive">
-                        <a class="toPrize">已参加，我要兑奖</a>
-                        <hr class="divider divider-horizontal divider-top">
-                      </div>-->
+                                                                                <a class="toPrize">已参加，我要兑奖</a>
+                                                                                <hr class="divider divider-horizontal divider-top">
+                                                                              </div>-->
       </div>
       <div class="extra setnone" id="extra" style="display: block">
         <h6 class="title relative" id="hidden-title">
@@ -164,11 +200,11 @@
         <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD4AAAA+CAMAAABEH1h2AAAAilBMVEUAAABvkf9vkf9vkf9vkf9vkf9vkf9vkf9vkf9vkf9vkf9vkf9vkf9vkf9vkf9vkf9vkf9vkf9vkf9vkf9vkf9vkf9vkf9vkf9vkf9vkf9vkf9vkf9vkf9vkf9vkf9vkf9vkf9vkf9vkf9vkf9vkf9vkf9vkf9vkf9vkf9vkf9vkf9vkf9vkf9vkf/zcJnUAAAALXRSTlMA+u04AwWHIpcT0uO1zFlMHMCs3XhAMCgY9vO7sQrpmnEO2saSYqSdfVaQZ2Vehk0JAAAC0ElEQVRIx+1W2baiMBBMwiIggoi4oI7ifpf+/9+bIjLJBcOiZx5vvZBDUt2d6u4k7Bf/HaPLeZPmRHm6OV9Gr3GXbko1pO5yMDnbkAGbbJjnBzkP5/HSdxx/Gc/D/GGgPwL7zrGQb2OH/YATb+Xvu93NXiXlqtvIIOWtNJCsOgMfY8lJxmhb81kgOBfBbG7ZcvKEyXHHBhZ/sMAt105dGNIYu9PSoouhWLSmGuw8xsD3ODXAPR8TMTT801IE/hG2LQw+BBkgPjBlYeroG+kh0Rpsx6MWeA74a6LQxD5gASLfhdSKcIf48T08s6c5VIPvLXVgC/8uBJo+0WdEASY96oQHBwHR7ClnmMugGvUgQkvg08zeVZr0RR9d+DLQa6NYubToUS88GSlfNWVPIB/vp3PIljTFnxBdpKj9QHouRJNa7LBaMHs8hD62WYEodelJwU+oKBoEVOaprDAFO5Rbnw+jz+Vet7bqtMljS7Nh9NkjQ5OR7lMZTDCMHkjt/nWuDd8AxmIYXcjMA5My/ogkUO98GJ0jU6qCWdWg7BU6qxqYqZCnw4NX3sfKEFmvSLeo4tDeDypxm5biS0OVuG/tvfp5VWVzZ5Z7aujAk/uC3VXZ7PXeo8q2KtqAAUV2uCVpeU0ck/3B2jEgaG4z0nnntmoZixlhqZZh6yrvuuooUg2bmOmJatgFVVWnah629HHxbWJ/6+NiS7rmATsKEFShDqu1ZQh9rQ4rlkOgyGYahex+dVQK64kt9FGZwUHBTIio8v/FavhakxZ7Q7RnZqizNrF+uK5Ue9BiCGC+ZWuX1NHNVo6zytxj7ZIq0nbn/Vcku0kBWtB3QbMvDD5YFyLz8yBiQMxle7Sj43ECNjJw2vXQzU8j4MKhKIbdMD/M2K7s0xTst5ClYE9WL/OcsxDnxzv5umMv47Mm/ssQlfh7n71PV+/kt4L/fIuqpHPYL+r4C8IzA842MxsYAAAAAElFTkSuQmCC">
         <span>客服</span>
       </a>
-      <a @click="alertBox(status.first)">
+      <a @click="alertBox('0')">
         <span class="btn-join xjoin join_f" :class="status.first?'':'disabled'" data-status="1">{{status.first?'参与首投活动':'首投活动已抢光，敬请等待下期'}}</span>
       </a>
     </div>
-  
+    <messagebox v-if="alert" @dowhat="doajax" @hideself="hidealert" :data="type"></messagebox>
   </div>
 </template>
 <style scoped src="../assets/css/base.css"></style>
@@ -176,72 +212,169 @@
 
 <style scoped src="../assets/css/detail.css"></style>
 <script>
-  import { Indicator, MessageBox } from 'mint-ui'
-  import { toUrlQuery } from '../assets/js/tool'
+  import messagebox from './messagebox'
+  import { Indicator, Toast } from 'mint-ui'
+  // import { toUrlQuery } from '../assets/js/tool'
+  import $ from 'jquery'
   import coupon from './coupon'
   export default {
-    created: function () {
+    created () {
       const _this = this
       Indicator.open({
         text: '加载中...',
         spinnerType: 'fading-circle'
       })
-      console.log(this.uid)
-      const body = {
-        'url': '/CaiyuPartner/api/v1/invest/platform/valid',
-        'data': {
-          'pid': this.$route.params.pid
+      document.setTitle = function (t) {
+        document.title = t
+        var i = document.createElement('iframe')
+        i.src = '//m.baidu.com/favicon.ico'
+        i.style.display = 'none'
+        i.onload = function () {
+          setTimeout(function () {
+            i.remove()
+          }, 9)
         }
-
+        document.body.appendChild(i)
       }
-      fetch('/forward.php', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/x-www-form-urlencoded',
-          'Accept': 'application/json, text/plain, */*'
+      document.setTitle('活动详情')
+      $.ajax({
+        type: 'POST',
+        url: '/forward.php',
+        data: {
+          'url': '/CaiyuPartner/api/v1/invest/platform/valid',
+          'data': {
+            'pid': this.$route.params.pid
+          }
         },
-        body: toUrlQuery(body)
-      }).then(res => {
-        return res.json()
-      })
-        .then(res => {
+        dataType: 'json',
+        success: function (res) {
           if (res.status === '0' || res.status === 0) {
             _this.status.first = res.data.first
+            console.log(_this.status.first)
             _this.status.second = res.data.second
             _this.status.super = res.data.super
           }
-        })
-      fetch(`/static/json/detail/detail_${_this.$route.params.pid}.json`).then(res => {
-        return res.json()
+        }
       })
-        .then(res => {
+      $.ajax({
+        type: 'GET',
+        url: '/static/json/detail/detail_' + _this.$route.params.pid + '.json',
+        dataType: 'json',
+        success: function (res) {
           _this.data = res.platform
           _this.items = res.tasklist
-          window.g_data = '234'
-          Indicator.close()
-        })
+        }
+      })
+      setTimeout(function () {
+        Indicator.close()
+      }, 1000)
     },
     data () {
       return {
         data: {},
         items: [],
         uid: this.$route.query.uid,
+        pid: this.$route.params.pid,
         status: {
-          first: null,
-          second: null,
-          super: null
-        }
+          first: 0,
+          second: 0,
+          super: 0
+        },
+        type: null,
+        alert: null
       }
     },
     components: {
-      coupon
+      coupon,
+      messagebox
     },
     methods: {
+      hidealert () {
+        this.alert = false
+      },
       alertBox (val) {
+        console.log(this.status.first)
+        switch (val) {
+          case '0':
+            console.log(this.status.first)
+            if (!this.status.first) {
+              Toast({
+                message: '活动已满',
+                position: 'bottom',
+                duration: 3000
+              })
+              return
+            }
+            break
+          case '1':
+            if (!this.status.second) {
+              Toast({
+                message: '活动已满',
+                position: 'bottom',
+                duration: 3000
+              })
+              return
+            }
+            break
+          case '4':
+            if (!this.status.super) {
+              Toast({
+                message: '活动已满',
+                position: 'bottom',
+                duration: 3000
+              })
+              return
+            }
+            break
+          case '5':
+            Toast({
+              message: '活动已满',
+              position: 'bottom',
+              duration: 3000
+            })
+            return
+        }
         console.log(val)
-        if (val === '0' || !val) return
-        MessageBox.prompt('为了追踪您的投资信息进行返现奖励请输入您将用于注册投资的手机号码：', '首投登记').then(({ value, action }) => {
-          alert(value + '====123====' + action)
+        this.type = val
+        this.alert = true
+      },
+      doajax (tel) {
+        const _this = this
+        $.ajax({
+          type: 'POST',
+          url: '/forward.php',
+          data: {
+            'url': '/CaiyuPartner/api/v1/invest/register',
+            'data': {
+              'pid': _this.$route.params.pid,
+              'mobile': tel,
+              'uid': decodeURIComponent(_this.$route.query.uid),
+              'source': _this.type
+              // 'code': code
+            }
+          },
+          dataType: 'json',
+          success: function (res) {
+            if (res.status === 0 || res.status === '0') {
+              if (_this.type === 1 || _this.type === '1') {
+                _this.alert = false
+                Toast({
+                  message: '登记成功，请前往该平台投资即可',
+                  position: 'bottom',
+                  duration: 3000
+                })
+              } else {
+                _this.alert = false
+                location.href = _this.data.fanxianurl
+              }
+            } else {
+              Toast({
+                message: res.msg,
+                position: 'bottom',
+                duration: 3000
+              })
+            }
+          }
         })
       }
     }

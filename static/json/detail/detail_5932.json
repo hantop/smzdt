@@ -1,12 +1,12 @@
 {
   "platform": {
     "fanxianurl": "https://www.zyxr.com/wapactivity/activity/activityKuayear.html?chl=caiyuguanjia",
-    "shoutoustatus":true, 
+    "shoutoustatus":true,
     "share":"",
 
     "title": "中业兴融",
     "pid": "4525",
-    "logo": "http://h5test.caiyu.in/img/logo_4525.png",
+    "logo": "http://h5test.caiyu.in/img/logo_5932.png",
     "grade": "A",
     "tag": [
       "民营系"
@@ -57,7 +57,7 @@
       }
     },
   {
-      "fanlitype": "0",
+      "fanlitype": "4",
       "title": "首投10000元—3个月及以上标的",
       "fanlimoney": "260",
       "fanlimoneydesc": "投资收益:283.56元，合计收益543.56 元",
@@ -66,11 +66,11 @@
       "baserate": "11.5",
       "fanlirate": "22.0",
       "fanlipeople": "63",
-      "fanlistart": "",
-      "fanliend": "",
+      "fanlistart": "2017/08/07 12:00:00",
+      "fanliend": "2017/09/06 15:15:00",
       "fanlistatus": true,
       "jiaxi": {
-        "jiaxititle": "",
+        "jiaxititle": "+超级返80元",
         "jiaxitype": ""
       }
     },
@@ -128,6 +128,7 @@
         "jiaxitype": ""
       }
     },
+
       {
       "fanlitype": "1",
       "title": "复投5000元及以上—3个月及以上标的",

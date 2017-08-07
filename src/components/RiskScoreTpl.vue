@@ -63,7 +63,6 @@
             <i class="point"></i>
             <a style="margin-left: 10px" :href="v" class="openurl">{{k}}</a>
           </h5>
-
         </div>
       </div>
   
@@ -72,6 +71,7 @@
   </div>
 </template>
 <script>
+  import $ from 'jquery'
   import { Indicator } from 'mint-ui'
   export default {
     data () {
@@ -88,16 +88,31 @@
         text: '加载中...',
         spinnerType: 'fading-circle'
       })
-      fetch(`../../static/json/riskscore/riskscore_${_this.$route.params.pid}.json`).then(res => {
-        return res.json()
-      })
-        .then(res => {
+      document.setTitle = function (t) {
+        document.title = t
+        var i = document.createElement('iframe')
+        i.src = '//m.baidu.com/favicon.ico'
+        i.style.display = 'none'
+        i.onload = function () {
+          setTimeout(function () {
+            i.remove()
+          }, 9)
+        }
+        document.body.appendChild(i)
+      }
+      document.setTitle('风控评级')
+      $.ajax({
+        type: 'GET',
+        url: '../../static/json/riskscore/riskscore_' + _this.$route.params.pid + '.json',
+        dataType: 'json',
+        success: function (res) {
           _this.grade = res.grade
           _this.monitor = res.monitor
           _this.comment = res.comment
           _this.link = res.link
           Indicator.close()
-        })
+        }
+      })
     }
   }
 </script>

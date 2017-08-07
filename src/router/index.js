@@ -13,41 +13,50 @@ Vue.use(Router)
 export default new Router({
   // mode: 'history',
   base: '/smzdt/',
-  routes: [
-    {
-      path: '/',
-      name: 'index',
-      component: IndexTpl
-    },
-    {
-      path: '/detail/:pid',
-      name: 'detail',
-      component: detailTpl
-    },
-    {
-      path: '/xiaozhong',
-      name: 'xiaozhong',
-      component: Xiaozhong
-    },
-    {
-      path: '/tuhao',
-      name: 'tuhao',
-      component: Tuhao
-    },
-    {
-      path: '/prize/:uid',
-      name: 'prize',
-      component: PrizeTpl
-    },
-    {
-      path: '/riskScore/:pid',
-      name: 'riskScore',
-      component: RiskScoreTpl
-    },
-    {
-      path: '*',
-      name: 'Bad',
-      component: Bad
+  routes: [{
+    path: '/',
+    name: 'index',
+    component: IndexTpl
+  },
+  {
+    path: '/detail/:pid',
+    name: 'detail',
+    component: detailTpl
+  },
+  {
+    path: '/xiaozhong',
+    name: 'xiaozhong',
+    component: Xiaozhong
+  },
+  {
+    path: '/tuhao',
+    name: 'tuhao',
+    component: Tuhao
+  },
+  {
+    path: '/prize/:uid',
+    name: 'prize',
+    component: PrizeTpl
+  },
+  {
+    path: '/riskScore/:pid',
+    name: 'riskScore',
+    component: RiskScoreTpl
+  },
+  {
+    path: '*',
+    name: 'Bad',
+    component: Bad
+  }
+  ],
+  scrollBehavior (to, from, savedPosition) {
+    if (savedPosition) {
+      return savedPosition
+    } else {
+      return {
+        x: 0,
+        y: 0
+      }
     }
-  ]
+  }
 })

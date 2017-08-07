@@ -25,7 +25,8 @@
         </div>
         <div class="message_box" :class="obj.status=='1'?'done':''">
           <h6>{{obj.status=='0'?'符合返现要求，发放返现':'符合返现要求，返现已发放'}}</h6>
-          <p>
+          <p v-if="obj.status!='0'">
+            登记手机号：{{obj.mobile}}
           </p>
         </div>
       </div>
@@ -42,11 +43,12 @@
   </div>
 </template>
 <script>
-  import {toUrlQuery} from '../assets/js/tool'
+  import $ from 'jquery'
+  // import { toUrlQuery } from '../assets/js/tool'
   export default {
     data () {
       return {
-        cui: true
+        cui: this.obj.reminder === 0 || this.obj.reminder === '0'
       }
     },
     props: ['obj'],
@@ -55,30 +57,42 @@
         this.$emit('hideself')
       },
       cuidan () {
-        const body = {
-          'url': '/CaiyuPartner/api/v1/invest/reminder',
-          'data': {
-            'uid': 'e8b73a50c77e4769977682d8ff8d26ac',
-            'id': this.obj.id
-          }
-        }
         const _this = this
-        fetch('/forward.php', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/x-www-form-urlencoded',
-            'Accept': 'application/json, text/plain, */*'
+        $.ajax({
+          type: 'POST',
+          url: '/forward.php',
+          data: {
+            'url': '/CaiyuPartner/api/v1/invest/reminder',
+            'data': {
+              'uid': _this.$route.params.uid,
+              'id': _this.obj.id
+            }
           },
-          body: toUrlQuery(body)
-        }).then(function (res) {
-          return res.json()
-        })
-          .then(function (data) {
-            if (data.status === 0) {
+          dataType: 'json',
+          success: function (res) {
+            if (res.status === 0) {
+              _this.$emit('cuifalse')
               _this.cui = false
             } else {
             }
-          })
+          }
+        })
+        // fetch('/forward.php', {
+        //   method: 'POST',
+        //   headers: {
+        //     'Content-Type': 'application/x-www-form-urlencoded',
+        //     'Accept': 'application/json, text/plain, */*'
+        //   },
+        //   body: toUrlQuery(body)
+        // }).then(function (res) {
+        //   return res.json()
+        // })
+        //   .then(function (data) {
+        //     if (data.status === 0) {
+        //       _this.cui = false
+        //     } else {
+        //     }
+        //   })
       }
     }
   }

@@ -1,8 +1,8 @@
 {
-  "totalmoney": "123213213.23",
+  "totalmoney": "3827710.00",
 
   "platforms": {
-    "tadoy:": {
+    "today": {
       "title": "今日推荐",
       "data": [{
           "pid": "4",

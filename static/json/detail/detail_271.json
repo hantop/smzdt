@@ -56,7 +56,7 @@
       }
     },
   {
-      "fanlitype": "0",
+      "fanlitype": "4",
       "title": "首投5000元—90天及以上新手标",
       "fanlimoney": "150",
       "fanlimoneydesc": "投资收益:147.95元，合计收益297.95元",
@@ -65,11 +65,11 @@
       "baserate": "12.0",
       "fanlirate": "24.2",
       "fanlipeople": "105",
-      "fanlistart": "",
-      "fanliend": "",
+      "fanlistart": "2017/08/08 12:00:00",
+      "fanliend": "2017/09/06 15:15:00",
       "fanlistatus": true,
       "jiaxi": {
-        "jiaxititle": "",
+        "jiaxititle": "+超级返40元",
         "jiaxitype": ""
       }
     },

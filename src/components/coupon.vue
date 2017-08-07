@@ -1,6 +1,6 @@
 
 <template>
-  <a v-on:click="promptShow" :id="data.fanlistatus">
+  <a v-on:click="promptShow">
     <div class="xshadow" :class="'xshadow'+data.fanlitype">
       <div class="xitem_box" :class="'xitem_box'+data.fanlitype">
         <h5 class="xh5">{{data.title}}</h5>
@@ -15,10 +15,10 @@
         </div>
         <div class="xbottom_right">
           <div v-if="data.fanlitype!='4'">{{fanxian}}</div>
-          <div v-if="data.fanlitype=='4'&&qiang">立即开抢</div>
+          <div v-if="data.fanlitype=='4'&&qiang">参与超级返</div>
           <div v-if="data.fanlitype=='4'&&!qiang">{{this.h}}:{{this.m}}:{{this.s}}</div>
           <p v-if="data.fanlitype!='4'"> (已有{{data.fanlipeople}}人选择)</p>
-          <p v-if="data.fanlitype=='4'&&qiang">(当前仅剩{{data.fanlipeople}}份)</p>
+          <p v-if="data.fanlitype=='4'&&qiang">(先到先得)</p>
           <p v-if="data.fanlitype=='4'&&!qiang">即刻开始</p>
         </div>
       </div>
@@ -37,10 +37,10 @@
         s: null,
         m: null,
         h: null
-
+        // status: this.status
       }
     },
-    props: ['props'],
+    props: ['props', 's', 'f', 'su'],
     created () {
       const _this = this
       if (this.data.fanlitype === '4') {
@@ -91,19 +91,22 @@
     },
     methods: {
       promptShow (e) {
-        this.$emit('childClick', e.currentTarget.id)
+        if (this.qiang) {
+          this.$emit('childClick', '5')
+        }
+        this.$emit('childClick', this.data.fanlitype)
       }
     },
     computed: {
       fanxian () {
-        return this.data.fanlistatus ? '去返现' : '已结束'
+        return this.data.fanlistatus ? '参与返现' : '参与返现'
       }
+
     },
     filters: {
       formatMoney
     }
   }
-
 </script>
 <style scoped>
   .xitem_box1 {
@@ -114,7 +117,6 @@
     margin: 0 auto;
     position: relative;
   }
-  
   .xshadow1 {
     background: url('../assets/new_img/yellow_shadow.png')no-repeat center bottom;
     background-size: contain;

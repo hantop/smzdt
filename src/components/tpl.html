@@ -7,8 +7,200 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
   <style>
+    .clear,
+    .clearfix:after {
+      height: 0;
+      clear: both;
+    }
+
+    body,
+    button,
+    input,
+    time {
+      font-family: "PingFangSC", "Lantinghei SC", "Open Sans", Arial, "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", "STHeiti", "WenQuanYi Micro Hei", SimSun, sans-serif;
+    }
+
     .num {
       font-family: "Arial-MT", Arial;
+    }
+
+    a {
+      text-decoration: none;
+      color: #0076ff;
+      cursor: pointer;
+    }
+
+    div,
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    h7,
+    input {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      font-weight: normal;
+    }
+
+    .clearfix:after,
+    .hidden {
+      visibility: hidden;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      outline: 0;
+      -webkit-tap-highlight-color: transparent;
+      tap-highlight-color: transparent;
+    }
+
+    body {
+      font-weight: 400;
+      user-select: none;
+      line-height: 1.5;
+      font-size: 16px;
+    }
+
+    li,
+    ul {
+      list-style: none;
+    }
+
+    img {
+      -webkit-transition: opacity .3s ease;
+      transition: opacity .3s ease;
+      -webkit-tap-highlight-color: transparent;
+      tap-highlight-color: transparent;
+      -webkit-user-select: none;
+      user-select: none;
+      max-width: 100%;
+      vertical-align: bottom;
+    }
+
+    .clearfix:after {
+      content: "";
+      display: block;
+    }
+
+    body,
+    html {
+      height: 100%;
+      -webkit-text-size-adjust: none;
+    }
+
+    .relative {
+      position: relative;
+    }
+
+    .tac {
+      text-align: center;
+    }
+
+    .db {
+      display: block;
+    }
+
+    .dn {
+      display: none;
+    }
+
+    .fl {
+      float: left;
+    }
+
+    .fr {
+      float: right;
+    }
+
+    .btn_blue {
+      background-color: #38a6fa;
+    }
+
+    .btn_blue:active {
+      background-color: #2381ca;
+    }
+
+    .btn_blue.disable {
+      background-color: #99d0fb;
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    .btn_cyan {
+      background-color: #36bcc1;
+    }
+
+    .btn_cyan:active {
+      background-color: #189da2;
+    }
+
+    .btn_cyan.disable {
+      background-color: #95dadd;
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    .disabled {
+      background: #d2d2d2!important;
+    }
+
+    button {
+      border-radius: 3px;
+      height: 44px;
+      font-size: 16px;
+      text-align: center;
+      color: #ffffff;
+      margin: 0 auto;
+      width: 100%;
+      display: block;
+      cursor: pointer;
+    }
+
+    .red {
+      color: #d85345;
+    }
+
+    .alert_input {
+      border-radius: 3px;
+      height: 44px;
+      font-size: 16px;
+      background-color: #fafafa;
+      border: solid 0.5px #e1e1e1;
+      width: 100%;
+    }
+
+    .alert_input:placeholder {
+      opacity: 0.5;
+      font-size: 16px;
+      color: #2b3242;
+    }
+
+    .blue {
+      color: #289cf5;
+    }
+
+    .orange {
+      color: #ea6e24;
+    }
+
+    .green {
+      color: #7dc331;
+    }
+
+    .skyblue {
+      color: #36bcc1;
+    }
+
+    .darkblue {
+      color: #374259;
+    }
+
+    .gray {
+      color: #9da3af;
     }
 
   </style>
@@ -178,7 +370,7 @@
 
     .speed::after {
       content: '';
-      background: url('../assets/new_img/arrow.png') no-repeat;
+      background: url('http://h5test.caiyu.in/img/arrow.png') no-repeat;
       position: absolute;
       right: -1.5rem;
       top: 0.31rem;
@@ -202,123 +394,332 @@
     </p>
     <a class="speed">查看最新返现进度</a>
   </div>
-  <div>
-    <h4 class="list_title"><img src="../assets/new_img/list_title.png" alt=""></h4>
-    <div class="item_box">
-      <div class="top">
-        <div class="logo">
-          <img width="100%" src="../assets/img/logo_jfqb.png" alt="">
-        </div>
-        <div class="right">
-          <div class="r_top">
-            <h5 class="namecn">PPmoney</h5>
-            <span class="grade">AAAA</span>
-            <span class="re_invest">复投</span>
+  <div data-v-67d3bbc2="" data-v-6e038d4f="">
+    <h4 data-v-67d3bbc2="" class="list_title"><img data-v-67d3bbc2="" src="data:image/png;base64,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"
+        alt=""></h4>
+    <a data-v-7cb16804="" data-v-67d3bbc2="" href="/smzdt/detail/4/?uid=undefined" class="">
+      <div data-v-7cb16804="" class="item_box">
+        <div data-v-7cb16804="" class="top">
+          <div data-v-7cb16804="" class="logo"><img data-v-7cb16804="" width="100%" src="http://h5test.caiyu.in/img/logo_yrcf.png" alt=""></div>
+          <div data-v-7cb16804="" class="right">
+            <div data-v-7cb16804="" class="r_top">
+              <h5 data-v-7cb16804="" class="namecn">宜人财富</h5> <span data-v-7cb16804="" class="grade">AAA</span>
+              <!---->
+            </div>
+            <p data-v-7cb16804="" class="describe">国内首家p2p上市公司 p2p行业领军平台</p>
           </div>
-          <p class="describe">浙商银行资金存管，注册资本5000w元</p>
         </div>
-      </div>
-      <div class="bottom">
-        <div class="rate">
-          <div class="red num">7.50<span style="font-size: 1.2rem">%</span></div>
-          <div class="gray">活动最高年化</div>
-        </div>
-        <div class="money">
-          <div class="red num">100~800<span style="font-size: 1.2rem">元</span></div>
-          <div class="gray">返现金额</div>
-        </div>
-        <button class="to_detail">
-        <img width="100%" src="../assets/new_img/ljf.png" alt="">
-      </button>
-      </div>
-    </div>
-    <div class="item_box">
-      <div class="top">
-        <div class="logo">
-          <img width="100%" src="../assets/img/logo_jfqb.png" alt="">
-        </div>
-        <div class="right">
-          <div class="r_top">
-            <h5 class="namecn">PPmoney</h5>
-            <span class="grade">AAAA</span>
-            <span class="re_invest">复投</span>
+        <div data-v-7cb16804="" class="bottom">
+          <div data-v-7cb16804="" class="rate">
+            <div data-v-7cb16804="" class="red num">40.00
+              <span data-v-7cb16804="" style="font-size: 1.2rem;">%</span></div>
+            <div data-v-7cb16804="" class="gray">活动最高年化</div>
           </div>
-          <p class="describe">浙商银行资金存管，注册资本5000w元</p>
-        </div>
+          <div data-v-7cb16804="" class="money">
+            <div data-v-7cb16804="" class="red num">50~800
+              <span data-v-7cb16804="" style="font-size: 1.2rem;">元</span></div>
+            <div data-v-7cb16804="" class="gray">返现金额</div>
+          </div> <img data-v-7cb16804="" width="100%" src="/static/img/qfx.png" alt="" class="to_detail"></div>
       </div>
-      <div class="bottom">
-        <div class="rate">
-          <div class="red num">7.50<span style="font-size: 1.2rem">%</span></div>
-          <div class="gray">活动最高年化</div>
-        </div>
-        <div class="money">
-          <div class="red num">100~800<span style="font-size: 1.2rem">元</span></div>
-          <div class="gray">返现金额</div>
-        </div>
-        <button class="to_detail">
-        <img width="100%" src="../assets/new_img/ljf.png" alt="">
-      </button>
-      </div>
-    </div>
-  </div>
-  <div>
-    <h4 class="list_title"><img src="../assets/new_img/list_title.png" alt=""></h4>
-    <div class="item_box">
-      <div class="top">
-        <div class="logo">
-          <img width="100%" src="../assets/img/logo_jfqb.png" alt="">
-        </div>
-        <div class="right">
-          <div class="r_top">
-            <h5 class="namecn">PPmoney</h5>
-            <span class="grade">AAAA</span>
-            <span class="re_invest">复投</span>
+    </a>
+    <a data-v-7cb16804="" data-v-67d3bbc2="" href="/smzdt/detail/100/?uid=undefined" class="">
+      <div data-v-7cb16804="" class="item_box">
+        <div data-v-7cb16804="" class="top">
+          <div data-v-7cb16804="" class="logo"><img data-v-7cb16804="" width="100%" src="http://h5test.caiyu.in/img/logo_lcf.png" alt=""></div>
+          <div data-v-7cb16804="" class="right">
+            <div data-v-7cb16804="" class="r_top">
+              <h5 data-v-7cb16804="" class="namecn">理财范</h5> <span data-v-7cb16804="" class="grade">AA</span>
+              <!---->
+            </div>
+            <p data-v-7cb16804="" class="describe">徽商银行资金存管 英达钢构领投3.3亿元C轮投资</p>
           </div>
-          <p class="describe">浙商银行资金存管，注册资本5000w元</p>
         </div>
-      </div>
-      <div class="bottom">
-        <div class="rate">
-          <div class="red num">7.50<span style="font-size: 1.2rem">%</span></div>
-          <div class="gray">活动最高年化</div>
-        </div>
-        <div class="money">
-          <div class="red num">100~800<span style="font-size: 1.2rem">元</span></div>
-          <div class="gray">返现金额</div>
-        </div>
-        <button class="to_detail">
-        <img width="100%" src="../assets/new_img/ljf.png" alt="">
-      </button>
-      </div>
-    </div>
-    <div class="item_box">
-      <div class="top">
-        <div class="logo">
-          <img width="100%" src="../assets/img/logo_jfqb.png" alt="">
-        </div>
-        <div class="right">
-          <div class="r_top">
-            <h5 class="namecn">PPmoney</h5>
-            <span class="grade">AAAA</span>
-            <span class="re_invest">复投</span>
+        <div data-v-7cb16804="" class="bottom">
+          <div data-v-7cb16804="" class="rate">
+            <div data-v-7cb16804="" class="red num">17.40
+              <span data-v-7cb16804="" style="font-size: 1.2rem;">%</span></div>
+            <div data-v-7cb16804="" class="gray">活动最高年化</div>
           </div>
-          <p class="describe">浙商银行资金存管，注册资本5000w元</p>
-        </div>
+          <div data-v-7cb16804="" class="money">
+            <div data-v-7cb16804="" class="red num">90~800
+              <span data-v-7cb16804="" style="font-size: 1.2rem;">元</span></div>
+            <div data-v-7cb16804="" class="gray">返现金额</div>
+          </div> <img data-v-7cb16804="" width="100%" src="/static/img/qfx.png" alt="" class="to_detail"></div>
       </div>
-      <div class="bottom">
-        <div class="rate">
-          <div class="red num">7.50<span style="font-size: 1.2rem">%</span></div>
-          <div class="gray">活动最高年化</div>
+    </a>
+    <a data-v-7cb16804="" data-v-67d3bbc2="" href="/smzdt/detail/271/?uid=undefined" class="">
+      <div data-v-7cb16804="" class="item_box">
+        <div data-v-7cb16804="" class="top">
+          <div data-v-7cb16804="" class="logo"><img data-v-7cb16804="" width="100%" src="http://h5test.caiyu.in/img/logo_qbm.png" alt=""></div>
+          <div data-v-7cb16804="" class="right">
+            <div data-v-7cb16804="" class="r_top">
+              <h5 data-v-7cb16804="" class="namecn">钱保姆</h5> <span data-v-7cb16804="" class="grade">AA</span>
+              <!---->
+            </div>
+            <p data-v-7cb16804="" class="describe">北京银行资金存管，国资企业1亿元战略投资</p>
+          </div>
         </div>
-        <div class="money">
-          <div class="red num">100~800<span style="font-size: 1.2rem">元</span></div>
-          <div class="gray">返现金额</div>
-        </div>
-        <button class="to_detail">
-        <img width="100%" src="../assets/new_img/ljf.png" alt="">
-      </button>
+        <div data-v-7cb16804="" class="bottom">
+          <div data-v-7cb16804="" class="rate">
+            <div data-v-7cb16804="" class="red num">52.60
+              <span data-v-7cb16804="" style="font-size: 1.2rem;">%</span></div>
+            <div data-v-7cb16804="" class="gray">活动最高年化</div>
+          </div>
+          <div data-v-7cb16804="" class="money">
+            <div data-v-7cb16804="" class="red num">70~200
+              <span data-v-7cb16804="" style="font-size: 1.2rem;">元</span></div>
+            <div data-v-7cb16804="" class="gray">返现金额</div>
+          </div> <img data-v-7cb16804="" width="100%" src="/static/img/qfx.png" alt="" class="to_detail"></div>
       </div>
-    </div>
+    </a>
+    <a data-v-7cb16804="" data-v-67d3bbc2="" href="/smzdt/detail/10/?uid=undefined" class="">
+      <div data-v-7cb16804="" class="item_box">
+        <div data-v-7cb16804="" class="top">
+          <div data-v-7cb16804="" class="logo"><img data-v-7cb16804="" width="100%" src="http://h5test.caiyu.in/img/logo_ppmoney.png" alt=""></div>
+          <div data-v-7cb16804="" class="right">
+            <div data-v-7cb16804="" class="r_top">
+              <h5 data-v-7cb16804="" class="namecn">PPmoney</h5> <span data-v-7cb16804="" class="grade">AAA</span>
+              <!---->
+            </div>
+            <p data-v-7cb16804="" class="describe">厦门银行资金存管 3.75亿元B轮融资</p>
+          </div>
+        </div>
+        <div data-v-7cb16804="" class="bottom">
+          <div data-v-7cb16804="" class="rate">
+            <div data-v-7cb16804="" class="red num">24.80
+              <span data-v-7cb16804="" style="font-size: 1.2rem;">%</span></div>
+            <div data-v-7cb16804="" class="gray">活动最高年化</div>
+          </div>
+          <div data-v-7cb16804="" class="money">
+            <div data-v-7cb16804="" class="red num">150~500
+              <span data-v-7cb16804="" style="font-size: 1.2rem;">元</span></div>
+            <div data-v-7cb16804="" class="gray">返现金额</div>
+          </div> <img data-v-7cb16804="" width="100%" src="/static/img/qfx.png" alt="" class="to_detail"></div>
+      </div>
+    </a>
+    <a data-v-7cb16804="" data-v-67d3bbc2="" href="/smzdt/detail/225/?uid=undefined" class="">
+      <div data-v-7cb16804="" class="item_box">
+        <div data-v-7cb16804="" class="top">
+          <div data-v-7cb16804="" class="logo"><img data-v-7cb16804="" width="100%" src="http://h5test.caiyu.in/img/logo_51rp.png" alt=""></div>
+          <div data-v-7cb16804="" class="right">
+            <div data-v-7cb16804="" class="r_top">
+              <h5 data-v-7cb16804="" class="namecn">51人品</h5> <span data-v-7cb16804="" class="grade">AAA</span>
+              <!---->
+            </div>
+            <p data-v-7cb16804="" class="describe">新浪支付托管 小米京东1亿美金累计融资</p>
+          </div>
+        </div>
+        <div data-v-7cb16804="" class="bottom">
+          <div data-v-7cb16804="" class="rate">
+            <div data-v-7cb16804="" class="red num">35.30
+              <span data-v-7cb16804="" style="font-size: 1.2rem;">%</span></div>
+            <div data-v-7cb16804="" class="gray">活动最高年化</div>
+          </div>
+          <div data-v-7cb16804="" class="money">
+            <div data-v-7cb16804="" class="red num">120~170
+              <span data-v-7cb16804="" style="font-size: 1.2rem;">元</span></div>
+            <div data-v-7cb16804="" class="gray">返现金额</div>
+          </div> <img data-v-7cb16804="" width="100%" src="/static/img/qfx.png" alt="" class="to_detail"></div>
+      </div>
+    </a>
+    <a data-v-7cb16804="" data-v-67d3bbc2="" href="/smzdt/detail/4525/?uid=undefined" class="">
+      <div data-v-7cb16804="" class="item_box">
+        <div data-v-7cb16804="" class="top">
+          <div data-v-7cb16804="" class="logo"><img data-v-7cb16804="" width="100%" src="http://h5test.caiyu.in/img/logo_pjb.png" alt=""></div>
+          <div data-v-7cb16804="" class="right">
+            <div data-v-7cb16804="" class="r_top">
+              <h5 data-v-7cb16804="" class="namecn">票据宝</h5> <span data-v-7cb16804="" class="grade">AA</span>
+              <!---->
+            </div>
+            <p data-v-7cb16804="" class="describe">广东华兴银行资金存管 人人网2000万美元融资</p>
+          </div>
+        </div>
+        <div data-v-7cb16804="" class="bottom">
+          <div data-v-7cb16804="" class="rate">
+            <div data-v-7cb16804="" class="red num">14.20
+              <span data-v-7cb16804="" style="font-size: 1.2rem;">%</span></div>
+            <div data-v-7cb16804="" class="gray">活动最高年化</div>
+          </div>
+          <div data-v-7cb16804="" class="money">
+            <div data-v-7cb16804="" class="red num">90~350
+              <span data-v-7cb16804="" style="font-size: 1.2rem;">元</span></div>
+            <div data-v-7cb16804="" class="gray">返现金额</div>
+          </div> <img data-v-7cb16804="" width="100%" src="/static/img/qfx.png" alt="" class="to_detail"></div>
+      </div>
+    </a>
+    <a data-v-7cb16804="" data-v-67d3bbc2="" href="/smzdt/detail/6056/?uid=undefined" class="">
+      <div data-v-7cb16804="" class="item_box">
+        <div data-v-7cb16804="" class="top">
+          <div data-v-7cb16804="" class="logo"><img data-v-7cb16804="" width="100%" src="http://h5test.caiyu.in/img/logo_trj.png" alt=""></div>
+          <div data-v-7cb16804="" class="right">
+            <div data-v-7cb16804="" class="r_top">
+              <h5 data-v-7cb16804="" class="namecn">投融家</h5> <span data-v-7cb16804="" class="grade">AA</span>
+              <!---->
+            </div>
+            <p data-v-7cb16804="" class="describe">浙商银行资金存管 注册资本5000万元</p>
+          </div>
+        </div>
+        <div data-v-7cb16804="" class="bottom">
+          <div data-v-7cb16804="" class="rate">
+            <div data-v-7cb16804="" class="red num">33.30
+              <span data-v-7cb16804="" style="font-size: 1.2rem;">%</span></div>
+            <div data-v-7cb16804="" class="gray">活动最高年化</div>
+          </div>
+          <div data-v-7cb16804="" class="money">
+            <div data-v-7cb16804="" class="red num">120~450
+              <span data-v-7cb16804="" style="font-size: 1.2rem;">元</span></div>
+            <div data-v-7cb16804="" class="gray">返现金额</div>
+          </div> <img data-v-7cb16804="" width="100%" src="/static/img/yqg.png" alt="" class="to_detail"></div>
+      </div>
+    </a>
+    <a data-v-7cb16804="" data-v-67d3bbc2="" href="/smzdt/detail/6072/?uid=undefined" class="">
+      <div data-v-7cb16804="" class="item_box">
+        <div data-v-7cb16804="" class="top">
+          <div data-v-7cb16804="" class="logo"><img data-v-7cb16804="" width="100%" src="http://h5test.caiyu.in/img/logo_jfqb.png" alt=""></div>
+          <div data-v-7cb16804="" class="right">
+            <div data-v-7cb16804="" class="r_top">
+              <h5 data-v-7cb16804="" class="namecn">玖富钱包</h5> <span data-v-7cb16804="" class="grade">AAA</span> <span data-v-7cb16804="" class="re_invest">复投</span></div>
+            <p data-v-7cb16804="" class="describe">注册资本2亿元 玖富旗舰移动金融平台</p>
+          </div>
+        </div>
+        <div data-v-7cb16804="" class="bottom">
+          <div data-v-7cb16804="" class="rate">
+            <div data-v-7cb16804="" class="red num">46.80
+              <span data-v-7cb16804="" style="font-size: 1.2rem;">%</span></div>
+            <div data-v-7cb16804="" class="gray">活动最高年化</div>
+          </div>
+          <div data-v-7cb16804="" class="money">
+            <div data-v-7cb16804="" class="red num">50~350
+              <span data-v-7cb16804="" style="font-size: 1.2rem;">元</span></div>
+            <div data-v-7cb16804="" class="gray">返现金额</div>
+          </div> <img data-v-7cb16804="" width="100%" src="/static/img/yqg.png" alt="" class="to_detail"></div>
+      </div>
+    </a>
+    <a data-v-7cb16804="" data-v-67d3bbc2="" href="/smzdt/detail/7234/?uid=undefined" class="">
+      <div data-v-7cb16804="" class="item_box">
+        <div data-v-7cb16804="" class="top">
+          <div data-v-7cb16804="" class="logo"><img data-v-7cb16804="" width="100%" src="http://h5test.caiyu.in/img/logo_rraj.png" alt=""></div>
+          <div data-v-7cb16804="" class="right">
+            <div data-v-7cb16804="" class="r_top">
+              <h5 data-v-7cb16804="" class="namecn">人人爱家</h5> <span data-v-7cb16804="" class="grade">A</span>
+              <!---->
+            </div>
+            <p data-v-7cb16804="" class="describe">恒丰银行存管 中欧国际集团1亿元B轮融资</p>
+          </div>
+        </div>
+        <div data-v-7cb16804="" class="bottom">
+          <div data-v-7cb16804="" class="rate">
+            <div data-v-7cb16804="" class="red num">36.30
+              <span data-v-7cb16804="" style="font-size: 1.2rem;">%</span></div>
+            <div data-v-7cb16804="" class="gray">活动最高年化</div>
+          </div>
+          <div data-v-7cb16804="" class="money">
+            <div data-v-7cb16804="" class="red num">50~800
+              <span data-v-7cb16804="" style="font-size: 1.2rem;">元</span></div>
+            <div data-v-7cb16804="" class="gray">返现金额</div>
+          </div> <img data-v-7cb16804="" width="100%" src="/static/img/yqg.png" alt="" class="to_detail"></div>
+      </div>
+    </a>
+    <a data-v-7cb16804="" data-v-67d3bbc2="" href="/smzdt/detail/6113/?uid=undefined" class="">
+      <div data-v-7cb16804="" class="item_box">
+        <div data-v-7cb16804="" class="top">
+          <div data-v-7cb16804="" class="logo"><img data-v-7cb16804="" width="100%" src="http://h5test.caiyu.in/img/logo_hyjf.png" alt=""></div>
+          <div data-v-7cb16804="" class="right">
+            <div data-v-7cb16804="" class="r_top">
+              <h5 data-v-7cb16804="" class="namecn">汇盈金服</h5> <span data-v-7cb16804="" class="grade">A</span>
+              <!---->
+            </div>
+            <p data-v-7cb16804="" class="describe">江西银行存管 美国OTC市场上市</p>
+          </div>
+        </div>
+        <div data-v-7cb16804="" class="bottom">
+          <div data-v-7cb16804="" class="rate">
+            <div data-v-7cb16804="" class="red num">46.50
+              <span data-v-7cb16804="" style="font-size: 1.2rem;">%</span></div>
+            <div data-v-7cb16804="" class="gray">活动最高年化</div>
+          </div>
+          <div data-v-7cb16804="" class="money">
+            <div data-v-7cb16804="" class="red num">30~300
+              <span data-v-7cb16804="" style="font-size: 1.2rem;">元</span></div>
+            <div data-v-7cb16804="" class="gray">返现金额</div>
+          </div> <img data-v-7cb16804="" width="100%" src="/static/img/yqg.png" alt="" class="to_detail"></div>
+      </div>
+    </a>
+    <a data-v-7cb16804="" data-v-67d3bbc2="" href="/smzdt/detail/5/?uid=undefined" class="">
+      <div data-v-7cb16804="" class="item_box">
+        <div data-v-7cb16804="" class="top">
+          <div data-v-7cb16804="" class="logo"><img data-v-7cb16804="" width="100%" src="http://h5test.caiyu.in/img/logo_ppdai.png" alt=""></div>
+          <div data-v-7cb16804="" class="right">
+            <div data-v-7cb16804="" class="r_top">
+              <h5 data-v-7cb16804="" class="namecn">拍拍贷</h5> <span data-v-7cb16804="" class="grade">AAA</span>
+              <!---->
+            </div>
+            <p data-v-7cb16804="" class="describe">招商银行资金存管 君联资本和海纳亚洲领投C轮亿元美金融资</p>
+          </div>
+        </div>
+        <div data-v-7cb16804="" class="bottom">
+          <div data-v-7cb16804="" class="rate">
+            <div data-v-7cb16804="" class="red num">55.76
+              <span data-v-7cb16804="" style="font-size: 1.2rem;">%</span></div>
+            <div data-v-7cb16804="" class="gray">活动最高年化</div>
+          </div>
+          <div data-v-7cb16804="" class="money">
+            <div data-v-7cb16804="" class="red num">40
+              <span data-v-7cb16804="" style="font-size: 1.2rem;">元</span></div>
+            <div data-v-7cb16804="" class="gray">返现金额</div>
+          </div> <img data-v-7cb16804="" width="100%" src="/static/img/yqg.png" alt="" class="to_detail"></div>
+      </div>
+    </a>
+    <a data-v-7cb16804="" data-v-67d3bbc2="" href="/smzdt/detail/47/?uid=undefined" class="">
+      <div data-v-7cb16804="" class="item_box">
+        <div data-v-7cb16804="" class="top">
+          <div data-v-7cb16804="" class="logo"><img data-v-7cb16804="" width="100%" src="http://h5test.caiyu.in/img/logo_aqj.png" alt=""></div>
+          <div data-v-7cb16804="" class="right">
+            <div data-v-7cb16804="" class="r_top">
+              <h5 data-v-7cb16804="" class="namecn">爱钱进</h5> <span data-v-7cb16804="" class="grade">AAA</span>
+              <!---->
+            </div>
+            <p data-v-7cb16804="" class="describe">华夏银行资金存管 高榕资本31000万元融资</p>
+          </div>
+        </div>
+        <div data-v-7cb16804="" class="bottom">
+          <div data-v-7cb16804="" class="rate">
+            <div data-v-7cb16804="" class="red num">32.10
+              <span data-v-7cb16804="" style="font-size: 1.2rem;">%</span></div>
+            <div data-v-7cb16804="" class="gray">活动最高年化</div>
+          </div>
+          <div data-v-7cb16804="" class="money">
+            <div data-v-7cb16804="" class="red num">20~50
+              <span data-v-7cb16804="" style="font-size: 1.2rem;">元</span></div>
+            <div data-v-7cb16804="" class="gray">返现金额</div>
+          </div> <img data-v-7cb16804="" width="100%" src="/static/img/yqg.png" alt="" class="to_detail"></div>
+      </div>
+    </a>
+    <a data-v-7cb16804="" data-v-67d3bbc2="" href="/smzdt/detail/3712/?uid=undefined" class="">
+      <div data-v-7cb16804="" class="item_box">
+        <div data-v-7cb16804="" class="top">
+          <div data-v-7cb16804="" class="logo"><img data-v-7cb16804="" width="100%" src="http://h5test.caiyu.in/img/logo_htyd.png" alt=""></div>
+          <div data-v-7cb16804="" class="right">
+            <div data-v-7cb16804="" class="r_top">
+              <h5 data-v-7cb16804="" class="namecn">汇通易贷</h5> <span data-v-7cb16804="" class="grade">A</span>
+              <!---->
+            </div>
+            <p data-v-7cb16804="" class="describe">华兴银行资金存管 注册资本5000万元</p>
+          </div>
+        </div>
+        <div data-v-7cb16804="" class="bottom">
+          <div data-v-7cb16804="" class="rate">
+            <div data-v-7cb16804="" class="red num">37.20
+              <span data-v-7cb16804="" style="font-size: 1.2rem;">%</span></div>
+            <div data-v-7cb16804="" class="gray">活动最高年化</div>
+          </div>
+          <div data-v-7cb16804="" class="money">
+            <div data-v-7cb16804="" class="red num">120~500
+              <span data-v-7cb16804="" style="font-size: 1.2rem;">元</span></div>
+            <div data-v-7cb16804="" class="gray">返现金额</div>
+          </div> <img data-v-7cb16804="" width="100%" src="/static/img/yqg.png" alt="" class="to_detail"></div>
+      </div>
+    </a>
   </div>
 
 

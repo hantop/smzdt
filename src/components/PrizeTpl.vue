@@ -3,9 +3,10 @@
   
     <div class="big_cell">
   
-      <div class="title">
+      <div style="border-bottom:none" class="title">
         我的返现
       </div>
+      <p class="gray">8月8日之后的投资登记信息将显示在此。之前的投资不在此展示，并不影响返现发放。</p>
       <div>
         <table cellspacing="0" cellpadding="0" class="table_1">
           <tr class="title">
@@ -16,14 +17,14 @@
           </tr>
           <tr v-for="(obj,i) in  data" :key="i" v-if="i<11||showall">
             <td>{{obj.createtime.substr(0,10)}}</td>
-            <td>{{obj.pname}}{{obj.source == '1'?'（复）':''}}</td>
+            <td>{{obj.pnamecn}}{{obj.source == '1'?'（复）':''}}</td>
             <td>{{obj.mobile}}</td>
             <td>
               <a @click="showalert" :id="i" class="link blue">{{obj.status=='0'?'已登记':'已返现'}}</a>
             </td>
           </tr>
         </table>
-        <div @click="showlist" class="load_more blue">{{showall?'收起':'查看'}}全部返现信息</div>
+        <!--<div @click="showlist" class="load_more blue">{{showall?'收起':'查看'}}全部返现信息</div>-->
       </div>
   
     </div>
@@ -52,13 +53,14 @@
       </div>
   
     </div>
-    <alertbox :obj="alert" v-on:hideself="hidealert" v-if="showbox"></alertbox>
+    <alertbox :obj="alert" v-on:cuifalse="cuifalse" v-on:hideself="hidealert" v-if="showbox"></alertbox>
   </div>
 </template>
 <script>
   import Alertbox from './Alertbox'
-  import { toUrlQuery } from '../assets/js/tool'
+  // import { toUrlQuery } from '../assets/js/tool'
   import { Indicator } from 'mint-ui'
+  import $ from 'jquery'
   export default {
     data () {
       return {
@@ -66,13 +68,33 @@
         data: [],
         alert: {},
         showall: false
-
       }
     },
     components: {
       Alertbox
     },
     methods: {
+      cuifalse () {
+        const _this = this
+        $.ajax({
+          type: 'POST',
+          url: '/forward.php',
+          data: {
+            'url': '/CaiyuPartner/api/v1/invest/list',
+            'data': {
+              'uid': decodeURIComponent(this.$route.params.uid)
+            }
+          },
+          dataType: 'json',
+          success: function (res) {
+            if (res.status === 0) {
+              Indicator.close()
+              _this.data = res.data
+            } else {
+            }
+          }
+        })
+      },
       showalert (e) {
         const id = e.currentTarget.id
         this.alert = this.data[id]
@@ -91,41 +113,72 @@
         text: '加载中...',
         spinnerType: 'fading-circle'
       })
-      const body = {
-        'url': '/CaiyuPartner/api/v1/invest/list',
-        'data': {
-          'uid': this.$route.params.uid
+      document.setTitle = function (t) {
+        document.title = t
+        var i = document.createElement('iframe')
+        i.src = '//m.baidu.com/favicon.ico'
+        i.style.display = 'none'
+        i.onload = function () {
+          setTimeout(function () {
+            i.remove()
+          }, 9)
         }
-
+        document.body.appendChild(i)
       }
-      fetch('/forward.php', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/x-www-form-urlencoded',
-          'Accept': 'application/json, text/plain, */*'
+      document.setTitle('最新返现进度')
+      $.ajax({
+        type: 'POST',
+        url: '/forward.php',
+        data: {
+          'url': '/CaiyuPartner/api/v1/invest/list',
+          'data': {
+            'uid': decodeURIComponent(this.$route.params.uid)
+          }
         },
-        body: toUrlQuery(body)
-      }).then(function (res) {
-        return res.json()
-      })
-        .then(function (data) {
-          if (data.status === 0) {
-            _this.data = data.data
+        dataType: 'json',
+        success: function (res) {
+          if (res.status === 0) {
+            Indicator.close()
+            _this.data = res.data
           } else {
           }
-        })
-      fetch('../../static/json/prize.json').then(res => {
-        return res.json()
+        }
       })
-        .then(res => {
+      // fetch('/forward.php', {
+      //   method: 'POST',
+      //   headers: {
+      //     'Content-Type': 'application/x-www-form-urlencoded',
+      //     'Accept': 'application/json, text/plain, */*'
+      //   },
+      //   body: toUrlQuery(body)
+      // }).then(function (res) {
+      //   return res.json()
+      // })
+      //   .then(function (data) {
+      //     if (data.status === 0) {
+      //       _this.data = data.data
+      //     } else {
+      //     }
+      //   })
+      $.ajax({
+        type: 'GET',
+        url: '../../static/json/prize.json',
+        dataType: 'json',
+        success: function (res) {
           _this.list = res
-          Indicator.close()
-        })
+          // Indicator.close()
+        }
+      })
     }
   }
 </script>
 
 <style scoped>
+.gray {
+    color: #9da3af;
+    border-bottom: 1px solid rgb(220, 220, 220);
+    font-size: 10px;
+}
   .pj_banner {
     padding: 15px 10px 0;
     background-color: #fff;

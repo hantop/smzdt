@@ -1,5 +1,5 @@
 <template>
-  <div class="tuhao" style="background-color: rgb(239, 239, 240);padding-bottom:50px">
+  <div v-title="'土豪大额专区'" class="tuhao" style="background-color: rgb(239, 239, 240);padding-bottom:50px">
     <div v-for="(v, k, i) in data" :key="i">
       <h4 class="list_title">
         {{k}}
@@ -12,6 +12,7 @@
 <script>
   import { Indicator } from 'mint-ui'
   import coupon from './coupon'
+  import $ from 'jquery'
   export default {
     data () {
       return {
@@ -27,14 +28,22 @@
         text: '加载中...',
         spinnerType: 'fading-circle'
       })
-
-      fetch('../../static/json/tuhao.json').then(res => {
-        return res.json()
-      })
-        .then(res => {
+      $.ajax({
+        type: 'GET',
+        url: '../../static/json/tuhao.json',
+        dataType: 'json',
+        success: function (res) {
           _this.data = res
           Indicator.close()
-        })
+        }
+      })
+      // fetch('../../static/json/tuhao.json').then(res => {
+      //   return res.json()
+      // })
+      //   .then(res => {
+      //     _this.data = res
+      //     Indicator.close()
+      //   })
     }
   }
 </script>
@@ -42,10 +51,7 @@
   .tuhao .list_title {
     text-align: center;
     padding: 0.9rem 0px;
-    background-color: #ffffff;
-    box-shadow: 0 4px 5px 0 rgba(221, 221, 221, 0.5);
     position: relative;
-    margin-bottom: 20px;
     color: #434343;
     font-weight: 600;
     font-size: 22px;

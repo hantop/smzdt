@@ -31,9 +31,9 @@
       <platform-list v-for="(obj, i) in data.platforms" :uid="uid" :key="i" :data="obj"></platform-list>
   
       <!--<div slot="top" class="mint-loadmore-top">
-                        <span v-show="topStatus === 'loading'" :class="{ 'rotate': topStatus === 'drop' }">↓</span>
-                        <span v-show="topStatus === 'loading'">Loading...</span>
-                      </div>-->
+                            <span v-show="topStatus === 'loading'" :class="{ 'rotate': topStatus === 'drop' }">↓</span>
+                            <span v-show="topStatus === 'loading'">Loading...</span>
+                          </div>-->
   
     </loadmore>
   </div>
@@ -49,7 +49,7 @@
       return {
         topStatus: '',
         data: {},
-        uid: this.$route.query.uid
+        uid: encodeURIComponent(this.$route.query.uid)
       }
     },
     components: {
@@ -79,17 +79,6 @@
           Indicator.close()
         }
       })
-      // fetch('../../static/json/index.json').then(res => {
-      //   return res.json()
-      // })
-      //   .then(res => {
-      //     _this.data = res
-      //     Indicator.close()
-      //   })
-      //   .catch(res => {
-      //     Indicator.close()
-      //     Toast('加载失败')
-      //   })
     }
   }
 

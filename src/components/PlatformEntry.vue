@@ -55,7 +55,7 @@
 </script>
 <style scoped>
   .item_box {
-    border-top: rgba(225, 225, 225, .4) 1px solid;
+    border-top: rgba(225, 225, 225, 1) 0.5px solid;
     padding: 0 1.5rem;
     padding-bottom: 1.8rem;
   }

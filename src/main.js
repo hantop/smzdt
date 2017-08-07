@@ -15,6 +15,11 @@ new Vue({
     App
   }
 })
+Vue.directive('title', {
+  inserted: function (el, binding) {
+    document.title = binding.value
+  }
+})
 Vue.prototype.toUrlQuery = function (data, name) {
   let str = ''
   for (var key in data) {
