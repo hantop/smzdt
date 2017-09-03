@@ -1,40 +1,30 @@
-[{
-    "pid": "5932",
-    "logo": "http://h5test.caiyu.in/dashboard/img/logo_zyxr.png",
-    "title": "中业兴融",
-    "grade": "无评级",
-    "desc": "上海华瑞银行存管 注册资本5000万元",
-    "rate": "28",
-    "money": "150~700",
-    "isfutou": false,
-    "fanxiantype": "1",
-    "fanxianbottom": "",
-    "fanxiantypetitle": ""
-  },
+﻿[
+
   {
-    "pid": "4270",
-    "logo": "http://h5test.caiyu.in/dashboard/img/logo_lmw.png",
-    "title": "利民网",
-    "grade": "无评级",
-    "desc": "新网银行资金存管 注册资本5000万元",
-    "rate": "28.10",
-    "money": "80~350",
-    "isfutou": false,
+    "pid": "6568",
+    "logo": "http://h5.caiyu.in/img/logo_6568.png",
+    "title": "民爱贷",
+    "grade": "未评级",
+    "desc": "上海银行资金存管 注册资本5000万",
+    "rate": "40.44",
+    "money": "80~300",
+    "isfutou": true,
     "fanxiantype": "0",
     "fanxianbottom": "",
     "fanxiantypetitle": ""
   },
   {
-    "pid": "5241",
-    "logo": "http://h5.caiyu.in/dashboard/img/logo_xglcd.png",
-    "title": "信广立诚贷",
-    "grade": "无评级",
-    "desc": "徽商银行资金存管 注册资本5000万",
-    "rate": "17.11",
-    "money": "50~600",
+    "pid": "6634",
+    "logo": "http://h5.caiyu.in/img/logo_6634.png",
+    "title": "聚胜财富",
+    "grade": "未评级",
+    "desc": "天府银行资金存管 注册资本3亿",
+    "rate": "34.57",
+    "money": "150~500",
     "isfutou": false,
     "fanxiantype": "0",
     "fanxianbottom": "",
     "fanxiantypetitle": ""
   }
+
 ]

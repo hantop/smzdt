@@ -1,26 +1,50 @@
 {
   "platform": {
     "fanxianurl": "https://www.pj.com/mobile/zhuce.do?f=cygj",
-    "shoutoustatus":true, 
-    "share":"",
+    "shoutoustatus": true,
+    "share": "",
 
     "title": "票据宝",
     "pid": "4525",
-    "logo": "http://h5test.caiyu.in/img/logo_4525.png",
-    "grade": "AA",
+    "logo": "http://h5.caiyu.in/img/logo_4525.png",
+    "grade": "A",
     "tag": [
       "上市公司系"
     ],
     "detectlevel": "正常",
     "desc": "广东华兴银行资金存管 人人网2000万美元融资",
-    "rate": "13.08%",
-    "specialqa":{
-      "可以投资新手标吗？":"不可以的，票据宝新手标和活期标不参加本次返利活动。"
+    "ratedesc": "首投综合年化收益率可达13.08%",
+    "specialqa": {
+      "可以投资新手标吗？": "不可以的，票据宝新手标和活期标不参加本次返利活动。"
     },
-    "specilarule":["特别注意：票据宝新手标、活期标不参加返利活动"]
+    "qa": [true, false, true, true, true, true, true],
+    "description": [],
+    "rule": [true, true, true, true, true, true],
+    "topspecilarule": [],
+    "midspecilarule": [],
+    "grayspecilarule": [],
+    "btmspecilarule": ["［超级返］的标的，只有点击“参与超级返”按钮并成功登记手机号后，投资才能获得超级返奖励。", "特别注意：票据宝新手标、活期标不参加返利活动"]
 
   },
   "tasklist": [{
+      "fanlitype": "4",
+      "title": "首投10000元——31天及以上标的",
+      "fanlimoney": "90",
+      "fanlimoneydesc": "投资收益:50.96 元，合计收益150.96 元",
+      "futoudesc": "",
+      "fanlistat": "",
+      "baserate": "6.0",
+      "fanlirate": "17.7",
+      "fanlipeople": "174",
+      "fanlistart": "00:00:00",
+      "fanliend": "23:59:59",
+      "fanlistatus": true,
+      "jiaxi": {
+        "jiaxititle": "+超级返10元",
+        "jiaxitype": ""
+      }
+    },
+    {
       "fanlitype": "0",
       "title": "首投10000元——180天及以上标的",
       "fanlimoney": "350",
@@ -38,7 +62,7 @@
         "jiaxitype": ""
       }
     },
-   {
+    {
       "fanlitype": "0",
       "title": "首投10000元——90天及以上标的",
       "fanlimoney": "200",
@@ -48,24 +72,6 @@
       "baserate": "7.0",
       "fanlirate": "14.2",
       "fanlipeople": "94",
-      "fanlistart": "",
-      "fanliend": "",
-      "fanlistatus": true,
-      "jiaxi": {
-        "jiaxititle": "",
-        "jiaxitype": ""
-      }
-    },
-  {
-      "fanlitype": "0",
-      "title": "首投10000元——31天及以上标的",
-      "fanlimoney": "90",
-      "fanlimoneydesc": "投资收益:88.77 元，合计收益178.77 元",
-      "futoudesc": "",
-      "fanlistat": "",
-      "baserate": "6.0",
-      "fanlirate": "12.1",
-      "fanlipeople": "174",
       "fanlistart": "",
       "fanliend": "",
       "fanlistatus": true,

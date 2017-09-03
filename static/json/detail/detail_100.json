@@ -1,22 +1,27 @@
 {
   "platform": {
     "fanxianurl": "http://www.licaifan.com/index.php/site/index?refer=671",
-    "shoutoustatus":true, 
-    "share":"",
+    "shoutoustatus": true,
+    "share": "",
 
     "title": "理财范",
     "pid": "100",
-    "logo": "http://h5test.caiyu.in/img/logo_100.png",
+    "logo": "http://h5.caiyu.in/img/logo_100.png",
     "grade": "AA",
     "tag": [
       "风投系"
     ],
     "detectlevel": "正常",
     "desc": "徽商银行资金存管 英达钢构领投3.3亿元C轮投资",
-    "rate": "15.98%",
-    "specialqa":{
-    },
-    "specilarule":[]
+    "ratedesc": "首投综合年化收益率可达15.98%",
+    "specialqa": {},
+    "qa": [true, true, true, true, true, true, true],
+    "description": [],
+    "rule": [true, true, true, true, true, true],
+    "topspecilarule": [],
+    "midspecilarule": [],
+    "grayspecilarule": [],
+    "btmspecilarule": []
 
   },
   "tasklist": [{
@@ -37,7 +42,7 @@
         "jiaxitype": ""
       }
     },
-   {
+    {
       "fanlitype": "0",
       "title": "首投30000元—33天及以上标的",
       "fanlimoney": "260",
@@ -55,7 +60,7 @@
         "jiaxitype": ""
       }
     },
-  {
+    {
       "fanlitype": "0",
       "title": "首投50000元—33天及以上标的",
       "fanlimoney": "400",
@@ -73,7 +78,7 @@
         "jiaxitype": ""
       }
     },
-      {
+    {
       "fanlitype": "0",
       "title": "首投100000元—33天及以上标的",
       "fanlimoney": "800",

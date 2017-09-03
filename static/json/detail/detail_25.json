@@ -1,0 +1,118 @@
+{
+  "platform": {
+    "fanxianurl": "https://m.touna.cn/spread/localtouna/lt01.html?utm_source=caiyugj&utm_medium=2&utm_campaign=1",
+    "shoutoustatus": true,
+    "share": "",
+
+    "title": "投哪网",
+    "pid": "10",
+    "logo": "http://h5.caiyu.in/img/logo_25.png",
+    "grade": "AAA",
+    "tag": [
+      "上市公司系"
+    ],
+    "detectlevel": "正常",
+    "desc": "上市公司大金重工、广发信德战略投资",
+    "ratedesc": "首投综合年化收益率可达17.61%",
+    "specialqa": {},
+    "qa": [true, true, true, true, true, true, true],
+    "description": [],
+    "rule": [true, true, true, true, true, true],
+    "topspecilarule": [],
+    "midspecilarule": [],
+    "grayspecilarule": [],
+    "btmspecilarule": []
+
+  },
+  "tasklist": [{
+      "fanlitype": "0",
+      "title": "首投5000元—3月及以上标的",
+      "fanlimoney": "100",
+      "fanlimoneydesc": "投资收益117.12元，合计收益217.12元",
+      "futoudesc": "",
+      "fanlistat": "",
+      "baserate": "9.5",
+      "fanlirate": "17.61",
+      "fanlipeople": "46",
+      "fanlistart": "15:00:00",
+      "fanliend": "21:00:00",
+      "fanlistatus": true,
+      "jiaxi": {
+        "jiaxititle": "",
+        "jiaxitype": ""
+      }
+    },
+    {
+      "fanlitype": "0",
+      "title": "首投10000元—3月及以上标的",
+      "fanlimoney": "200",
+      "fanlimoneydesc": "投资收益234.25元，合计收益434.25元",
+      "futoudesc": "",
+      "fanlistat": "",
+      "baserate": "9.5",
+      "fanlirate": "17.61",
+      "fanlipeople": "101",
+      "fanlistart": "",
+      "fanliend": "",
+      "fanlistatus": true,
+      "jiaxi": {
+        "jiaxititle": "",
+        "jiaxitype": ""
+      }
+    },
+    {
+      "fanlitype": "0",
+      "title": "首投30000元—3月及以上标的",
+      "fanlimoney": "350",
+      "fanlimoneydesc": "投资收益702.74 元，合计收益1052.74元",
+      "futoudesc": "",
+      "fanlistat": "",
+      "baserate": "9.5",
+      "fanlirate": "14.23",
+      "fanlipeople": "241",
+      "fanlistart": "",
+      "fanliend": "",
+      "fanlistatus": true,
+      "jiaxi": {
+        "jiaxititle": "",
+        "jiaxitype": ""
+      }
+    },
+    {
+      "fanlitype": "0",
+      "title": "首投10000元—6月及以上标的",
+      "fanlimoney": "300",
+      "fanlimoneydesc": "投资收益419.18 元，合计收益719.18元",
+      "futoudesc": "",
+      "fanlistat": "",
+      "baserate": "8.5",
+      "fanlirate": "14.6",
+      "fanlipeople": "126",
+      "fanlistart": "",
+      "fanliend": "",
+      "fanlistatus": true,
+      "jiaxi": {
+        "jiaxititle": "",
+        "jiaxitype": ""
+      }
+    },
+    {
+      "fanlitype": "1",
+      "title": "复投5000元—3月及以上标的",
+      "fanlimoney": "80",
+      "fanlimoneydesc": "投资收益93.7元，合计收益173.7元",
+      "futoudesc": "",
+      "fanlistat": "",
+      "baserate": "7.6",
+      "fanlirate": "14.09",
+      "fanlipeople": "76",
+      "fanlistart": "",
+      "fanliend": "",
+      "fanlistatus": true,
+      "jiaxi": {
+        "jiaxititle": "",
+        "jiaxitype": ""
+      }
+    }
+  ]
+}

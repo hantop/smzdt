@@ -39,10 +39,10 @@
         }
         document.body.appendChild(i)
       }
-      document.setTitle('小众高反平台')
+      document.setTitle('小众高返平台')
       $.ajax({
         type: 'GET',
-        url: '../../static/json/xiaozhong.json',
+        url: '../../static/json/xiaozhong.json?' + Date.now(),
         dataType: 'json',
         success: function (res) {
           _this.data = res
@@ -60,7 +60,7 @@
   }
   
   .list_title p {
-    font-size: 1rem;
+    font-size: 12px;
     color: #9da3af;
   }
   

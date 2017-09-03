@@ -34,7 +34,8 @@
                             <span v-show="topStatus === 'loading'" :class="{ 'rotate': topStatus === 'drop' }">↓</span>
                             <span v-show="topStatus === 'loading'">Loading...</span>
                           </div>-->
-  
+        <div style=" font-size: 12px;margin-top: 13px; margin-bottom: 13px; color: #777; text-align:center; ">参与活动则表示同意 <a href="http://h5.caiyu.in/dashboard/agreement.html">返现协议与免责声明</a></div>
+
     </loadmore>
   </div>
 </template>
@@ -72,7 +73,7 @@
       })
       $.ajax({
         type: 'GET',
-        url: '../../static/json/index.json',
+        url: '../../static/json/index.json?' + Date.now(),
         dataType: 'json',
         success: function (res) {
           _this.data = res
@@ -91,7 +92,7 @@
     top: 55%;
     padding: 2px;
     cursor: pointer;
-    z-index: 99999;
+    z-index: 3;
   }
   
   .nav {

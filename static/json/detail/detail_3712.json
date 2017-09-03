@@ -1,70 +1,39 @@
 {
   "platform": {
-    "fanxianurl": "http://m.htyd50.com/wap/register/activityRegister?csname=cygj",
-    "shoutoustatus":false, 
-    "share":"",
+    "fanxianurl": "http://wap.htyd50.com/user/wapActivityRegister.html?channel=cygj",
+    "shoutoustatus": false,
+    "share": "",
 
     "title": "汇通易贷",
     "pid": "3712",
-    "logo": "http://h5test.caiyu.in/img/logo_3712.png",
-    "grade": "A",
+    "logo": "http://h5.caiyu.in/img/logo_3712.png",
+    "grade": "B",
     "tag": [
-      "民营系"
+      "民企系"
     ],
     "detectlevel": "正常",
-    "desc": "华兴银行资金存管 注册资本5000万",
-    "rate": "37.2%",
-    "specialqa":{
-    },
-    "specilarule":["汇通易贷新版网站（www.htyd50.com）可能存在标的投满的情况，也可以去旧版V3版网页（v3.htyd50.com）中投标。"]
+    "desc": "广东华兴银行资金存管 实缴资本5000万",
+    "ratedesc": "首投综合年化收益率可达26.19%",
+    "specialqa": {},
+    "qa": [true, true, true, true, true, true, true],
+    "description": [],
+    "rule": [true, true, true, true, true, true],
+    "topspecilarule": [],
+    "midspecilarule": [],
+    "grayspecilarule": [],
+    "btmspecilarule": ["汇通易贷新版网站（www.htyd50.com）可能存在标的投满的情况，也可以去旧版V3版网页（v3.htyd50.com）中投标。"]
 
   },
   "tasklist": [{
       "fanlitype": "0",
-      "title": "首投5000元—30天标",
-      "fanlimoney": "120",
-      "fanlimoneydesc": "投资收益:32.88元，合计收益152.88元",
-      "futoudesc": "",
-      "fanlistat": "",
-      "baserate": "8.0",
-      "fanlirate": "37.2",
-      "fanlipeople": "213",
-      "fanlistart": "",
-      "fanliend": "",
-      "fanlistatus": false,
-      "jiaxi": {
-        "jiaxititle": "",
-        "jiaxitype": ""
-      }
-    },
-   {
-      "fanlitype": "0",
-      "title": "首投50000元—30天标",
-      "fanlimoney": "500",
-      "fanlimoneydesc": "投资收益:328.77元，合计收益828.77元",
-      "futoudesc": "",
-      "fanlistat": "",
-      "baserate": "8.0",
-      "fanlirate": "20.2",
-      "fanlipeople": "139",
-      "fanlistart": "",
-      "fanliend": "",
-      "fanlistatus": false,
-      "jiaxi": {
-        "jiaxititle": "",
-        "jiaxitype": ""
-      }
-    },
-  {
-      "fanlitype": "0",
-      "title": "首投10000元—90天标",
-      "fanlimoney": "200",
-      "fanlimoneydesc": "投资收益:295.89元，合计收益495.89元",
+      "title": "首投30000元—90天标",
+      "fanlimoney": "800",
+      "fanlimoneydesc": "投资收益:887.67元，合计收益1687.67元",
       "futoudesc": "",
       "fanlistat": "",
       "baserate": "12.0",
-      "fanlirate": "20.1",
-      "fanlipeople": "105",
+      "fanlirate": "22.81",
+      "fanlipeople": "43",
       "fanlistart": "",
       "fanliend": "",
       "fanlistatus": false,
@@ -73,16 +42,34 @@
         "jiaxitype": ""
       }
     },
-      {
+    {
       "fanlitype": "0",
-      "title": "首投10000元—180天标",
-      "fanlimoney": "300",
-      "fanlimoneydesc": "投资收益:542.47元，合计收益842.47元",
+      "title": "首投50000元—90天标",
+      "fanlimoney": "1500",
+      "fanlimoneydesc": "投资收益:1479.45元，合计收益2979.45元",
       "futoudesc": "",
       "fanlistat": "",
-      "baserate": "11.0",
-      "fanlirate": "17.1",
-      "fanlipeople": "71",
+      "baserate": "12.0",
+      "fanlirate": "24.2",
+      "fanlipeople": "109",
+      "fanlistart": "",
+      "fanliend": "",
+      "fanlistatus": false,
+      "jiaxi": {
+        "jiaxititle": "",
+        "jiaxitype": ""
+      }
+    },
+    {
+      "fanlitype": "0",
+      "title": "首投10000元—90天标",
+      "fanlimoney": "350",
+      "fanlimoneydesc": "投资收益:295.89元，合计收益645.89元",
+      "futoudesc": "",
+      "fanlistat": "",
+      "baserate": "12.0",
+      "fanlirate": "26.2",
+      "fanlipeople": "105",
       "fanlistart": "",
       "fanliend": "",
       "fanlistatus": false,

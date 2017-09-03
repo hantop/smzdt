@@ -8,12 +8,14 @@
           为了追踪您的投资信息进行返现奖励请输入您将用于注册投资的手机号码：
         </p>
         <p v-if="data=='4'" class="text tac">
-          请于60分钟内登记投资手机号并完成投资若未完成投资，超级返名额将顺移给下一位登记用户
+          请于24小时内登记投资手机号<br>并完成投资
         </p>
       </div>
       <p class="yellow tac">*该手机号码仅用于信息追踪</p>
       <input v-model="tel" class="alert_input tac" type="text" name="" id="" placeholder="请输入注册投资的手机号">
       <button @click="dowhat" class="btn_cyan">确定</button>
+      <div style=" font-size: 12px;margin-top: 13px;  color: #777; text-align:center; ">您即将投资的是评级为 <router-link :to="'/riskscore/'+pid">{{score}}</router-link> 的平台</div>
+      <div style=" font-size: 12px;margin-top: 4px;  color: #777; text-align:center; ">参与活动则表示同意 <a href="http://h5.caiyu.in/dashboard/agreement.html">返现协议与免责声明</a></div>
       <a @click="hideself" class="esc"></a>
     </div>
     <div class="mask"></div>
@@ -27,7 +29,7 @@
         tel: ''
       }
     },
-    props: ['data'],
+    props: ['data', 'score', 'pid'],
     computed: {
       name () {
         switch (this.data) {
@@ -57,7 +59,7 @@
     font-size: 12px;
     color: #e8be3f;
     position: absolute;
-    bottom: 129px;
+    bottom: 184px;
     left: 50%;
     -webkit-transform: translate(-50%, 0);
     transform: translate(-50%, 0);
@@ -108,9 +110,9 @@
     top: 0;
     width: 100%;
     height: 100%;
-    opacity: .5;
+    opacity: .7;
     background: #000;
-    z-index: 1;
+    z-index: 5;
   }
   
   .esc {

@@ -1,0 +1,138 @@
+{
+  "platform": {
+    "fanxianurl": "http://t.heyunchou.com/02k626.do",
+    "shoutoustatus": true,
+    "share": "",
+
+    "title": "和云筹",
+    "pid": "182",
+    "logo": "http://h5.caiyu.in/img/logo_182.png",
+    "grade": "B",
+    "tag": [
+      "民企系"
+    ],
+    "detectlevel": "正常",
+    "desc": "廊坊银行资金存管 注册资本1亿",
+    "ratedesc": "首投综合年化收益率可达28.11%",
+    "specialqa": {
+      "可以投资新手标吗？": "平台的新手标的是7天，是不符合财鱼奖励要求的！"
+    },
+    "qa": [true, false, true, true, true, true, true],
+    "description": [],
+    "rule": [true, true, true, true, true, true],
+    "topspecilarule": [],
+    "midspecilarule": [],
+    "grayspecilarule": [],
+    "btmspecilarule": ["［超级返］的标的，只有点击“参与超级返”按钮并成功登记手机号后，投资才能获得超级返奖励。", "＊复投在45天及以上标的，投资10000可以使用100元代金券;投资5000可以使用50元代金券；请注意看代金券使用规则。"]
+
+  },
+  "tasklist": [{
+      "fanlitype": "4",
+      "title": "首投5000元—35天及以上标的",
+      "fanlimoney": "100",
+      "fanlimoneydesc": "投资收益34.76元，合计收益144.76元",
+      "futoudesc": "",
+      "fanlistat": "",
+      "baserate": "7.25",
+      "fanlirate": "30.1",
+      "fanlipeople": "123",
+      "fanlistart": "00:00:00",
+      "fanliend": "23:59:59",
+      "fanlistatus": true,
+      "jiaxi": {
+        "jiaxititle": "+超级返10元",
+        "jiaxitype": ""
+      }
+    },
+    {
+      "fanlitype": "0",
+      "title": "首投8000元—35天及以上标的",
+      "fanlimoney": "150",
+      "fanlimoneydesc": "投资收益55.62元，合计收益205.62元",
+      "futoudesc": "",
+      "fanlistat": "",
+      "baserate": "7.25",
+      "fanlirate": "26.8",
+      "fanlipeople": "91",
+      "fanlistart": "",
+      "fanliend": "",
+      "fanlistatus": true,
+      "jiaxi": {
+        "jiaxititle": "",
+        "jiaxitype": ""
+      }
+    },
+    {
+      "fanlitype": "0",
+      "title": "首投10000元—35天及以上标的",
+      "fanlimoney": "200",
+      "fanlimoneydesc": "投资收益69.52元，合计收益269.52元",
+      "futoudesc": "",
+      "fanlistat": "",
+      "baserate": "7.25",
+      "fanlirate": "28.1",
+      "fanlipeople": "71",
+      "fanlistart": "",
+      "fanliend": "",
+      "fanlistatus": true,
+      "jiaxi": {
+        "jiaxititle": "",
+        "jiaxitype": ""
+      }
+    },
+    {
+      "fanlitype": "0",
+      "title": "首投15000元—35天及以上标的",
+      "fanlimoney": "300",
+      "fanlimoneydesc": "投资收益104.28 元，合计收益404.28元",
+      "futoudesc": "",
+      "fanlistat": "",
+      "baserate": "7.25",
+      "fanlirate": "28.11",
+      "fanlipeople": "74",
+      "fanlistart": "",
+      "fanliend": "",
+      "fanlistatus": true,
+      "jiaxi": {
+        "jiaxititle": "",
+        "jiaxitype": ""
+      }
+    },
+    {
+      "fanlitype": "0",
+      "title": "首投30000元—35天及以上标的",
+      "fanlimoney": "500",
+      "fanlimoneydesc": "投资收益208.56 元，合计收益708.56元",
+      "futoudesc": "",
+      "fanlistat": "",
+      "baserate": "7.25",
+      "fanlirate": "24.6",
+      "fanlipeople": "27",
+      "fanlistart": "",
+      "fanliend": "",
+      "fanlistatus": true,
+      "jiaxi": {
+        "jiaxititle": "",
+        "jiaxitype": ""
+      }
+    },
+    {
+      "fanlitype": "1",
+      "title": "复投5000元—35天及以上标的",
+      "fanlimoney": "50",
+      "fanlimoneydesc": "投资收益34.76元，合计收益84.76元",
+      "futoudesc": "",
+      "fanlistat": "",
+      "baserate": "7.25",
+      "fanlirate": "17.68",
+      "fanlipeople": "17",
+      "fanlistart": "",
+      "fanliend": "",
+      "fanlistatus": true,
+      "jiaxi": {
+        "jiaxititle": "",
+        "jiaxitype": ""
+      }
+    }
+  ]
+}

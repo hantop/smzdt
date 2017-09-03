@@ -3,23 +3,26 @@
   <a v-on:click="promptShow">
     <div class="xshadow" :class="'xshadow'+data.fanlitype">
       <div class="xitem_box" :class="'xitem_box'+data.fanlitype">
-        <h5 class="xh5">{{data.title}}</h5>
-        <div class="xmoney" :class="'xmoney'+data.fanlitype">返现<span class="num spa">{{data.fanlimoney}}</span>元<span v-if="data.fanlitype=='4'" class="item">{{data.jiaxi.jiaxititle}}</span></div>
+        <h5 class="xh5">{{data.title}}
+          <span v-if="data.fanlitype == '4'" class="cjf">超级返</span>
+        </h5>
+        <div v-if="data.fanlitype == '5'" class="xmoney" :class="'xmoney5'">返现<span class="num spa">{{data.fanlimoney}}</span>元<span class="item">{{data.jiaxi.jiaxititle}}</span></div>
+        <div v-else class="xmoney" :class="'xmoney'+data.fanlitype">返现<span class="num spa">{{data.fanlimoney}}</span>元<span v-if="data.fanlitype=='4'" class="item">{{data.jiaxi.jiaxititle}}</span></div>
         <p v-if="data.fanlitype=='1'" style="color: #e64d3f;position: relative;top: -2px;">{{data.futoudesc}}</p>
         <p>{{data.fanlimoneydesc}}</p>
         <div class="xbottom">
-          <b style="position: relative">{{data.baserate|formatMoney(1)}}<span class="xfz9">官网收益率</span></b><span 
-          class="xfz11">%</span><img class="xarrow" src="../assets/img/arrow.png" alt=""><b 
-          style="position: relative">{{data.fanlirate|formatMoney(1)}}<span class="xfz9 ">活动收益率</span></b><span 
-          class="xfz11">%</span>
+          <b style="position: relative">{{data.baserate|formatMoney(1)}}<span class="xfz9">官网收益率</span></b><span class="xfz11">%</span><img class="xarrow" src="../assets/img/arrow.png" alt=""><b style="position: relative">{{data.fanlirate|formatMoney(1)}}<span class="xfz9 ">活动收益率</span></b><span class="xfz11">%</span>
         </div>
         <div class="xbottom_right">
-          <div v-if="data.fanlitype!='4'">{{fanxian}}</div>
-          <div v-if="data.fanlitype=='4'&&qiang">参与超级返</div>
-          <div v-if="data.fanlitype=='4'&&!qiang">{{this.h}}:{{this.m}}:{{this.s}}</div>
-          <p v-if="data.fanlitype!='4'"> (已有{{data.fanlipeople}}人选择)</p>
-          <p v-if="data.fanlitype=='4'&&qiang">(先到先得)</p>
-          <p v-if="data.fanlitype=='4'&&!qiang">即刻开始</p>
+
+          <div v-if="data.fanlitype=='5'">{{open?'去复投':'10:00开抢'}}</div>
+          <div v-else-if="data.fanlitype!='4'">{{fanxian}}</div>
+          <div v-else-if="data.fanlitype=='4'&&qiang">{{chaojifan}}</div>
+          <!--<div v-if="data.fanlitype=='4'&&!qiang">{{this.h}}:{{this.m}}:{{this.s}}</div>-->
+          <p v-if="data.fanlitype!='4'&&open">(已有{{data.fanlipeople}}人选择)</p>
+          <p v-else-if="data.fanlitype!='4'&&!open">先到先得</p>
+          <p v-else-if="data.fanlitype=='4'&&qiang">{{sutext}}</p>
+          <p v-else-if="data.fanlitype=='4'&&!qiang">先到先得</p>
         </div>
       </div>
     </div>
@@ -36,41 +39,47 @@
         clock: null,
         s: null,
         m: null,
-        h: null
+        h: null,
+        time2: null
         // status: this.status
       }
     },
-    props: ['props', 's', 'f', 'su'],
+    props: ['props', 'se', 'fi', 'su'],
     created () {
       const _this = this
       if (this.data.fanlitype === '4') {
-        this.timeout = parseInt((Date.parse(this.data.fanlistart) - Date.now()) / 1000)
-        if (this.timeout > 60) {
-          this.s = this.timeout % 60
-          this.m = parseInt(this.timeout / 60)
-          if (this.m > 60) {
-            this.h = parseInt(this.m / 60)
-            console.log(this.h)
-            this.m = this.m % 60
-            if (this.h < 10) this.h = '0' + this.h
-          } else {
-            this.h = '00'
-            if (this.m < 10) this.m = '0' + this.m
-          }
+        let startime = Date.parse(new Date().getFullYear() + '/' + (new Date().getMonth() + 1) + '/' + new Date().getDate() + ' ' + this.data.fanlistart)
+        let endtime = Date.parse(new Date().getFullYear() + '/' + (new Date().getMonth() + 1) + '/' + new Date().getDate() + ' ' + this.data.fanliend)
+        let nextstarttime = Date.parse(new Date().getFullYear() + '/' + (new Date().getMonth() + 1) + '/' + (new Date().getDate() + 1) + ' ' + this.data.fanlistart)
+        let now = Date.now()
+        if (now < startime) {
+          this.timeout = parseInt((startime - now) / 1000)
+          this.settime(this.timeout)
+        } else if (now > endtime) {
+          this.timeout = parseInt((nextstarttime - now) / 1000)
+          this.settime(this.timeout)
         } else {
-          this.s = this.timeout
-          if (this.s < 10) this.s = '0' + this.s
-          this.h = '00'
-          this.m = '00'
+          this.qiang = true
+          this.time2 = parseInt((endtime - now) / 1000)
+          _this.clock2 = setInterval(function () {
+            _this.time2--
+          }, 1000)
         }
-        _this.clock = setInterval(function () {
-          _this.timeout--
-        }, 1000)
       }
     },
     watch: {
+      time2 (val) {
+        if (val <= 1) {
+          clearInterval(this.clock)
+          let nextstarttime = Date.parse(new Date().getFullYear() + '/' + (new Date().getMonth() + 1) + '/' + (new Date().getDate() + 1) + ' ' + this.data.fanlistart)
+          let now = Date.now()
+          this.timeout = parseInt((nextstarttime - now) / 1000)
+          this.settime(this.timeout)
+          this.qiang = false
+        }
+      },
       timeout (val) {
-        if (val <= 0) {
+        if (val <= 1) {
           clearInterval(this.clock)
           this.qiang = true
         }
@@ -87,21 +96,78 @@
           if (this.m < 10) this.m = '0' + this.m
         }
         if (this.s < 10) this.s = '0' + this.s
+      },
+      fir (val) {
+        console.log(this.fir)
       }
     },
     methods: {
-      promptShow (e) {
-        if (this.qiang) {
-          this.$emit('childClick', '5')
+      settime (timeout) {
+        const _this = this
+        if (this.timeout > 60) {
+          this.s = this.timeout % 60
+          if (this.s < 10) this.s = '0' + this.s
+          this.m = parseInt(this.timeout / 60)
+          if (this.m > 60) {
+            this.h = parseInt(this.m / 60)
+            this.m = this.m % 60
+            if (this.m < 10) this.m = '0' + this.m
+            if (this.h < 10) this.h = '0' + this.h
+          } else {
+            this.h = '00'
+            if (this.m < 10) this.m = '0' + this.m
+          }
+        } else {
+          this.s = this.timeout
+          if (this.s < 10) this.s = '0' + this.s
+          this.h = '00'
+          this.m = '00'
         }
-        this.$emit('childClick', this.data.fanlitype)
+        _this.clock = setInterval(function () {
+          _this.timeout--
+        }, 1000)
+      },
+      promptShow (e) {
+        console.log(this.fir)
+        if (this.data.fanlitype === '4') {
+          if (this.qiang) {
+            this.$emit('childClick', '4')
+          } else {
+            this.$emit('childClick', '44')
+          }
+        } else {
+          this.$emit('childClick', this.data.fanlitype)
+        }
       }
     },
     computed: {
       fanxian () {
-        return this.data.fanlistatus ? '参与返现' : '参与返现'
+        if (this.data.fanlitype === '0') {
+          if (this.fi) {
+            return this.open ? '去返现' : '10:00开抢'
+          }
+          return '已抢光'
+        } else if (this.data.fanlitype === '1') {
+          if (this.se) {
+            return this.open ? '去复投' : '10:00开抢'
+          }
+          return '已抢光'
+        }
+      },
+      chaojifan () {
+        if (this.su) {
+          return this.open ? '参与超级返' : '10:00开抢'
+        }
+        return '已秒光'
+      },
+      sutext () {
+        return this.su ? '先到先得' : '敬请期待下期'
+      },
+      open () {
+        let ten = Date.parse(new Date().getFullYear() + '/' + (new Date().getMonth() + 1) + '/' + new Date().getDate() + ' 00:00:00')
+        let date = Date.now()
+        return (date > ten)
       }
-
     },
     filters: {
       formatMoney
@@ -109,6 +175,20 @@
   }
 </script>
 <style scoped>
+  .cjf {
+    font-size: 10px;
+    font-weight: 500;
+    color: #ffffff;
+    border-radius: 2px;
+    background-color: #d85345;
+    height: 4vw;
+    display: inline-block;
+    line-height: 4vw;
+    padding: 0 1vw;
+    font-size: 2.5vw;
+    transform: skewX(-14deg) translate(1vw, -0.5vw);
+  }
+  
   .xitem_box1 {
     background: url('../assets/new_img/yellow_bg.png');
     background-size: contain;
@@ -117,6 +197,7 @@
     margin: 0 auto;
     position: relative;
   }
+  
   .xshadow1 {
     background: url('../assets/new_img/yellow_shadow.png')no-repeat center bottom;
     background-size: contain;
@@ -155,6 +236,7 @@
     text-align: center;
     line-height: 16vw;
   }
+  
   .xshadow4 {
     margin: 0 auto;
     padding-bottom: 20px;
@@ -175,13 +257,14 @@
     color: #ea6e24;
     text-align: center;
     line-height: 16vw;
-    transform: translateX(-16vw);
   }
+  
   .xmoney4 span.spa {
     font-size: inherit;
     vertical-align: inherit;
   }
-  .xitem_box4 .xbottom_right{
+  
+  .xitem_box4 .xbottom_right {
     position: absolute;
     font-weight: 500;
     text-align: center;
@@ -191,13 +274,13 @@
     line-height: normal;
     width: 24vw;
   }
-  .xmoney4 .item{
+  
+.xmoney4 .item {
     font-size: 5.5vw;
-    transform: translateY(2px);
-    position: absolute;
-    right: -11vw;
+    position: relative;
     top: 2.5vw;
-  }
+}
+  
   .xitem_box4 .xbottom_right div {
     height: 5.2vw;
     font-size: 4vw;
@@ -212,7 +295,8 @@
     font-weight: 500;
     color: #ea6e24;
   }
-  .xitem_box4 .xbottom{
+  
+  .xitem_box4 .xbottom {
     position: absolute;
     bottom: 1.6vw;
     height: 14vw;
@@ -222,6 +306,76 @@
     left: 8vw;
     line-height: 14vw;
   }
+  .xshadow5 {
+    margin: 0 auto;
+    padding-bottom: 20px;
+  }
+  
+  .xitem_box5 {
+    background: url(../assets/new_img/coupon_f_bg.png);
+    width: 92vw;
+    height: 43.6vw;
+    background-size: contain;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  .xmoney5 {
+    font-size: 9vw;
+    font-weight: 600;
+    color: #ea6e24;
+    text-align: center;
+    line-height: 16vw;
+  }
+  
+  .xmoney5 span.spa {
+    font-size: inherit;
+    vertical-align: inherit;
+  }
+  
+  .xitem_box5 .xbottom_right {
+    position: absolute;
+    font-weight: 500;
+    text-align: center;
+    color: #ffffff;
+    right: 6.5vw;
+    top: 31.5vw;
+    line-height: normal;
+    width: 24vw;
+  }
+  
+  .xmoney5 .item {
+    font-size: 4.5vw;
+    position: relative;
+    top: 1.5vw;
+  }
+  
+  .xitem_box5 .xbottom_right div {
+    height: 5.2vw;
+    font-size: 4vw;
+    font-weight: 600;
+    color: #ea6e24;
+    width: 24vw;
+  }
+  
+  .xitem_box5 .xbottom_right p {
+    height: 3.7vw;
+    font-size: 2.7vw;
+    font-weight: 500;
+    color: #ea6e24;
+  }
+  
+  .xitem_box5 .xbottom {
+    position: absolute;
+    bottom: 1.6vw;
+    height: 14vw;
+    font-size: 5.5vw;
+    font-weight: 400;
+    color: #ffffff;
+    left: 8vw;
+    line-height: 14vw;
+  }
+  
   .xmoney span {
     font-size: 16vw;
     vertical-align: bottom;

@@ -1,43 +1,48 @@
 {
   "platform": {
     "fanxianurl": "https://www.qbm360.com/apiurl/activity/2017/reg/reg.html?fromType=jizhang01",
-    "shoutoustatus":true, 
-    "share":"",
+    "shoutoustatus": true,
+    "share": "",
 
     "title": "钱保姆",
     "pid": "271",
-    "logo": "http://h5test.caiyu.in/img/logo_271.png",
+    "logo": "http://h5.caiyu.in/img/logo_271.png",
     "grade": "AA",
     "tag": [
       "国资系"
     ],
     "detectlevel": "正常",
     "desc": "北京银行资金存管，国资企业1亿元战略投资",
-    "rate": "52.58%",
-    "specialqa":{
-    },
-    "specilarule":["［复投规则］只有之前成功通过财鱼管家参加过钱保姆平台首投的用户，才能参加复投，需要点击'去复投'按钮参加复投登记，登记成功之后需要在24小时之内进行投资。每天名额有限，满额即关闭活动入口。可以使用平台的红包和加息券，复投奖励每个账号只能领取一次！"]
+    "ratedesc": "首投综合年化收益率可达34.30%",
+    "specialqa": {},
+    "qa": [true, true, true, true, true, true, true],
+    "description": [],
+    "rule": [true, true, true, true, true, true],
+    "topspecilarule": ["如果投资10万-100万的大额标，会有450元－5000元红包。如果您希望投资此类标的，请单独加客服 QQ1443193515 了解详细投资方式。"],
+    "midspecilarule": [],
+    "grayspecilarule": [],
+    "btmspecilarule": ["［超级返］的标的，只有点击“参与超级返”按钮并成功登记手机号后，投资才能获得超级返奖励。", "［复投规则］只有之前成功通过财鱼管家参加过钱保姆平台首投的用户，才能参加复投，需要点击'去复投'按钮参加复投登记，登记成功之后进行投资。每天名额有限，满额即关闭活动入口。可以使用平台的红包和加息券，复投奖励每个账号只能领取一次！平台额外奖励的20元红包券在首投后自动加入账户，可在复投时直接使用"]
 
   },
   "tasklist": [{
-      "fanlitype": "0",
-      "title": "首投2000元—30天及以上新手标",
-      "fanlimoney": "70",
-      "fanlimoneydesc": "投资收益:16.44元，合计收益86.44元",
+      "fanlitype": "4",
+      "title": "首投5000元—90天及以上新手标",
+      "fanlimoney": "150",
+      "fanlimoneydesc": "投资收益:147.95元，合计收益337.95元",
       "futoudesc": "",
       "fanlistat": "",
-      "baserate": "10.0",
-      "fanlirate": "52.6",
-      "fanlipeople": "189",
-      "fanlistart": "",
-      "fanliend": "",
+      "baserate": "12.0",
+      "fanlirate": "27.4",
+      "fanlipeople": "105",
+      "fanlistart": "00:00:00",
+      "fanliend": "23:59:59",
       "fanlistatus": true,
       "jiaxi": {
-        "jiaxititle": "",
+        "jiaxititle": "+超级返40元",
         "jiaxitype": ""
       }
     },
-   {
+    {
       "fanlitype": "0",
       "title": "首投5000元—30天及以上新手标",
       "fanlimoney": "100",
@@ -55,34 +60,52 @@
         "jiaxitype": ""
       }
     },
-  {
-      "fanlitype": "4",
-      "title": "首投5000元—90天及以上新手标",
-      "fanlimoney": "150",
-      "fanlimoneydesc": "投资收益:147.95元，合计收益297.95元",
+    {
+      "fanlitype": "0",
+      "title": "首投10000元—30天及以上新手标",
+      "fanlimoney": "200",
+      "fanlimoneydesc": "投资收益:82.19元，合计收益282.19元",
       "futoudesc": "",
       "fanlistat": "",
-      "baserate": "12.0",
-      "fanlirate": "24.2",
-      "fanlipeople": "105",
-      "fanlistart": "2017/08/08 12:00:00",
-      "fanliend": "2017/09/06 15:15:00",
+      "baserate": "10.0",
+      "fanlirate": "34.3",
+      "fanlipeople": "123",
+      "fanlistart": "",
+      "fanliend": "",
       "fanlistatus": true,
       "jiaxi": {
-        "jiaxititle": "+超级返40元",
+        "jiaxititle": "",
         "jiaxitype": ""
       }
     },
-      {
+    {
       "fanlitype": "0",
-      "title": "首投8000元—90天及以上新手标",
-      "fanlimoney": "200",
-      "fanlimoneydesc": "投资收益:236.71元，合计收益436.71元",
+      "title": "首投20000元—30天及以上新手标",
+      "fanlimoney": "350",
+      "fanlimoneydesc": "投资收益:164.38元，合计收益514.38元",
+      "futoudesc": "",
+      "fanlistat": "",
+      "baserate": "10.0",
+      "fanlirate": "31.29",
+      "fanlipeople": "123",
+      "fanlistart": "",
+      "fanliend": "",
+      "fanlistatus": true,
+      "jiaxi": {
+        "jiaxititle": "",
+        "jiaxitype": ""
+      }
+    },
+    {
+      "fanlitype": "0",
+      "title": "首投10000元—90天及以上新手标",
+      "fanlimoney": "250",
+      "fanlimoneydesc": "投资收益:295.89元，合计收益545.89元",
       "futoudesc": "",
       "fanlistat": "",
       "baserate": "12.0",
       "fanlirate": "22.1",
-      "fanlipeople": "23",
+      "fanlipeople": "105",
       "fanlistart": "",
       "fanliend": "",
       "fanlistatus": true,
@@ -91,21 +114,22 @@
         "jiaxitype": ""
       }
     },
-      {
-      "fanlitype": "1",
-      "title": "复投5000元—90天及以上标的",
-      "fanlimoney": "100",
-      "fanlimoneydesc": "投资收益:117.12元，合计收益217.12元",
-      "futoudesc": "复投前请仔细查阅复投规则",
+
+    {
+      "fanlitype": "5",
+      "title": "复投5000元—网宝强24天及以上标的",
+      "fanlimoney": "50",
+      "fanlimoneydesc": "投资收益:31.23元，合计收益101.23元",
+      "futoudesc": "该复投活动只能参加一次",
       "fanlistat": "",
       "baserate": "9.5",
-      "fanlirate": "17.6",
-      "fanlipeople": "77",
+      "fanlirate": "30.8",
+      "fanlipeople": "97",
       "fanlistart": "",
       "fanliend": "",
       "fanlistatus": true,
       "jiaxi": {
-        "jiaxititle": "",
+        "jiaxititle": "+平台额外奖励20元券",
         "jiaxitype": ""
       }
     }

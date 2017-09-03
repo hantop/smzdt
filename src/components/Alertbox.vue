@@ -2,7 +2,7 @@
   <div>
     <div class="alert">
       <h5 class="title tac">返现进度</h5>
-      <p class="title_message tac">{{obj.pname}} {{obj.source == '1'?'复投':'首投'}}</p>
+      <p class="title_message tac">{{obj.pnamecn}} {{obj.source == '1'?'复投':'首投'}}</p>
       <div class="message">
         <div class="message_box done">
           <h6>已登记，正前往投资</h6>
@@ -14,7 +14,7 @@
         <div v-if="obj.status=='0'" class="message_box">
           <h6>等待平台确认</h6>
           <p>
-            一般0-7个工作人会确认
+            一般0-7个工作日会确认
           </p>
         </div>
         <div v-if="obj.status=='1'" class="message_box done">
@@ -136,9 +136,9 @@
     top: 0;
     width: 100%;
     height: 100%;
-    opacity: .5;
+    opacity: .7;
     background: #000;
-    z-index: 1;
+    z-index: 5;
   }
   
   .esc {

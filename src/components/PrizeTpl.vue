@@ -33,7 +33,7 @@
   
       <div class="title">
         最新返现进度
-        <p class="gray">规定时间未返现，将获得额外5元超时补贴</p>
+        <p class="gray">8月8日后的投资，如果规定时间内未返现，请在活动群中联系客服登记。登记后2个工作日内未及时发放，将获得额外5元超时补贴。</p>
   
       </div>
   
@@ -59,8 +59,23 @@
 <script>
   import Alertbox from './Alertbox'
   // import { toUrlQuery } from '../assets/js/tool'
-  import { Indicator } from 'mint-ui'
+  import { Indicator, Toast } from 'mint-ui'
   import $ from 'jquery'
+  function statEvent (active, type) {
+    $.ajax({
+      type: 'POST',
+      url: '/ajax.php',
+      dataType: 'json',
+      data: {
+        func: 'submitAccessStat',
+        data: {
+          'active': active,
+          'type': type
+        }
+      }
+    })
+  }
+  statEvent('新什么值得投', '返现进度页')
   export default {
     data () {
       return {
@@ -138,9 +153,15 @@
         dataType: 'json',
         success: function (res) {
           if (res.status === 0) {
-            Indicator.close()
             _this.data = res.data
+            Indicator.close()
           } else {
+            Indicator.close()
+            Toast({
+              message: '加载失败',
+              position: 'middle',
+              duration: 1000
+            })
           }
         }
       })
@@ -162,23 +183,27 @@
       //   })
       $.ajax({
         type: 'GET',
-        url: '../../static/json/prize.json',
+        url: '../../static/json/prize.json?' + Date.now(),
         dataType: 'json',
         success: function (res) {
           _this.list = res
-          // Indicator.close()
         }
       })
+      setTimeout(function () {
+        Indicator.close()
+      }, 1500)
     }
   }
 </script>
 
 <style scoped>
-.gray {
+  .gray {
     color: #9da3af;
     border-bottom: 1px solid rgb(220, 220, 220);
     font-size: 10px;
-}
+    padding-bottom: 8px;
+  }
+  
   .pj_banner {
     padding: 15px 10px 0;
     background-color: #fff;
@@ -196,7 +221,7 @@
   }
   
   .big_cell>.title {
-    padding: 12px 0 10px;
+    padding: 12px 0 0px;
     position: relative;
     font-weight: bold;
     font-size: 15px;
@@ -210,6 +235,7 @@
   .big_cell>.title p {
     font-weight: normal;
     font-size: 12px;
+    margin-bottom: 12px;
   }
   
   .big_cell .load_more {

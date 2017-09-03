@@ -1,0 +1,138 @@
+{
+  "platform": {
+    "fanxianurl": "https://m.minaiw.com/wap/index.php?ctl=new_registerw&pt=146",
+    "shoutoustatus": true,
+    "share": "",
+
+    "title": "民爱贷",
+    "pid": "6568",
+    "logo": "http://h5.caiyu.in/img/logo_6568.png",
+    "grade": "未评级",
+    "tag": [
+      "民企系"
+    ],
+    "detectlevel": "正常",
+    "desc": "上海银行资金存管 注册资本5000万",
+    "ratedesc": "首投综合年化收益率可达40.44%",
+    "specialqa": {
+      "我可以投28天的标吗": "不行的 28天新手标是不算的"
+    },
+    "qa": [true, false, true, true, true, true, true],
+    "description": [],
+    "rule": [true, true, true, true, true, true],
+    "topspecilarule": [],
+    "midspecilarule": [],
+    "grayspecilarule": [],
+    "btmspecilarule": ["[特别注意] 28天新手标是不算的"]
+
+  },
+  "tasklist": [{
+      "fanlitype": "0",
+      "title": "首投3000元—1月标及以上标的",
+      "fanlimoney": "80",
+      "fanlimoneydesc": "投资收益19.73 元，合计收益99.73 元",
+      "futoudesc": "",
+      "fanlistat": "",
+      "baserate": "8.0",
+      "fanlirate": "40.4",
+      "fanlipeople": "164",
+      "fanlistart": "",
+      "fanliend": "",
+      "fanlistatus": true,
+      "jiaxi": {
+        "jiaxititle": "",
+        "jiaxitype": ""
+      }
+    },
+    {
+      "fanlitype": "0",
+      "title": "首投5000元—1月标及以上标的",
+      "fanlimoney": "120",
+      "fanlimoneydesc": "投资收益32.88 元，合计收益152.88元",
+      "futoudesc": "",
+      "fanlistat": "",
+      "baserate": "8.0",
+      "fanlirate": "37.2",
+      "fanlipeople": "41",
+      "fanlistart": "",
+      "fanliend": "",
+      "fanlistatus": true,
+      "jiaxi": {
+        "jiaxititle": "",
+        "jiaxitype": ""
+      }
+    },
+    {
+      "fanlitype": "0",
+      "title": "首投10000元—1月标及以上标的",
+      "fanlimoney": "200",
+      "fanlimoneydesc": "投资收益65.75元，合计收益265.75元",
+      "futoudesc": "",
+      "fanlistat": "",
+      "baserate": "8.0",
+      "fanlirate": "32.3",
+      "fanlipeople": "82",
+      "fanlistart": "",
+      "fanliend": "",
+      "fanlistatus": true,
+      "jiaxi": {
+        "jiaxititle": "",
+        "jiaxitype": ""
+      }
+    },
+    {
+      "fanlitype": "0",
+      "title": "首投20000元—1月标及以上标的",
+      "fanlimoney": "300",
+      "fanlimoneydesc": "投资收益131.51元，合计收益431.51 元",
+      "futoudesc": "",
+      "fanlistat": "",
+      "baserate": "8.0",
+      "fanlirate": "26.2",
+      "fanlipeople": "23",
+      "fanlistart": "",
+      "fanliend": "",
+      "fanlistatus": true,
+      "jiaxi": {
+        "jiaxititle": "",
+        "jiaxitype": ""
+      }
+    },
+    {
+      "fanlitype": "1",
+      "title": "复投5000元——1月标及以上标的",
+      "fanlimoney": "50",
+      "fanlimoneydesc": "投资收益32.88 元，合计收益165.75 元",
+      "futoudesc": "",
+      "fanlistat": "",
+      "baserate": "8.0",
+      "fanlirate": "20.1",
+      "fanlipeople": "63",
+      "fanlistart": "",
+      "fanliend": "",
+      "fanlistatus": true,
+      "jiaxi": {
+        "jiaxititle": "",
+        "jiaxitype": ""
+      }
+    },
+    {
+      "fanlitype": "1",
+      "title": "复投10000元——1月标及以上标的",
+      "fanlimoney": "100",
+      "fanlimoneydesc": "投资收益65.75元，合计收益165.75 元",
+      "futoudesc": "",
+      "fanlistat": "",
+      "baserate": "8.0",
+      "fanlirate": "20.1",
+      "fanlipeople": "83",
+      "fanlistart": "",
+      "fanliend": "",
+      "fanlistatus": true,
+      "jiaxi": {
+        "jiaxititle": "",
+        "jiaxitype": ""
+      }
+    }
+  ]
+}

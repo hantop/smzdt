@@ -1,7 +1,7 @@
 <template>
   <div>
-    <img src="http://h5test.caiyu.in/dashboard/img/invite_bg.jpg" alt="">
-    <img class="btn" src="http://h5test.caiyu.in/dashboard/img/invite_btn.png" alt="">
+    <img src="http://h5.caiyu.in/dashboard/img/invite_bg.jpg" alt="">
+    <img class="btn" src="http://h5.caiyu.in/dashboard/img/invite_btn.png" alt="">
   
     <router-link class="link" to="invite-rule">详细规则</router-link>
     <table cellspacing="0" cellpadding="0">

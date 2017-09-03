@@ -1,22 +1,27 @@
 {
   "platform": {
     "fanxianurl": "https://wx.hyjf.com/index.php?s=/Weixin/Activites/traffic/page_id/2167.html",
-    "shoutoustatus":false, 
-    "share":"",
+    "shoutoustatus": false,
+    "share": "",
 
     "title": "汇盈金服",
     "pid": "6113",
-    "logo": "http://h5test.caiyu.in/img/logo_6113.png",
+    "logo": "http://h5.caiyu.in/img/logo_6113.png",
     "grade": "A",
     "tag": [
       "民营系"
     ],
     "detectlevel": "正常",
     "desc": "江西银行存管 美国OTC市场上市",
-    "rate": "46.5%",
-    "specialqa":{
-    },
-    "specilarule":[]
+    "ratedesc": "首投综合年化收益率可达46.5%",
+    "specialqa": {},
+    "qa": [true, true, true, true, true, true, true],
+    "description": [],
+    "rule": [true, true, true, true, true, true],
+    "topspecilarule": [],
+    "midspecilarule": [],
+    "grayspecilarule": [],
+    "btmspecilarule": []
 
   },
   "tasklist": [{
@@ -31,13 +36,13 @@
       "fanlipeople": "158",
       "fanlistart": "",
       "fanliend": "",
-      "fanlistatus":false,
+      "fanlistatus": false,
       "jiaxi": {
         "jiaxititle": "",
         "jiaxitype": ""
       }
     },
-   {
+    {
       "fanlitype": "0",
       "title": "首投5000元—30天及以上标的",
       "fanlimoney": "100",
@@ -49,13 +54,13 @@
       "fanlipeople": "81",
       "fanlistart": "",
       "fanliend": "",
-      "fanlistatus":false,
+      "fanlistatus": false,
       "jiaxi": {
         "jiaxititle": "",
         "jiaxitype": ""
       }
     },
-  {
+    {
       "fanlitype": "0",
       "title": "首投3000元—90天及以上标的",
       "fanlimoney": "100",
@@ -73,7 +78,7 @@
         "jiaxitype": ""
       }
     },
-      {
+    {
       "fanlitype": "0",
       "title": "首投10000元—90天及以上标的",
       "fanlimoney": "300",

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html style="font-size: 2.6666667vw">
+
+<head>
+  <meta charset="utf-8">
+  <title>什么值得投</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="format-detection" content="telephone=no">
+  <meta content="email=no" name="format-detection">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+  <link rel="stylesheet" href="/static/css/base.css">
+  <style>
+    a {
+      border-radius: 3px;
+      height: 44px;
+      font-size: 16px;
+      text-align: center;
+      color: #ffffff;
+      margin: 0 auto;
+      width: 100%;
+      display: block;
+      cursor: pointer;
+    }
+
+    body {
+      background-color: #ff4b4d;
+      color: #374259;
+      padding-bottom: 50px;
+      height: initial;
+    }
+
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+
+    .img1 {
+      width: 100%;
+    }
+
+    .mid {
+      padding: 20px;
+    }
+
+    .box {
+      background-color: rgba(0, 0, 0, .5);
+      margin-top: 20px;
+      padding-bottom: 25px;
+    }
+
+    .fix {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      z-index: 99;
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      border-radius: 0;
+      line-height: 44px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .title {
+      padding: 12px 0;
+    }
+
+  </style>
+</head>
+
+<body>
+  <img class="img1" src="/static/img/huodong_bg.jpg" alt="">
+  <div class="mid tac">
+    <div class="box">
+      <img class="title" style="width: 45%" src="/static/img/huodong_t_1.png" alt="">
+      <img style="width: 92%" src="/static/img/huodong_table.png" alt="">
+    </div>
+    <div class="box">
+      <img class="title" style="width: 37%" src="/static/img/huodong_t_2.png" alt="">
+      <img style="width: 65%" src="/static/img/huodong_logo.png" alt="">
+    </div>
+  </div>
+  <a href="javascript:closea()" style="background-color: #fec238; color: #792f0b" class="btn_blue">我要超级返</a>
+</body>
+
+</html>
+<script>
+  function closea() {
+    var userAgent = navigator.userAgent;
+    if (userAgent.indexOf("Firefox") != -1 || userAgent.indexOf("Chrome") != -1) {
+      window.location.href = "about:blank";
+    } else if (userAgent.indexOf('Android') > -1 || userAgent.indexOf('Linux') > -1) {
+      window.opener = null;
+      window.open('about:blank', '_self', '').close();
+    } else {
+      window.opener = null;
+      window.open("about:blank", "_self");
+      window.close();
+    }
+  }
+
+</script>

@@ -1,43 +1,152 @@
 {
-  "totalmoney": "3827710.00",
+  "totalmoney": "5000050.00",
 
   "platforms": {
     "today": {
       "title": "今日推荐",
       "data": [{
-          "pid": "4",
-          "logo": "http://h5test.caiyu.in/img/logo_yrcf.png",
-          "title": "宜人财富",
-          "grade": "AAA",
-          "desc": "国内首家p2p上市公司 p2p行业领军平台",
-          "rate": "40.00",
+          "pid": "271",
+          "logo": "http://h5.caiyu.in/img/logo_qbm.png",
+          "title": "钱保姆",
+          "grade": "AA",
+          "desc": "北京银行资金存管，国资企业1亿元战略投资",
+          "rate": "34.30",
+          "money": "100~350",
+          "isfutou": false,
+          "fanxiantype": "2",
+          "fanxianbottom": "",
+          "fanxiantypetitle": ""
+        },
+        {
+          "pid": "6056",
+          "logo": "http://h5.caiyu.in/img/logo_trj.png",
+          "title": "投融家",
+          "grade": "AA",
+          "desc": "浙商银行资金存管 注册资本5000万元",
+          "rate": "37.40",
+          "money": "120~450",
+          "isfutou": false,
+          "fanxiantype": "2",
+          "fanxianbottom": "",
+          "fanxiantypetitle": ""
+        },
+        {
+          "pid": "5932",
+          "logo": "http://h5test.caiyu.in/dashboard/img/logo_zyxr.png",
+          "title": "中业兴融",
+          "grade": "A",
+          "desc": "上海华瑞银行存管 注册资本5000万元",
+          "rate": "28.00",
+          "money": "150~1400",
+          "isfutou": false,
+          "fanxiantype": "1",
+          "fanxianbottom": "",
+          "fanxiantypetitle": ""
+        },
+
+
+        {
+          "pid": "7234",
+          "logo": "http://h5.caiyu.in/img/logo_rraj.png",
+          "title": "人人爱家",
+          "grade": "AA",
+          "desc": "恒丰银行存管 中欧国际集团1亿元B轮融资",
+          "rate": "36.30",
           "money": "50~800",
           "isfutou": false,
           "fanxiantype": "0",
           "fanxianbottom": "",
           "fanxiantypetitle": ""
         },
+
         {
-          "pid": "100",
-          "logo": "http://h5test.caiyu.in/img/logo_lcf.png",
-          "title": "理财范",
+          "pid": "6476",
+          "logo": "http://h5.caiyu.in/img/logo_6476.png",
+          "title": "沙小僧",
           "grade": "AA",
-          "desc": "徽商银行资金存管 英达钢构领投3.3亿元C轮投资",
-          "rate": "17.40",
-          "money": "90~800",
+          "desc": "新网银行资金存管 大唐金控5000万元A轮融资",
+          "rate": "18.90",
+          "money": "130~1100",
+          "isfutou": false,
+          "fanxiantype": "2",
+          "fanxianbottom": "",
+          "fanxiantypetitle": ""
+        },
+        {
+          "pid": "5241",
+          "logo": "http://h5.caiyu.in/dashboard/img/logo_xglcd.png",
+          "title": "信广立诚贷",
+          "grade": "A",
+          "desc": "徽商银行资金存管 注册资本5000万",
+          "rate": "17.11",
+          "money": "300~700",
+          "isfutou": false,
+          "fanxiantype": "1",
+          "fanxianbottom": "",
+          "fanxiantypetitle": ""
+        },
+        {
+          "pid": "3203",
+          "logo": "http://h5.caiyu.in/img/logo_3203.png",
+          "title": "百金贷",
+          "grade": "A",
+          "desc": "贵州银行资金存管系统已上线 注册资本1亿",
+          "rate": "24.87",
+          "money": "180~1800",
           "isfutou": false,
           "fanxiantype": "0",
           "fanxianbottom": "",
           "fanxiantypetitle": ""
         },
         {
-          "pid": "271",
-          "logo": "http://h5test.caiyu.in/img/logo_qbm.png",
-          "title": "钱保姆",
-          "grade": "AA",
-          "desc": "北京银行资金存管，国资企业1亿元战略投资",
-          "rate": "52.60",
-          "money": "70~200",
+          "pid": "6475",
+          "logo": "http://h5.caiyu.in/img/logo_6475.png",
+          "title": "中再融",
+          "grade": "B",
+          "desc": "贵州银行存管 注册资本1亿元A轮融资",
+          "rate": "27.21",
+          "money": "80~400",
+          "isfutou": false,
+          "fanxiantype": "1",
+          "fanxianbottom": "",
+          "fanxiantypetitle": ""
+        },
+        {
+          "pid": "3712",
+          "logo": "http://h5.caiyu.in/img/logo_htyd.png",
+          "title": "汇通易贷",
+          "grade": "B",
+          "desc": "华兴银行资金存管 注册资本5000万元",
+          "rate": "26.19",
+          "money": "350~1500",
+          "isfutou": false,
+          "fanxiantype": "0",
+          "fanxianbottom": "",
+          "fanxiantypetitle": ""
+        },
+        {
+          "pid": "7242",
+          "logo": "http://h5.caiyu.in/img/logo_7242.png",
+          "title": "宏亚金融",
+          "grade": "C",
+          "desc": "注册资本8000万元",
+          "rate": "36.87",
+          "money": "150~400",
+          "isfutou": true,
+          "fanxiantype": "0",
+          "fanxianbottom": "",
+          "fanxiantypetitle": ""
+        },
+
+
+        {
+          "pid": "4",
+          "logo": "http://h5.caiyu.in/img/logo_yrcf.png",
+          "title": "宜人财富",
+          "grade": "AAA",
+          "desc": "国内首家p2p上市公司 p2p行业领军平台",
+          "rate": "21.77",
+          "money": "100~800",
           "isfutou": false,
           "fanxiantype": "0",
           "fanxianbottom": "",
@@ -45,20 +154,64 @@
         },
         {
           "pid": "10",
-          "logo": "http://h5test.caiyu.in/img/logo_ppmoney.png",
+          "logo": "http://h5.caiyu.in/img/logo_ppmoney.png",
           "title": "PPmoney",
           "grade": "AAA",
           "desc": "厦门银行资金存管 3.75亿元B轮融资",
-          "rate": "24.80",
-          "money": "150~500",
+          "rate": "27.70",
+          "money": "170~400",
           "isfutou": false,
-          "fanxiantype": "0",
+          "fanxiantype": "1",
           "fanxianbottom": "",
           "fanxiantypetitle": ""
         },
+
+
+
+
+
+
+
+
+
+        {
+          "pid": "182",
+          "logo": "http://h5.caiyu.in/img/logo_182.png",
+          "title": "和云筹",
+          "grade": "B",
+          "desc": "廊坊银行资金存管 注册资本1亿",
+          "rate": "28.11",
+          "money": "100~500",
+          "isfutou": false,
+          "fanxiantype": "2",
+          "fanxianbottom": "",
+          "fanxiantypetitle": ""
+        },
+
+
+
+
+
+
+        {
+          "pid": "4525",
+          "logo": "http://h5.caiyu.in/img/logo_pjb.png",
+          "title": "票据宝",
+          "grade": "A",
+          "desc": "广东华兴银行资金存管 人人网2000万美元融资",
+          "rate": "14.20",
+          "money": "90~350",
+          "isfutou": false,
+          "fanxiantype": "2",
+          "fanxianbottom": "",
+          "fanxiantypetitle": ""
+        },
+
+
+
         {
           "pid": "225",
-          "logo": "http://h5test.caiyu.in/img/logo_51rp.png",
+          "logo": "http://h5.caiyu.in/img/logo_51rp.png",
           "title": "51人品",
           "grade": "AAA",
           "desc": "新浪支付托管 小米京东1亿美金累计融资",
@@ -69,35 +222,30 @@
           "fanxianbottom": "",
           "fanxiantypetitle": ""
         },
+
+
+
+
         {
-          "pid": "4525",
-          "logo": "http://h5test.caiyu.in/img/logo_pjb.png",
-          "title": "票据宝",
-          "grade": "AA",
-          "desc": "广东华兴银行资金存管 人人网2000万美元融资",
-          "rate": "14.20",
-          "money": "90~350",
-          "isfutou": false,
-          "fanxiantype": "0",
-          "fanxianbottom": "",
-          "fanxiantypetitle": ""
-        },
-        {
-          "pid": "6056",
-          "logo": "http://h5test.caiyu.in/img/logo_trj.png",
-          "title": "投融家",
-          "grade": "AA",
-          "desc": "浙商银行资金存管 注册资本5000万元",
-          "rate": "33.30",
-          "money": "120~450",
+          "pid": "47",
+          "logo": "http://h5.caiyu.in/img/logo_aqj.png",
+          "title": "爱钱进",
+          "grade": "AAA",
+          "desc": "华夏银行资金存管 高榕资本31000万元融资",
+          "rate": "32.10",
+          "money": "20~50",
           "isfutou": false,
           "fanxiantype": "3",
           "fanxianbottom": "",
           "fanxiantypetitle": ""
-        },
-        {
+        }
+      ]
+    },
+    "finished": {
+      "title": "已结束平台",
+      "data": [{
           "pid": "6072",
-          "logo": "http://h5test.caiyu.in/img/logo_jfqb.png",
+          "logo": "http://h5.caiyu.in/img/logo_jfqb.png",
           "title": "玖富钱包",
           "grade": "AAA",
           "desc": "注册资本2亿元 玖富旗舰移动金融平台",
@@ -108,22 +256,81 @@
           "fanxianbottom": "",
           "fanxiantypetitle": ""
         },
+
         {
-          "pid": "7234",
-          "logo": "http://h5test.caiyu.in/img/logo_rraj.png",
-          "title": "人人爱家",
+          "pid": "6589",
+          "logo": "http://h5.caiyu.in/img/logo_6589.png",
+          "title": "花虾金融",
           "grade": "A",
-          "desc": "恒丰银行存管 中欧国际集团1亿元B轮融资",
-          "rate": "36.30",
-          "money": "50~800",
+          "desc": "全国股份制银行平安银行资金存管",
+          "rate": "29.60",
+          "money": "30~300",
           "isfutou": false,
           "fanxiantype": "3",
           "fanxianbottom": "",
           "fanxiantypetitle": ""
         },
         {
+          "pid": "216",
+          "logo": "http://h5.caiyu.in/img/logo_216.png",
+          "title": "指旺财富",
+          "grade": "AAA",
+          "desc": "国内首家p2p上市公司 p2p行业领军平台",
+          "rate": "16.81",
+          "money": "40~60",
+          "isfutou": true,
+          "fanxiantype": "3",
+          "fanxianbottom": "",
+          "fanxiantypetitle": ""
+        }, {
+          "pid": "25",
+          "logo": "http://h5.caiyu.in/img/logo_25.png",
+          "title": "投哪网",
+          "grade": "AAA",
+          "desc": "上市公司大金重工、广发信德战略投资",
+          "rate": "17.61",
+          "money": "100~350",
+          "isfutou": false,
+          "fanxiantype": "3",
+          "fanxianbottom": "",
+          "fanxiantypetitle": ""
+        },
+
+        {
+          "pid": "4270",
+          "logo": "http://h5.caiyu.in/img/logo_lmw.png",
+          "title": "利民网",
+          "grade": "未评级",
+          "desc": "新网银行资金存管 注册资本5000万元",
+          "rate": "28.10",
+          "money": "80~350",
+          "isfutou": false,
+          "fanxiantype": "3",
+          "fanxianbottom": "",
+          "fanxiantypetitle": ""
+        },
+
+
+
+        {
+          "pid": "100",
+          "logo": "http://h5.caiyu.in/img/logo_lcf.png",
+          "title": "理财范",
+          "grade": "AA",
+          "desc": "徽商银行资金存管 英达钢构领投3.3亿元C轮投资",
+          "rate": "17.40",
+          "money": "90~800",
+          "isfutou": false,
+          "fanxiantype": "3",
+          "fanxianbottom": "",
+          "fanxiantypetitle": ""
+        },
+
+
+
+        {
           "pid": "6113",
-          "logo": "http://h5test.caiyu.in/img/logo_hyjf.png",
+          "logo": "http://h5.caiyu.in/img/logo_hyjf.png",
           "title": "汇盈金服",
           "grade": "A",
           "desc": "江西银行存管 美国OTC市场上市",
@@ -133,10 +340,9 @@
           "fanxiantype": "3",
           "fanxianbottom": "",
           "fanxiantypetitle": ""
-        },
-        {
+        }, {
           "pid": "5",
-          "logo": "http://h5test.caiyu.in/img/logo_ppdai.png",
+          "logo": "http://h5.caiyu.in/img/logo_ppdai.png",
           "title": "拍拍贷",
           "grade": "AAA",
           "desc": "招商银行资金存管 君联资本和海纳亚洲领投C轮亿元美金融资",
@@ -146,35 +352,8 @@
           "fanxiantype": "3",
           "fanxianbottom": "",
           "fanxiantypetitle": ""
-        },
-        {
-          "pid": "47",
-          "logo": "http://h5test.caiyu.in/img/logo_aqj.png",
-          "title": "爱钱进",
-          "grade": "AAA",
-          "desc": "华夏银行资金存管 高榕资本31000万元融资",
-          "rate": "32.10",
-          "money": "20~50",
-          "isfutou": false,
-          "fanxiantype": "3",
-          "fanxianbottom": "",
-          "fanxiantypetitle": ""
-        },
-        {
-          "pid": "3712",
-          "logo": "http://h5test.caiyu.in/img/logo_htyd.png",
-          "title": "汇通易贷",
-          "grade": "A",
-          "desc": "华兴银行资金存管 注册资本5000万元",
-          "rate": "37.20",
-          "money": "120~500",
-          "isfutou": false,
-          "fanxiantype": "3",
-          "fanxianbottom": "",
-          "fanxiantypetitle": ""
         }
       ]
     }
-
   }
 }

@@ -1,36 +1,59 @@
 {
 
-  "ppmoney": [{
-      "fanlitype": "0",
-      "title": "首投10000元—20天及以上标的",
-      "fanlimoney": "234",
-      "fanlimoneydesc": "邀请好友送金条",
-      "fanlistatus": true,
-      "fanlipeople": "123"
-    },
-    {
-      "fanlitype": "0",
-      "title": "首投10000元—20天及以上标的",
-      "fanlimoney": "234",
-      "fanlimoneydesc": "邀请好友送金条",
-      "fanlistatus": true,
-      "fanlipeople": "123"
-    },
-    {
-      "fanlitype": "0",
-      "title": "首投10000元—20天及以上标的",
-      "fanlimoney": "234",
-      "fanlimoneydesc": "邀请好友送金条",
-      "fanlistatus": true,
-      "fanlipeople": "123"
-    },
-    {
-      "fanlitype": "0",
-      "title": "首投10000元—20天及以上标的",
-      "fanlimoney": "234",
-      "fanlimoneydesc": "邀请好友送金条",
-      "fanlistatus": true,
-      "fanlipeople": "123"
-    }
-  ]
+  "宜人财富": {
+    "pid": "4",
+    "logo": "http://h5.caiyu.in/img/logo_4.png",
+    "url": "http://5g.yirendai.com/gt/zc2/?siteId=fllm3",
+    "list": [
+
+      {
+        "fanlitype": "0",
+        "title": "首投100000元—3个月及以上标的",
+        "fanlimoney": "1000",
+        "invitedesc": "好友可得1000元返现",
+        "btndesc": "邀请好友投资此标你可得金条",
+        "fanlimoneydesc": "投资收益:1356.16 元，合计收益:2356.16 元",
+        "baserate": "5.5",
+        "fanlirate": "9.6",
+        "fanlistatus": true,
+        "fanlipeople": "123"
+      },
+      {
+        "fanlitype": "0",
+        "title": "首投250000元—3个月及以上标的",
+        "fanlimoney": "2000",
+        "invitedesc": "好友可得2000元返现",
+        "btndesc": "邀请好友投资此标你可得Apple Watch",
+        "fanlimoneydesc": "投资收益:3390.41 元，合计收益:5390.41 元",
+        "baserate": "5.5",
+        "fanlirate": "8.7",
+        "fanlistatus": true,
+        "fanlipeople": "123"
+      },
+      {
+        "fanlitype": "0",
+        "title": "首投500000元—3个月及以上标的",
+        "fanlimoney": "5000",
+        "invitedesc": "好友可得5000元返现",
+        "btndesc": "邀请好友投资此标你可得iPad",
+        "fanlimoneydesc": "投资收益:6780.82 元，合计收益:11780.82 元",
+        "baserate": "5.5",
+        "fanlirate": "9.7",
+        "fanlistatus": true,
+        "fanlipeople": "123"
+      },
+      {
+        "fanlitype": "0",
+        "title": "首投200万元-3个月及以上标的",
+        "fanlimoney": "20000",
+        "invitedesc": "好友可得20000元返现",
+        "btndesc": "邀请好友投资此标你可得金元宝",
+        "fanlimoneydesc": "投资收益:27123.29 元，合计收益:47123.29 元",
+        "baserate": "5.5",
+        "fanlirate": "9.6",
+        "fanlistatus": true,
+        "fanlipeople": "123"
+      }
+    ]
+  }
 }

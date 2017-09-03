@@ -152,7 +152,7 @@ button {
 }
 
 .red {
-  color: #d85345;
+  color: #d85345!important;
 }
 
 .alert_input {
@@ -171,25 +171,25 @@ button {
 }
 
 .blue {
-  color: #289cf5;
+  color: #289cf5!important;
 }
 
 .orange {
-  color: #ea6e24;
+  color: #ea6e24!important;
 }
 
 .green {
-  color: #7dc331;
+  color: #7dc331!important;
 }
 
 .skyblue {
-  color: #36bcc1;
+  color: #36bcc1!important;
 }
 
 .darkblue {
-  color: #374259;
+  color: #374259!important;
 }
 
 .gray {
-  color: #9da3af;
+  color: #9da3af!important;
 }

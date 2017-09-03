@@ -73,6 +73,22 @@
 <script>
   import $ from 'jquery'
   import { Indicator } from 'mint-ui'
+  function statEvent (active, type) {
+    $.ajax({
+      type: 'POST',
+      url: '/ajax.php',
+      dataType: 'json',
+      data: {
+        func: 'submitAccessStat',
+        data: {
+          'active': active,
+          'type': type
+        }
+      }
+    })
+  }
+  statEvent('新什么值得投', '风控评级页')
+
   export default {
     data () {
       return {
@@ -83,6 +99,7 @@
       }
     },
     created: function () {
+      statEvent('新什么值得投', '风控评级' + this.$route.params.pid)
       const _this = this
       Indicator.open({
         text: '加载中...',
@@ -103,7 +120,7 @@
       document.setTitle('风控评级')
       $.ajax({
         type: 'GET',
-        url: '../../static/json/riskscore/riskscore_' + _this.$route.params.pid + '.json',
+        url: '../../static/json/riskscore/riskscore_' + _this.$route.params.pid + '.json?' + Date.now(),
         dataType: 'json',
         success: function (res) {
           _this.grade = res.grade
@@ -113,6 +130,9 @@
           Indicator.close()
         }
       })
+      setTimeout(function () {
+        Indicator.close()
+      }, 1500)
     }
   }
 </script>

@@ -1,10 +1,11 @@
 <template>
-  <div v-title="'土豪大额专区'" class="tuhao" style="background-color: rgb(239, 239, 240);padding-bottom:50px">
+  <div v-title="'土豪大额专区'" class="tuhao" style="padding-bottom:50px">
+    <img class="bg" src="../assets/new_img/tuhao_bg.jpg" alt="">
     <div v-for="(v, k, i) in data" :key="i">
       <h4 class="list_title">
-        {{k}}
+        <img class="logo" :src="v.logo" alt="">{{k}}
       </h4>
-      <coupon v-for="(obj,i) in v" :key="i" :props="obj"></coupon>
+      <coupon v-for="(obj,i) in v.list" :key="i" :props="obj"></coupon>
     </div>
     <button class="btn_blue fix">邀请好友投资</button>
   </div>
@@ -30,7 +31,7 @@
       })
       $.ajax({
         type: 'GET',
-        url: '../../static/json/tuhao.json',
+        url: '../../static/json/tuhao.json?' + Date.now(),
         dataType: 'json',
         success: function (res) {
           _this.data = res
@@ -48,6 +49,13 @@
   }
 </script>
 <style>
+  .tuhao .bg {
+    display: block;
+    width: 100%;
+  }
+  
+  .tuhao .logo {}
+  
   .tuhao .list_title {
     text-align: center;
     padding: 0.9rem 0px;
@@ -58,7 +66,10 @@
   }
   
   .tuhao .list_title img {
-    height: 2rem;
+    height: 28px;
+    position: relative;
+    left: -4px;
+    top: -2px;
   }
   
   .tuhao .fix {

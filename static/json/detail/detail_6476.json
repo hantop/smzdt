@@ -1,0 +1,103 @@
+{
+  "platform": {
+    "fanxianurl": "https://www.shaxiaoseng.com/activity/landing/index.html?channel=AJJEJB",
+    "shoutoustatus": true,
+    "share": "",
+
+    "title": "沙小僧",
+    "pid": "6476",
+    "logo": "http://h5.caiyu.in/img/logo_6476.png",
+    "grade": "AA",
+    "tag": [
+      "风投系"
+    ],
+    "detectlevel": "正常",
+    "desc": "新网银行资金存管 大唐金控5000万元A轮融资",
+    "ratedesc": "首投综合年化收益率可达18.94%",
+    "specialqa": {
+      "可以投债权转让标吗？": "不行的",
+      "可以投资新手标吗？": "活动标的是3月标起的，如果平台有3月标期的新手标是可以的！"
+    },
+    "qa": [true, false, true, true, true, true, true],
+    "description": [],
+    "rule": [true, true, true, true, true, true],
+    "topspecilarule": [],
+    "midspecilarule": [],
+    "grayspecilarule": [],
+    "btmspecilarule": ["［超级返］的标的，只有点击“参与超级返”按钮并成功登记手机号后，投资才能获得超级返奖励。"]
+
+  },
+  "tasklist": [{
+      "fanlitype": "4",
+      "title": "首投5000元—90天及以上标的",
+      "fanlimoney": "130",
+      "fanlimoneydesc": "投资收益103.56 元，合计收益253.56 元",
+      "futoudesc": "",
+      "fanlistat": "",
+      "baserate": "8.4",
+      "fanlirate": "20.6",
+      "fanlipeople": "123",
+      "fanlistart": "00:00:00",
+      "fanliend": "23:59:59",
+      "fanlistatus": true,
+      "jiaxi": {
+        "jiaxititle": "+超级返20元",
+        "jiaxitype": ""
+      }
+    },
+    {
+      "fanlitype": "0",
+      "title": "首投10000元—90天及以上标的",
+      "fanlimoney": "250",
+      "fanlimoneydesc": "投资收益207.12 元，合计收益457.12元",
+      "futoudesc": "",
+      "fanlistat": "",
+      "baserate": "8.4",
+      "fanlirate": "18.5",
+      "fanlipeople": "91",
+      "fanlistart": "",
+      "fanliend": "",
+      "fanlistatus": true,
+      "jiaxi": {
+        "jiaxititle": "",
+        "jiaxitype": ""
+      }
+    },
+    {
+      "fanlitype": "0",
+      "title": "首投30000元—90天及以上标的",
+      "fanlimoney": "700",
+      "fanlimoneydesc": "投资收益:621.37 元，合计收益1321.37 元",
+      "futoudesc": "",
+      "fanlistat": "",
+      "baserate": "8.4",
+      "fanlirate": "17.86",
+      "fanlipeople": "42",
+      "fanlistart": "",
+      "fanliend": "",
+      "fanlistatus": true,
+      "jiaxi": {
+        "jiaxititle": "",
+        "jiaxitype": ""
+      }
+    },
+    {
+      "fanlitype": "0",
+      "title": "首投50000元—90天及以上标的",
+      "fanlimoney": "1100",
+      "fanlimoneydesc": "投资收益:1035.62元，合计收益2135.62 元",
+      "futoudesc": "",
+      "fanlistat": "",
+      "baserate": "8.4",
+      "fanlirate": "17.32",
+      "fanlipeople": "27",
+      "fanlistart": "",
+      "fanliend": "",
+      "fanlistatus": true,
+      "jiaxi": {
+        "jiaxititle": "",
+        "jiaxitype": ""
+      }
+    }
+  ]
+}

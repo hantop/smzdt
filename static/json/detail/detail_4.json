@@ -1,34 +1,44 @@
 {
   "platform": {
     "fanxianurl": "http://5g.yirendai.com/gt/zc2/?siteId=fllm3",
-    "shoutoustatus":true, 
-    "share":"",
+    "shoutoustatus": true,
+    "share": "",
 
     "title": "宜人财富",
     "pid": "4",
-    "logo": "http://h5test.caiyu.in/img/logo_4.png",
+    "logo": "http://h5.caiyu.in/img/logo_4.png",
     "grade": "AAA",
     "tag": [
       "上市公司系"
     ],
     "detectlevel": "正常",
     "desc": "国内首家p2p上市公司 p2p行业领军平台",
-    "rate": "40.02%",
-    "specialqa":{
+    "ratedesc": "首投综合年化收益率可达21.77%",
+    "specialqa": {
+      "可以投资新手标吗？":"新手标3月期的标的，不参与返利活动。其他新手标可以参与。"
     },
-    "specilarule":[]
+    "qa": [true, false, true, true, true, true, true],
+    "description": [],
+    "rule": [true, true, true, true, true, true],
+    "topspecilarule": ["特别注意：新手标3月期的标的，不参与返利活动。"
+    ],
+    "midspecilarule": [],
+    "grayspecilarule": [],
+    "btmspecilarule": []
 
   },
-  "tasklist": [{
+  "tasklist": [
+
+    {
       "fanlitype": "0",
-      "title": "首投10000元—180天及以上标的",
-      "fanlimoney": "800",
-      "fanlimoneydesc": "投资收益:2958.90元，合计收益3758.90元",
+      "title": "首投10000元—30天及以上标的",
+      "fanlimoney": "100",
+      "fanlimoneydesc": "投资收益:78.90元，合计收益178.90元",
       "futoudesc": "",
       "fanlistat": "",
-      "baserate": "6.0",
-      "fanlirate": "7.6",
-      "fanlipeople": "33",
+      "baserate": "9.6",
+      "fanlirate": "21.77",
+      "fanlipeople": "102",
       "fanlistart": "",
       "fanliend": "",
       "fanlistatus": true,
@@ -37,16 +47,34 @@
         "jiaxitype": ""
       }
     },
-   {
+    {
       "fanlitype": "0",
-      "title": "首投50000元—90天及以上标的",
-      "fanlimoney": "350",
-      "fanlimoneydesc": "投资收益:616.44元，合计收益966.44元",
+      "title": "首投20000元—30天及以上标的",
+      "fanlimoney": "200",
+      "fanlimoneydesc": "投资收益:157.81元，合计收益357.81元",
+      "futoudesc": "",
+      "fanlistat": "",
+      "baserate": "9.6",
+      "fanlirate": "21.77",
+      "fanlipeople": "82",
+      "fanlistart": "",
+      "fanliend": "",
+      "fanlistatus": true,
+      "jiaxi": {
+        "jiaxititle": "",
+        "jiaxitype": ""
+      }
+    },
+    {
+      "fanlitype": "0",
+      "title": "首投30000元—90天及以上标的",
+      "fanlimoney": "300",
+      "fanlimoneydesc": "投资收益:369.86元，合计收益669.86元",
       "futoudesc": "",
       "fanlistat": "",
       "baserate": "5.0",
-      "fanlirate": "7.8",
-      "fanlipeople": "133",
+      "fanlirate": "9.1",
+      "fanlipeople": "96",
       "fanlistart": "",
       "fanliend": "",
       "fanlistatus": true,
@@ -55,16 +83,16 @@
         "jiaxitype": ""
       }
     },
-  {
+    {
       "fanlitype": "0",
-      "title": "首投20000元—30天及以上标的",
-      "fanlimoney": "160",
-      "fanlimoneydesc": "投资收益:157.81元，合计收益317.81元",
+      "title": "首投50000元—90天及以上标的",
+      "fanlimoney": "500",
+      "fanlimoneydesc": "投资收益:616.44元，合计收益1116.44元",
       "futoudesc": "",
       "fanlistat": "",
-      "baserate": "9.6",
-      "fanlirate": "19.3",
-      "fanlipeople": "129",
+      "baserate": "5.0",
+      "fanlirate": "9.1",
+      "fanlipeople": "74",
       "fanlistart": "",
       "fanliend": "",
       "fanlistatus": true,
@@ -73,16 +101,34 @@
         "jiaxitype": ""
       }
     },
-      {
+    {
       "fanlitype": "0",
-      "title": "首投2000元—30天及以上标的",
-      "fanlimoney": "50",
-      "fanlimoneydesc": "投资收益:15.78元，合计收益65.78元",
+      "title": "首投60000元—90天及以上标的",
+      "fanlimoney": "600",
+      "fanlimoneydesc": "投资收益:739.73元，合计收益1339.73元",
       "futoudesc": "",
       "fanlistat": "",
-      "baserate": "9.6",
-      "fanlirate": "40.0",
-      "fanlipeople": "334",
+      "baserate": "5.0",
+      "fanlirate": "9.1",
+      "fanlipeople": "41",
+      "fanlistart": "",
+      "fanliend": "",
+      "fanlistatus": true,
+      "jiaxi": {
+        "jiaxititle": "",
+        "jiaxitype": ""
+      }
+    },
+    {
+      "fanlitype": "0",
+      "title": "首投80000元—90天及以上标的",
+      "fanlimoney": "800",
+      "fanlimoneydesc": "投资收益:986.30元，合计收益1786.30元",
+      "futoudesc": "",
+      "fanlistat": "",
+      "baserate": "5.0",
+      "fanlirate": "9.1",
+      "fanlipeople": "29",
       "fanlistart": "",
       "fanliend": "",
       "fanlistatus": true,
@@ -91,5 +137,7 @@
         "jiaxitype": ""
       }
     }
+
+
   ]
 }

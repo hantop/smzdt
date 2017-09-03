@@ -1,0 +1,119 @@
+{
+  "platform": {
+    "fanxianurl": "http://m.huaxiaoxia.com/newPage/invite/inviteH5Page.spring?shareId=22&activityId=20170805&channelId=C02100059",
+    "shoutoustatus": true,
+    "share": "",
+
+    "title": "花虾金融",
+    "pid": "6589",
+    "logo": "http://h5.caiyu.in/img/logo_6589.png",
+    "grade": "A",
+    "tag": [
+      "民企系"
+    ],
+    "detectlevel": "正常",
+    "desc": "全国股份制银行平安银行资金存管",
+    "rate":"29.60%",
+    "ratedesc": "首投综合年化收益率可达29.60%",
+    "specialqa": {},
+    "qa": [true, true, true, true, true, true, true],
+    "description": [],
+    "rule": [true, true, true, true, true, true],
+    "topspecilarule": [],
+    "midspecilarule": [],
+    "grayspecilarule": [],
+    "btmspecilarule": []
+
+  },
+  "tasklist": [{
+      "fanlitype": "0",
+      "title": "首投5000元—15天新手标",
+      "fanlimoney": "30",
+      "fanlimoneydesc": "投资收益30.82元，合计收益60.82元",
+      "futoudesc": "",
+      "fanlistat": "",
+      "baserate": "15.0",
+      "fanlirate": "29.6",
+      "fanlipeople": "103",
+      "fanlistart": "00:00:00",
+      "fanliend": "23:59:59",
+      "fanlistatus": true,
+      "jiaxi": {
+        "jiaxititle": "+超级返40元",
+        "jiaxitype": ""
+      }
+    },
+    {
+      "fanlitype": "0",
+      "title": "首投10000元—30天及以上标的",
+      "fanlimoney": "160",
+      "fanlimoneydesc": "投资收益57.53元，合计收益217.53元",
+      "futoudesc": "",
+      "fanlistat": "",
+      "baserate": "7.0",
+      "fanlirate": "26.47",
+      "fanlipeople": "94",
+      "fanlistart": "00:00:00",
+      "fanliend": "23:59:59",
+      "fanlistatus": true,
+      "jiaxi": {
+        "jiaxititle": "+超级返50元",
+        "jiaxitype": ""
+      }
+    },
+    {
+      "fanlitype": "0",
+      "title": "首投30000元—30天及以上标的",
+      "fanlimoney": "450",
+      "fanlimoneydesc": "投资收益172.60元，合计收益622.60元",
+      "futoudesc": "",
+      "fanlistat": "",
+      "baserate": "7.0",
+      "fanlirate": "25.25",
+      "fanlipeople": "44",
+      "fanlistart": "00:00:00",
+      "fanliend": "23:59:59",
+      "fanlistatus": true,
+      "jiaxi": {
+        "jiaxititle": "+超级返50元",
+        "jiaxitype": ""
+      }
+    },
+    {
+      "fanlitype": "0",
+      "title": "首投5000元—90天及以上标的",
+      "fanlimoney": "150",
+      "fanlimoneydesc": "投资收益104.79 元，合计收益254.79元",
+      "futoudesc": "",
+      "fanlistat": "",
+      "baserate": "8.5",
+      "fanlirate": "20.7",
+      "fanlipeople": "91",
+      "fanlistart": "",
+      "fanliend": "",
+      "fanlistatus": true,
+      "jiaxi": {
+        "jiaxititle": "",
+        "jiaxitype": ""
+      }
+    },
+    {
+      "fanlitype": "0",
+      "title": "首投10000元—90天及以上标的",
+      "fanlimoney": "300",
+      "fanlimoneydesc": "投资收益209.59元，合计收益509.59元",
+      "futoudesc": "",
+      "fanlistat": "",
+      "baserate": "8.5",
+      "fanlirate": "20.7",
+      "fanlipeople": "73",
+      "fanlistart": "",
+      "fanliend": "",
+      "fanlistatus": true,
+      "jiaxi": {
+        "jiaxititle": "",
+        "jiaxitype": ""
+      }
+    }
+  ]
+}
