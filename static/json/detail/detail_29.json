@@ -19,7 +19,28 @@
     "desc": "一句话介绍",
     "ratedesc": "首投综合年化收益率可达12.00",
 
-    "description": ["lalala"],
+    "hasfutou": true,
+    "process": [true, true, true, true, true],
+    "processdata": {
+      "first": [],
+      "second": [],
+      "third": []
+    },
+    "shoutoutext": {
+      "topspecilarule": [],
+      "midspecilarule": [],
+      "grayspecilarule": [],
+      "btmspecilarule": [],
+      "rule": true
+    },
+    "futoutext": {
+      "topspecilarule": [],
+      "midspecilarule": [],
+      "grayspecilarule": [],
+      "btmspecilarule": [],
+      "rule": true
+    },
+        "hasfutou": true,     "process": [true, true, true, true, true],     "processdata": {       "first": [],       "second": [],       "third": []     },     "shoutoutext": {       "topspecilarule": [],       "midspecilarule": [],       "grayspecilarule": [],       "btmspecilarule": [],       "rule": true     },     "futoutext": {       "topspecilarule": [],       "midspecilarule": [],       "grayspecilarule": [],       "btmspecilarule": [],       "rule": true     },"description": ["lalala"],
 
     "qa": [true, false, false, false, false, false, false],
     "specialqa": {

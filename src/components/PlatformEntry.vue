@@ -1,38 +1,38 @@
 <template>
-      <router-link :to="'/detail/'+data.pid+'/?uid='+uid">
-  <div class="item_box">
-    <div class="top">
-      <div class="logo">
-        <img width="100%" :src="data.logo" alt="">
-      </div>
-      <div class="right">
-        <div class="r_top">
-          <h5 class="namecn">{{data.title}}</h5>
-          <span class="grade">{{data.grade}}</span>
-          <span v-if="data.isfutou" class="re_invest">复投</span>
+  <router-link :to="'/detail/'+data.pid+'/?uid='+uid">
+    <div class="item_box">
+      <div class="top">
+        <div class="logo">
+          <img width="100%" :src="data.logo" alt="">
         </div>
-        <p class="describe">{{data.desc}}</p>
+        <div class="right">
+          <div class="r_top">
+            <h5 class="namecn">{{data.title}}</h5>
+            <span class="grade">{{data.grade}}</span>
+            <span v-if="data.isfutou" class="re_invest">复投</span>
+          </div>
+          <p class="describe">{{data.desc}}</p>
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="rate">
+          <div class="red num">{{data.rate}}
+            <span style="font-size: 1.2rem">%</span>
+          </div>
+          <div class="gray">活动最高年化</div>
+        </div>
+        <div class="money">
+          <div class="red num">{{data.money}}
+            <span style="font-size: 1.2rem">元</span>
+          </div>
+          <div class="gray">返现金额</div>
+        </div>
+  
+        <img class="to_detail" width="100%" :src="url" alt="">
+  
       </div>
     </div>
-    <div class="bottom">
-      <div class="rate">
-        <div class="red num">{{data.rate}}
-          <span style="font-size: 1.2rem">%</span>
-        </div>
-        <div class="gray">活动最高年化</div>
-      </div>
-      <div class="money">
-        <div class="red num">{{data.money}}
-          <span style="font-size: 1.2rem">元</span>
-        </div>
-        <div class="gray">返现金额</div>
-      </div>
-
-        <img  class="to_detail" width="100%" :src="url" alt="">
-
-    </div>
-  </div>
-        </router-link>
+  </router-link>
 </template>
 <script>
   export default {
@@ -94,6 +94,8 @@
     text-align: center;
     color: #e76212;
     padding: 0 0.5rem;
+    position: relative;
+    top: -3px;
   }
   
   .re_invest {
@@ -107,6 +109,8 @@
     height: 1.8rem;
     line-height: 1.8rem;
     background-color: rgba(18, 115, 233, 0.17);
+    position: relative;
+    top: -3px;
   }
   
   .describe {

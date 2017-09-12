@@ -8,17 +8,17 @@
       <router-link style="display: block;" :to="'/riskscore/'+this.$route.params.pid">
         <div class="xbox">
           <!--<div class="top">
-                <div class="logo">
-                  <img width="100%" :src="data.logo" alt="">
-                </div>
-                <div class="right">
-                  <div class="r_top">
-                    <h5 class="namecn">{{data.title}}</h5>
-                    <span v-for="(item,index) in data.tag" :key="index" class="xspan2">{{item}}</span>
-                  </div>
-                  <p class="describe">{{data.desc}}</p>
-                </div>
-              </div>-->
+                                                            <div class="logo">
+                                                              <img width="100%" :src="data.logo" alt="">
+                                                            </div>
+                                                            <div class="right">
+                                                              <div class="r_top">
+                                                                <h5 class="namecn">{{data.title}}</h5>
+                                                                <span v-for="(item,index) in data.tag" :key="index" class="xspan2">{{item}}</span>
+                                                              </div>
+                                                              <p class="describe">{{data.desc}}</p>
+                                                            </div>
+                                                          </div>-->
           <img :src="data.logo" class="xlogo" alt="">
           <div class="xright">
             <div class="xtitle">
@@ -35,25 +35,65 @@
         </div>
       </router-link>
       <div class="xcoupon">
+        <div v-if="data.hasfutou == true" class="btntype">
+          <p :class="btntype?'btn_active':''" @click="btntype=true" class="btn_left">首投返现奖励</p>
+          <p :class="btntype?'':'btn_active'" @click="btntype=false" class="btn_right">复投返现奖励</p>
+        </div>
         <p class="tac attention">请根据自身风险承受能力谨慎考察后投资</p>
-        <coupon :fi="status.first" :se="status.second" :su="status.super" :props="item" v-for="(item, i) in items" :key="i" v-on:childClick="alertBox"></coupon>
-        <h6 style="color: #909090;padding: 0 1.19444em;">
-          <br v-if="data.topspecilarule.length>0">
-          <li v-for="(item,i) in data.topspecilarule" :key="i" class="red">{{item}}</li>
-          <br v-if="data.topspecilarule.length>0">
-          <li v-if="data.rule[0]">注意：</li>
-          <li v-for="(item,i) in data.midspecilarule" :key="i" class="red">{{item}}</li>
-          <li v-for="(item,i) in data.grayspecilarule" :key="i">{{item}}</li>
-          <li v-if="data.rule[1]"> ＊已经通过财鱼管家注册的用户，可以直接去{{data.title}}官网或app中投资。</li>
-          <li v-if="data.rule[2]"> ＊通过本页面进行注册的理财平台新用户有资格获得返现，首投满足奖励的条件与对应的奖励以本页面活动规则为准。</li>
-          <li v-if="data.rule[3]"> ＊符合条件的用户，财鱼管家将在7个工作日内会发放返现红包至财鱼管家“我的-提醒”页面中。</li>
-          <li v-if="data.rule[4]"> ＊禁止任何形式的刷单行为，如果发现（如同一IP刷单等），平台将不予结算。</li>
-          <li v-if="data.rule[5]"> ＊如果活动期间奖励规则变动，则以注册时间（且注册后24小时内完成投资）的奖励规则为准。</li>
-          <li v-for="(item,i) in data.btmspecilarule" :key="i" class="red">{{item}}</li>
+        <coupon :fi="status.first" :se="status.second" :su="status.super" :props="item" v-for="(item, i) in items" :key="i" v-if="showlisttype?item.fanlitype !=1 &&item.fanlitype !=5:item.fanlitype ==1||item.fanlitype ==5" v-on:childClick="alertBox"></coupon>
+        <h6 v-show="btntype" style="color: #909090;padding: 0 1.19444em;">
+          <br v-if="data.shoutoutext.topspecilarule.length>0">
+          <li v-for="(item,i) in data.shoutoutext.topspecilarule" :key="i" class="red">{{item}}</li>
+          <br v-if="data.shoutoutext.topspecilarule.length>0">
+          <li v-if="data.shoutoutext.rule">特别说明：</li>
+          <li v-for="(item,i) in data.shoutoutext.midspecilarule" :key="i" class="red">{{item}}</li>
+          <li v-for="(item,i) in data.shoutoutext.grayspecilarule" :key="i">{{item}}</li>
+          <li v-for="(item,i) in data.shoutoutext.btmspecilarule" :key="i" class="red">{{item}}</li>
+        </h6>
+        <h6 v-show="!btntype" style="color: #909090;padding: 0 1.19444em;">
+          <br v-if="data.futoutext.topspecilarule.length>0">
+          <li v-for="(item,i) in data.futoutext.topspecilarule" :key="i" class="red">{{item}}</li>
+          <br v-if="data.futoutext.topspecilarule.length>0">
+          <li v-if="data.futoutext.rule">复投规则：</li>
+          <li v-for="(item,i) in data.futoutext.midspecilarule" :key="i" class="red">{{item}}</li>
+          <li v-for="(item,i) in data.futoutext.grayspecilarule" :key="i">{{item}}</li>
+          <li v-for="(item,i) in data.futoutext.btmspecilarule" :key="i" class="red">{{item}}</li>
         </h6>
       </div>
+      <a class="qa_rule" href="/dashboard/qa.html">查看常见问题 ></a>
     </header>
     <section>
+  
+      <div class="extra setnone" id="extra" style="display: block;text-align:center">
+        <h6 style="text-align:left" class="title relative" id="hidden-title">
+          <span>返现攻略</span>
+        </h6>
+
+        <div style="text-align:left;color: #909090;padding: 0 1.19444em; font-size: 13px">
+          <div class="rule_box">
+            <h5>1.登记手机号后，通过财鱼管家完成平台注册</h5>
+            <li v-if="data.process[0]">只有通过财鱼管家注册的平台账号才能参加返现活动。</li>
+            <li v-for="(item,i) in data.processdata.first" :key="i">{{item}}</li>
+          </div>
+          <div class="rule_box rule_box2">
+            <h5>2.完成投资</h5>
+            <li v-if="data.process[1]">平台账号注册成功后，请在48小时内前往平台完成投资，超时将无法返现。</li>
+            <li v-if="data.process[2]">如果活动过程中奖励规则出现变化，以登记时的奖励规则为准。</li>
+            <li v-for="(item,i) in data.processdata.second" :key="i">{{item}}</li>
+          </div>
+          <div class="rule_box rule_box3">
+            <h5>3.等待发放返现</h5>
+            <li v-if="data.process[3]">返现一般会在3个工作日内直接发放至财鱼管家app“我的红包”中。</li>
+            <li v-if="data.process[4]">已登记过的手机号请不要在其他财鱼账号上再次登记，否则可能无法收到返现。</li>
+            <li v-for="(item,i) in data.processdata.third" :key="i">{{item}}</li>
+          </div>
+        </div>
+        <router-link class="speed" :to="'/prize/'+encodeURIComponent(uid)">查看最新返现进度 ></router-link>
+        <!--<div class="receive-gift relative btn-receive" data-canuser="0" id="btn-receive">
+                                                                                                                                                                                                                        <a class="toPrize">已参加，我要兑奖</a>
+                                                                                                                                                                                                                        <hr class="divider divider-horizontal divider-top">
+                                                                                                                                                                                                                      </div>-->
+      </div>
       <div class="delivery-order">
         <h6 class="title relative" id="see-delivery-order">
           <span class="benift-plan">投资晒单</span>
@@ -96,98 +136,21 @@
           </div>
         </div>
       </div>
-      <div class="extra setnone" id="extra" style="display: block;text-align:center">
-        <h6 style="text-align:left" class="title relative" id="hidden-title">
-          <span>活动规则说明</span>
-        </h6>
-        <div v-if="data.description.length>0" style="text-align:left;color: #909090;padding: 0 1.19444em; font-size: 13px">
-          <li v-for="(item,i) in data.description" :key="i">{{item}}</li>
-        </div>
-        <div v-else style="text-align:left;color: #909090;padding: 0 1.19444em; font-size: 13px">
-          <li>1.点击活动按钮，在平台活动页面注册账号。注册成功后在24小时内投资活动标的。</li>
-          <li> 2.投资成功后，7个工作日内，将会在财鱼管家app“我的-提醒”中收到返现红包。</li>
-          <li> 3.务必注意，在通过本活动页面注册的理财平台账户才有效，通过其他渠道进行的注册与投资行为无效。</li>
-          <li> 4.如果中间奖励规则变动，则已注册时间（且在注册后24小时内完成投资）的奖励规则为准。</li>
-          <li>5.如有疑问可以添加财鱼管家活动群467258481 进行咨询。</li>
-          <li> 温馨提示：财鱼管家展示不同的理财产品供用户选择，不同的理财产品将承受不同的风险，投资前请仔细考虑平台新用等各方面因素。</li>
-        </div>
-        <router-link class="speed" :to="'/prize/'+encodeURIComponent(uid)">查看最新返现进度 ></router-link>
-        <!--<div class="receive-gift relative btn-receive" data-canuser="0" id="btn-receive">
-                                                                                                                                                                            <a class="toPrize">已参加，我要兑奖</a>
-                                                                                                                                                                            <hr class="divider divider-horizontal divider-top">
-                                                                                                                                                                          </div>-->
-      </div>
-      <div class="extra setnone" id="extra" style="display: block">
-        <h6 class="title relative" id="hidden-title">
-          <span>常见问题</span>
-        </h6>
-        <div style="padding-top:20px">
-          <div v-for="(v, k, i) in data.specialqa" :key="i">
-            <div class="question">
-              <p class="red">{{k}}</p>
-            </div>
-            <div class="answer">
-              <p class="red">{{v}}</p>
+      <!--<div class="extra setnone" id="extra" style="display: block">
+          <h6 class="title relative" id="hidden-title">
+            <span>常见问题</span>
+          </h6>
+          <div style="padding-top:20px">
+            <div v-for="(v, k, i) in data.specialqa" :key="i">
+              <div class="question">
+                <p>{{k}}</p>
+              </div>
+              <div class="answer">
+                <p>{{v}}</p>
+              </div>
             </div>
           </div>
-          <div v-if="data.qa[0]">
-            <div class="question">
-              <p>用券还可以得奖励吗？</p>
-            </div>
-            <div class="answer">
-              <p>注册后平台给的优惠券，是可以使用的。</p>
-            </div>
-          </div>
-          <div v-if="data.qa[1]">
-            <div class="question">
-              <p>可以投资新手标吗？</p>
-            </div>
-            <div class="answer">
-              <p>可以的。</p>
-            </div>
-          </div>
-          <div v-if="data.qa[2]">
-            <div class="question">
-              <p>投资号码和注册财鱼的号码是否要求一致？</p>
-            </div>
-            <div class="answer">
-              <p>从财鱼管家APP中参加活动，两者号码可以不一致。</p>
-            </div>
-          </div>
-          <div v-if="data.qa[3]">
-            <div class="question">
-              <p>一个平台能投几个方案？</p>
-            </div>
-            <div class="answer">
-              <p>每个平台只有首次投资是能获得返现的。</p>
-            </div>
-          </div>
-          <div v-if="data.qa[4]">
-            <div class="question">
-              <p>投资之后要交单（登记）吗？</p>
-            </div>
-            <div class="answer">
-              <p>不需要。投资后会按活动规定的时间进行返现。如超时未收到返现，可以在活动QQ群（467258481）联系客服查询。</p>
-            </div>
-          </div>
-          <div v-if="data.qa[5]">
-            <div class="question">
-              <p>同一设备、同一IP、同一财鱼管家账号能用不同手机号在同一平台注册投资吗？</p>
-            </div>
-            <div class="answer">
-              <p>同一个账号，同一IP，同一设备，只能在同一个平台投资返利一次。</p>
-            </div>
-          </div>
-          <div v-if="data.qa[6]">
-            <div class="question">
-              <p>投资金额或期限大于方案规定的可以返现吗？</p>
-            </div>
-            <div class="answer">
-              <p>是可以返现的。</p>
-            </div>
-          </div>
-        </div>
-      </div>
+        </div>-->
       <div style=" font-size: 12px;margin-top: 13px; margin-bottom: 13px; color: #777; text-align:center; ">参与活动则表示同意
         <a href="http://h5.caiyu.in/dashboard/agreement.html">返现协议与免责声明</a>
       </div>
@@ -203,7 +166,7 @@
         <span class="btn-join xjoin join_f" :class="status.first?'':'disabled'" data-status="1">{{status.first?'参与首投活动':'首投活动已抢光，敬请等待下期'}}</span>
       </a>
     </div>
-    <messagebox v-if="alert" @dowhat="doajax" @hideself="hidealert" :score="data.grade" :data="type" :pid="pid"></messagebox>
+    <messagebox :pname="data.title" v-if="alert" @dowhat="doajax" @hideself="hidealert" :score="data.grade" :data="type" :pid="pid" :result="result" :defaulttel="defaulttel"></messagebox>
   </div>
 </template>
 <style scoped src="../assets/css/base.css"></style>
@@ -211,6 +174,102 @@
 
 <style scoped src="../assets/css/detail.css"></style>
 <style scoped>
+  .qa_rule {
+    margin: 0 auto;
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .rule_box {
+    padding-left: 12vw;
+    position: relative;
+    padding-bottom: 6vw;
+  }
+  
+  .rule_box::after {
+    content: '';
+    height: 100%;
+    width: 1px;
+    border-left: 1px solid #4e92df;
+    position: absolute;
+    left: 5.4vw;
+    top: 3vw;
+  }
+  
+  .rule_box3::after {
+    border-left: none;
+  }
+  
+  
+  .rule_box h5 {
+    font-size: 1.2em;
+    font-weight: 600;
+    position: relative;
+    margin-bottom: 2vw;
+  }
+  
+  .rule_box h5::after {
+    content: '1';
+    display: block;
+    position: absolute;
+    left: -10vw;
+    width: 5vw;
+    height: 5vw;
+    background-color: #4e92df;
+    border-radius: 50%;
+    padding: 1vw;
+    text-align: center;
+    line-height: 5vw;
+    color: #fff;
+    z-index: 2;
+    top: -0.5vw;
+  }
+  
+  .rule_box2 h5::after {
+    content: '2'
+  }
+  
+  .rule_box3 h5::after {
+    content: '3'
+  }
+  
+  .btntype {
+    display: flex;
+    width: 100%;
+    transform: translateY(-1vw);
+    padding: 0 5%;
+    margin-bottom: 4vw;
+  }
+  
+  .btntype p {
+    flex: 1;
+    text-align: center;
+    border-bottom: 1px solid #cdcdcd;
+    color: #666;
+    padding-bottom: 2vw;
+  }
+  
+  .btn_active {
+    border-bottom: 2px solid #5f89da!important;
+    color: #5f89da!important;
+  }
+  
+  .xfengkong::after {
+    content: " ";
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    border-width: 2px 2px 0 0;
+    border-color: #c8c8cd;
+    border-style: solid;
+    -webkit-transform: matrix(.71, .71, -.71, .71, 0, 0);
+    transform: matriX(.71, .71, -.71, .71, 0, 0);
+    position: absolute;
+    right: 20px;
+    top: 50%;
+  }
+  
   .speed {
     font-size: 1.4rem;
     background-color: #36bcc1;
@@ -233,7 +292,6 @@
     margin: 0;
     font-size: 3.5vw;
     -webkit-transform: translateY(-1vw);
-    transform: translateY(-7.5px);
     color: gray;
     font-weight: 400;
     height: 11px;
@@ -336,7 +394,10 @@
         type: null,
         alert: null,
         login: this.$route.query.caiyu_islogin,
-        open: null
+        open: null,
+        btntype: true,
+        defaulttel: '',
+        result: false
       }
     },
     computed: {
@@ -347,6 +408,9 @@
         } else {
           return str + '?u_id=' + this.uid
         }
+      },
+      showlisttype () {
+        return this.btntype
       }
     },
     components: {
@@ -358,6 +422,7 @@
         this.alert = false
       },
       alertBox (val) {
+        this.result = false
         const _this = this
         if (this.login === 0 || this.login === '0' || this.login === false || this.login === 'false') {
           if (navigator.userAgent.match('iphone') || navigator.userAgent.match('Iphone') || navigator.userAgent.match('iPhone')) {
@@ -463,13 +528,16 @@
                   duration: 1000
                 })
               } else {
-                _this.alert = false
-                const that = _this
-                if (that.pid === '6568') {
-                  location.href = 'https://m.minaiw.com/wap/index.php?ctl=new_registerw&pt=146'
-                } else {
-                  location.href = _this.fanxianurl
-                }
+                _this.result = true
+                setTimeout(function () {
+                  _this.alert = false
+                  const that = _this
+                  if (that.pid === '6568') {
+                    location.href = 'https://m.minaiw.com/wap/index.php?ctl=new_registerw&pt=146'
+                  } else {
+                    location.href = _this.fanxianurl
+                  }
+                }, 4000)
               }
             } else {
               Toast({

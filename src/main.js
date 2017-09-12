@@ -15,6 +15,9 @@ new Vue({
     App
   }
 })
+router.afterEach((to, from, next) => {
+  window.scrollTo(0, 0)
+})
 Vue.directive('title', {
   inserted: function (el, binding) {
     document.title = binding.value

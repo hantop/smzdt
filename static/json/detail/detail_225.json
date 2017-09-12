@@ -16,6 +16,27 @@
     "ratedesc": "5500万美金实缴，51信用卡出品",
     "specialqa": {},
     "qa": [true, true, true, true, true, true, true],
+    "hasfutou": false,
+    "process": [false, false, false, false, false],
+    "processdata": {
+      "first": ["只有通过财鱼管家注册的平台账号才能参加返现活动。"],
+      "second": ["平台账号注册成功后，请在48小时内前往平台完成投资，超时将无法返现。","如果活动过程中奖励规则出现变化，以登记时的奖励规则为准。"],
+      "third": ["返现一般会在7个工作日内直接发放至财鱼管家app“我的红包”中。","已登记过的手机号请不要在其他财鱼账号上再次登记，否则可能无法收到返现。"]
+    },
+    "shoutoutext": {
+      "topspecilarule": [],
+      "midspecilarule": [],
+      "grayspecilarule": ["＊［新手标能不能参加返现活动？］本平台新手标可参加；","＊［新手优惠券能不能使用？］本平台的新手优惠券可以使用；","PS：已注册51信用卡的用户无法参与51人品的返现活动。","＊从财鱼管家活动页跳转至平台注册页，充值成功后，进入“人品账户中心-我的福利”中激活财鱼管家专属1元红包，以实现资金锁定；","＊成功充值后选一定要择领取账户内的“1元”红包，并确认参与，后续才可获得返利。（锁定后系统会自动投资，不需要手动再投资）"],
+      "btmspecilarule": [],
+      "rule": true
+    },
+    "futoutext": {
+      "topspecilarule": [],
+      "midspecilarule": [],
+      "grayspecilarule": [],
+      "btmspecilarule": [],
+      "rule": true
+    },
     "description": [
       "1.点击活动按钮，在平台活动页面注册账号。注册成功后在24小时内投资活动标的。",
       "2.投资成功后，30个工作日内，将会在财鱼管家app“我的-提醒”中收到返现红包。",

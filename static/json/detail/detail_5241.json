@@ -19,6 +19,27 @@
       "用券还可以得奖励吗？": "首投无法使用券。"
     },
     "qa": [false, false, true, true, true, true, true],
+    "hasfutou": true,
+    "process": [false, false, false, false, false],
+    "processdata": {
+      "first": ["只有通过财鱼管家注册的平台账号才能参加返现活动。"],
+      "second": ["平台账号注册成功后，请在48小时内前往平台完成投资，超时将无法返现。","如果活动过程中奖励规则出现变化，以登记时的奖励规则为准。"],
+      "third": ["首投为当日投资即返现，复投现一般会在3个工作日内内直接发放至财鱼管家app“我的红包”中。","已登记过的手机号请不要在其他财鱼账号上再次登记，否则可能无法收到返现。"]
+    },
+    "shoutoutext": {
+      "topspecilarule": [],
+      "midspecilarule": [],
+      "grayspecilarule": ["＊［新手标能不能参加返现活动？］目前活动标的是3月标起的，如将来平台有3月标期的新手标是可以的；","＊［新手优惠券能不能使用？］首投目前无法使用优惠券；"],
+      "btmspecilarule": [],
+      "rule": true
+    },
+    "futoutext": {
+      "topspecilarule": [],
+      "midspecilarule": [],
+      "grayspecilarule": ["＊通过财鱼管家首投本平台的用户，才能参加复投活动；点击“去复投”，登记手机号，然后再去投资。"],
+      "btmspecilarule": [],
+      "rule": true
+    },
     "description": [],
     "rule": [true, true, true, true, true, true],
     "topspecilarule": [],

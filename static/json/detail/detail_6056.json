@@ -1,6 +1,6 @@
 {
   "platform": {
-    "fanxianurl": "https://m.tourongjia.com/#/channelTemplateFanli?hmsr=sccygj",
+    "fanxianurl": "https://www.tourongjia.com/Track/Sccygj/index",
     "shoutoustatus": false,
     "share": "",
 
@@ -16,12 +16,34 @@
     "ratedesc": "首投综合年化收益率可达37.40%",
     "specialqa": {},
     "qa": [true, true, true, true, true, true, true],
+
+    "hasfutou": true,
+    "process": [false, false, false, false, false],
+    "processdata": {
+      "first": ["只有通过财鱼管家注册的平台账号才能参加返现活动。"],
+      "second": ["平台账号注册成功后，请在48小时内前往平台完成投资，超时将无法返现。","如果活动过程中奖励规则出现变化，以登记时的奖励规则为准。"],
+      "third": ["首投当日投资即可返现，复投一般会在3个工作日内发放，返现将直接发放至财鱼管家app“我的红包”中。","已登记过的手机号请不要在其他财鱼账号上再次登记，否则可能无法收到返现。"]
+    },
+    "shoutoutext": {
+      "topspecilarule": [],
+      "midspecilarule": [],
+      "grayspecilarule": ["＊［新手标能不能参加返现活动？］本平台新手标可参加；","＊［新手优惠券能不能使用？］本平台的新手优惠券可以使用；","＊［怎么参加“超级返”？］点击“参与超级返”按钮，登记上您的手机号，即获得“超级返”名额。然后再去注册投资即可。"],
+      "btmspecilarule": [],
+      "rule": true
+    },
+    "futoutext": {
+      "topspecilarule": [],
+      "midspecilarule": [],
+      "grayspecilarule": ["＊通过财鱼管家首投本平台且首投金额不低于5000元的用户，才能参加复投活动；点击“去复投”，登记手机号，然后再去投资；","＊可使用本平台的红包或加息券，复投奖励每个账号只能领取一次；"],
+      "btmspecilarule": [],
+      "rule": true
+    },
     "description": [],
     "rule": [true, true, true, true, true, true],
     "topspecilarule": [],
     "midspecilarule": [],
     "grayspecilarule": [],
-    "btmspecilarule": ["［复投规则］只有之前成功通过财鱼管家参加过投融家平台首投，且首投金额不低于5000的用户，才能参加复投，需要点击'去复投'按钮参加复投登记，登记成功之后需要在24小时之内进行投资。每天名额有限，满额即关闭活动入口。可以使用平台的红包和加息券，复投奖励每个账号只能领取一次！"]
+    "btmspecilarule": []
 
   },
   "tasklist": [{

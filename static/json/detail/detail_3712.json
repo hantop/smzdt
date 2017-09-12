@@ -16,6 +16,27 @@
     "ratedesc": "首投综合年化收益率可达26.19%",
     "specialqa": {},
     "qa": [true, true, true, true, true, true, true],
+    "hasfutou": false,
+    "process": [false, false, false, false, false],
+    "processdata": {
+      "first": ["只有通过财鱼管家注册的平台账号才能参加返现活动。"],
+      "second": ["平台账号注册成功后，请在48小时内前往平台完成投资，超时将无法返现。","如果活动过程中奖励规则出现变化，以登记时的奖励规则为准。"],
+      "third": ["返现一般会在3个工作日内直接发放至财鱼管家app“我的红包”中。","已登记过的手机号请不要在其他财鱼账号上再次登记，否则可能无法收到返现。"]
+    },
+    "shoutoutext": {
+      "topspecilarule": [],
+      "midspecilarule": [],
+      "grayspecilarule": ["＊［新手标能不能参加返现活动？］本平台新手标可参加；","＊［新手优惠券能不能使用？］本平台的新手优惠券可以使用；"],
+      "btmspecilarule": [],
+      "rule": true
+    },
+    "futoutext": {
+      "topspecilarule": [],
+      "midspecilarule": [],
+      "grayspecilarule": [],
+      "btmspecilarule": [],
+      "rule": true
+    },
     "description": [],
     "rule": [true, true, true, true, true, true],
     "topspecilarule": [],

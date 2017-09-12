@@ -18,6 +18,27 @@
       "可以投资新手标吗？": "注册页面的财鱼管家专享标就是新手标。"
     },
     "qa": [true, false, true, true, true, true, true],
+    "hasfutou": true,
+    "process": [false, false, false, false, false],
+    "processdata": {
+      "first": ["只有通过财鱼管家注册的平台账号才能参加返现活动。"],
+      "second": ["平台账号注册成功后，请在48小时内前往平台完成投资，超时将无法返现。","如果活动过程中奖励规则出现变化，以登记时的奖励规则为准。"],
+      "third": ["返现一般会在3个工作日内直接发放至财鱼管家app“我的红包”中。","已登记过的手机号请不要在其他财鱼账号上再次登记，否则可能无法收到返现。"]
+    },
+    "shoutoutext": {
+      "topspecilarule": [],
+      "midspecilarule": [],
+      "grayspecilarule": ["＊［新手标能不能参加返现活动？］注册页面的财鱼管家专享标就是新手标；","＊［新手优惠券能不能使用？］本平台的新手优惠券可以使用；","首投仅限 3个月的“财鱼管家专享标”才参与返现活动；","已通过财鱼管家注册的用户，只能通过注册页面完成投资，不能去官网或下载APP进行投资。"],
+      "btmspecilarule": [],
+      "rule": true
+    },
+    "futoutext": {
+      "topspecilarule": [],
+      "midspecilarule": [],
+      "grayspecilarule": ["＊通过财鱼管家首投本平台的用户，才能参加复投活动；点击“去复投”，登记手机号，然后再去投资；","＊可使用本平台的红包或加息券，复投奖励每个账号只能领取一次；"],
+      "btmspecilarule": [],
+      "rule": true
+    },
     "description": [],
     "rule": [true, false, true, true, true, true],
     "topspecilarule": ["特别注意：用户首投必须投资3个月的“财鱼管家专享标”，投资其他标的不给任何奖励！",

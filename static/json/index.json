@@ -1,19 +1,34 @@
 {
-  "totalmoney": "5000050.00",
+  "totalmoney": "5677520.00",
 
   "platforms": {
     "today": {
       "title": "今日推荐",
-      "data": [{
-          "pid": "271",
-          "logo": "http://h5.caiyu.in/img/logo_qbm.png",
-          "title": "钱保姆",
-          "grade": "AA",
-          "desc": "北京银行资金存管，国资企业1亿元战略投资",
-          "rate": "34.30",
-          "money": "100~350",
+      "data": [
+        
+        {
+          "pid": "3712",
+          "logo": "http://h5.caiyu.in/img/logo_htyd.png",
+          "title": "汇通易贷",
+          "grade": "B",
+          "desc": "华兴银行资金存管 注册资本5000万元",
+          "rate": "26.19",
+          "money": "350~1500",
           "isfutou": false,
-          "fanxiantype": "2",
+          "fanxiantype": "0",
+          "fanxianbottom": "",
+          "fanxiantypetitle": ""
+        },
+        {
+          "pid": "3203",
+          "logo": "http://h5.caiyu.in/img/logo_3203.png",
+          "title": "百金贷",
+          "grade": "A",
+          "desc": "贵州银行资金存管系统已上线 注册资本1亿",
+          "rate": "39.42",
+          "money": "180~1800",
+          "isfutou": false,
+          "fanxiantype": "0",
           "fanxianbottom": "",
           "fanxiantypetitle": ""
         },
@@ -26,7 +41,7 @@
           "rate": "37.40",
           "money": "120~450",
           "isfutou": false,
-          "fanxiantype": "2",
+          "fanxiantype": "1",
           "fanxianbottom": "",
           "fanxiantypetitle": ""
         },
@@ -36,14 +51,13 @@
           "title": "中业兴融",
           "grade": "A",
           "desc": "上海华瑞银行存管 注册资本5000万元",
-          "rate": "28.00",
+          "rate": "41.39",
           "money": "150~1400",
           "isfutou": false,
           "fanxiantype": "1",
           "fanxianbottom": "",
           "fanxiantypetitle": ""
         },
-
 
         {
           "pid": "7234",
@@ -59,6 +73,7 @@
           "fanxiantypetitle": ""
         },
 
+
         {
           "pid": "6476",
           "logo": "http://h5.caiyu.in/img/logo_6476.png",
@@ -72,32 +87,7 @@
           "fanxianbottom": "",
           "fanxiantypetitle": ""
         },
-        {
-          "pid": "5241",
-          "logo": "http://h5.caiyu.in/dashboard/img/logo_xglcd.png",
-          "title": "信广立诚贷",
-          "grade": "A",
-          "desc": "徽商银行资金存管 注册资本5000万",
-          "rate": "17.11",
-          "money": "300~700",
-          "isfutou": false,
-          "fanxiantype": "1",
-          "fanxianbottom": "",
-          "fanxiantypetitle": ""
-        },
-        {
-          "pid": "3203",
-          "logo": "http://h5.caiyu.in/img/logo_3203.png",
-          "title": "百金贷",
-          "grade": "A",
-          "desc": "贵州银行资金存管系统已上线 注册资本1亿",
-          "rate": "24.87",
-          "money": "180~1800",
-          "isfutou": false,
-          "fanxiantype": "0",
-          "fanxianbottom": "",
-          "fanxiantypetitle": ""
-        },
+
         {
           "pid": "6475",
           "logo": "http://h5.caiyu.in/img/logo_6475.png",
@@ -112,15 +102,63 @@
           "fanxiantypetitle": ""
         },
         {
-          "pid": "3712",
-          "logo": "http://h5.caiyu.in/img/logo_htyd.png",
-          "title": "汇通易贷",
-          "grade": "B",
-          "desc": "华兴银行资金存管 注册资本5000万元",
-          "rate": "26.19",
-          "money": "350~1500",
+          "pid": "271",
+          "logo": "http://h5.caiyu.in/img/logo_qbm.png",
+          "title": "钱保姆",
+          "grade": "AA",
+          "desc": "北京银行资金存管，国资企业1亿元战略投资",
+          "rate": "31.29",
+          "money": "80~350",
           "isfutou": false,
           "fanxiantype": "0",
+          "fanxianbottom": "",
+          "fanxiantypetitle": ""
+        },
+
+        {
+          "pid": "6264",
+          "logo": "http://h5.caiyu.in/img/logo_6264.png",
+          "title": "小树时代理财",
+          "grade": "B",
+          "desc": "江西银行资金存管 信息披露规范",
+          "rate": "23.34",
+          "money": "200~600",
+          "isfutou": false,
+          "fanxiantype": "0",
+          "fanxianbottom": "",
+          "fanxiantypetitle": ""
+        },
+
+
+
+
+        {
+          "pid": "258",
+          "logo": "http://h5.caiyu.in/img/logo_258.png",
+          "title": "滚雪球理财",
+          "grade": "AA",
+          "desc": "知名风投三轮投资  厦门银行资金存管",
+          "rate": "29.62",
+          "money": "110~2100",
+          "isfutou": false,
+          "fanxiantype": "0",
+          "fanxianbottom": "",
+          "fanxiantypetitle": ""
+        },
+
+
+
+
+        {
+          "pid": "5241",
+          "logo": "http://h5.caiyu.in/dashboard/img/logo_xglcd.png",
+          "title": "信广立诚贷",
+          "grade": "A",
+          "desc": "徽商银行资金存管 注册资本5000万",
+          "rate": "21.21",
+          "money": "300~700",
+          "isfutou": false,
+          "fanxiantype": "1",
           "fanxianbottom": "",
           "fanxiantypetitle": ""
         },
@@ -137,6 +175,9 @@
           "fanxianbottom": "",
           "fanxiantypetitle": ""
         },
+
+
+
 
 
         {
@@ -183,7 +224,7 @@
           "rate": "28.11",
           "money": "100~500",
           "isfutou": false,
-          "fanxiantype": "2",
+          "fanxiantype": "1",
           "fanxianbottom": "",
           "fanxiantypetitle": ""
         },
@@ -256,7 +297,20 @@
           "fanxianbottom": "",
           "fanxiantypetitle": ""
         },
-
+        {
+          "pid": "6634",
+          "hide":true,
+          "logo": "http://h5.caiyu.in/img/logo_6634.png",
+          "title": "聚胜财富",
+          "grade": "未评级",
+          "desc": "天府银行资金存管 注册资本3亿",
+          "rate": "34.57",
+          "money": "150~500",
+          "isfutou": false,
+          "fanxiantype": "0",
+          "fanxianbottom": "",
+          "fanxiantypetitle": ""
+        },
         {
           "pid": "6589",
           "logo": "http://h5.caiyu.in/img/logo_6589.png",
@@ -298,6 +352,7 @@
 
         {
           "pid": "4270",
+          "hide":true,
           "logo": "http://h5.caiyu.in/img/logo_lmw.png",
           "title": "利民网",
           "grade": "未评级",
@@ -314,6 +369,7 @@
 
         {
           "pid": "100",
+          "hide":true,
           "logo": "http://h5.caiyu.in/img/logo_lcf.png",
           "title": "理财范",
           "grade": "AA",
@@ -330,6 +386,7 @@
 
         {
           "pid": "6113",
+          "hide":true,
           "logo": "http://h5.caiyu.in/img/logo_hyjf.png",
           "title": "汇盈金服",
           "grade": "A",

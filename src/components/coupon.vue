@@ -207,7 +207,7 @@
   
   .xmoney1 {
     color: #FF9115;
-    font-size: 11.2vw;
+    font-size: 10vw;
     font-weight: 600;
     text-align: center;
     line-height: 16vw;
@@ -230,7 +230,7 @@
   }
   
   .xmoney0 {
-    font-size: 11.2vw;
+    font-size: 10vw;
     font-weight: 600;
     color: #e64d3f;
     text-align: center;
@@ -377,7 +377,7 @@
   }
   
   .xmoney span {
-    font-size: 16vw;
+    font-size: 12vw;
     vertical-align: bottom;
   }
   

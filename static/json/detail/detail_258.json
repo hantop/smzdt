@@ -1,0 +1,144 @@
+{
+  "platform": {
+    "fanxianurl": "https://fjwebs.gxq168.com/act/Activity/spreadregister?source=caiyuguanjia",
+    "shoutoustatus": true,
+    "share": "",
+
+    "title": "滚雪球理财",
+    "pid": "258",
+    "logo": "http://h5.caiyu.in/img/logo_258.png",
+    "grade": "AA",
+    "tag": [
+      "风投系"
+    ],
+    "detectlevel": "正常",
+    "desc": "知名风投三轮投资  厦门银行资金存管",
+    "ratedesc": "首投综合年化收益率可达29.62%",
+    "specialqa": {
+      "可以投资新手标吗？": "目前平台没有30天以上的新手标的，如果投资平台新手标的则不能参加财鱼的返利活动。"
+    },
+    "qa": [true, false, true, true, true, true, true],
+    "description": [],
+    "rule": [true, true, true, true, true, true],
+    "topspecilarule": [],
+    "midspecilarule": [],
+    "grayspecilarule": [],
+    "btmspecilarule": [],
+
+
+
+
+    "hasfutou": true,
+    "process": [false, false, false, false, false],
+    "processdata": {
+      "first": ["只有通过财鱼管家注册的平台账号才能参加返现活动。"],
+      "second": ["平台账号注册成功后，请在48小时内前往平台完成投资，超时将无法返现。","如果活动过程中奖励规则出现变化，以登记时的奖励规则为准。"],
+      "third": ["返现一般会在3个工作日内直接发放至财鱼管家app“我的红包”中。","已登记过的手机号请不要在其他财鱼账号上再次登记，否则可能无法收到返现。"]
+    },
+    "shoutoutext": {
+      "topspecilarule": [],
+      "midspecilarule": [],
+      "grayspecilarule": ["＊［新手标能不能参加返现活动？］新手标不参与返现活动；","＊［新手优惠券能不能使用？］本平台的新手优惠券可以使用；"],
+      "btmspecilarule": [],
+      "rule": false
+    },
+    "futoutext": {
+      "topspecilarule": [],
+      "rule": false,
+      "midspecilarule": [],
+      "grayspecilarule": ["＊通过财鱼管家首投本平台的用户，才能参加复投活动；点击“去复投”，登记手机号，然后再去投资；","＊可使用本平台的红包或加息券，复投奖励每个账号只能领取一次。"],
+      "btmspecilarule": []
+    }
+  },
+  "tasklist": [{
+      "fanlitype": "0",
+      "title": "首投30天及以上标的 投资金额6000元~10万",
+      "fanlimoney": "1%+50",
+      "fanlimoneydesc": "例如：投资6000元，投资收益29.59元，合计收益139.59元",
+      "futoudesc": "",
+      "fanlistat": "",
+      "baserate": "6.0",
+      "fanlirate": "28.3",
+      "fanlipeople": "54",
+      "fanlistart": "",
+      "fanliend": "",
+      "fanlistatus": true,
+      "jiaxi": {
+        "jiaxititle": "",
+        "jiaxitype": ""
+      }
+    },
+    {
+      "fanlitype": "0",
+      "title": "首投50天及以上标的 投资金额6000元~10万",
+      "fanlimoney": "1.5%+50",
+      "fanlimoneydesc": "例如：投资6000元，投资收益53.42元，合计收益193.42元",
+      "futoudesc": "",
+      "fanlistat": "",
+      "baserate": "6.5",
+      "fanlirate": "23.5",
+      "fanlipeople": "43",
+      "fanlistart": "",
+      "fanliend": "",
+      "fanlistatus": true,
+      "jiaxi": {
+        "jiaxititle": "",
+        "jiaxitype": ""
+      }
+    },
+    {
+      "fanlitype": "0",
+      "title": "首投85天及以上标的 投资金额6000元~10万",
+      "fanlimoney": "2%+100",
+      "fanlimoneydesc": "例如：投资6000元，投资收益100.6元，合计收益320.6元",
+      "futoudesc": "",
+      "fanlistat": "",
+      "baserate": "7.2",
+      "fanlirate": "22.95%",
+      "fanlipeople": "53",
+      "fanlistart": "",
+      "fanliend": "",
+      "fanlistatus": true,
+      "jiaxi": {
+        "jiaxititle": "",
+        "jiaxitype": ""
+      }
+    },
+    {
+      "fanlitype": "1",
+      "title": "复投6000元—30天及以上标的",
+      "fanlimoney": "80",
+      "fanlimoneydesc": "投资收益29.59元，合计收益109.59元",
+      "futoudesc": "",
+      "fanlistat": "",
+      "baserate": "6.0",
+      "fanlirate": "22.2",
+      "fanlipeople": "35",
+      "fanlistart": "00:00:00",
+      "fanliend": "23:59:59",
+      "fanlistatus": true,
+      "jiaxi": {
+        "jiaxititle": "",
+        "jiaxitype": ""
+      }
+    },
+    {
+      "fanlitype": "1",
+      "title": "复投10000元—30天及以上标的",
+      "fanlimoney": "130",
+      "fanlimoneydesc": "投资收益49.32元，合计收益179.32元",
+      "futoudesc": "",
+      "fanlistat": "",
+      "baserate": "6.0",
+      "fanlirate": "21.8",
+      "fanlipeople": "35",
+      "fanlistart": "00:00:00",
+      "fanliend": "23:59:59",
+      "fanlistatus": true,
+      "jiaxi": {
+        "jiaxititle": "",
+        "jiaxitype": ""
+      }
+    }
+  ]
+}
