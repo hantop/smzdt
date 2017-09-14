@@ -1,0 +1,156 @@
+{
+  "platform": {
+    "fanxianurl": "https://share.umibank.com/prom/?channel=3011#/activity/newer",
+    "shoutoustatus": true,
+    "share": "",
+
+    "title": "悠米钱包",
+    "pid": "7243",
+    "logo": "http://h5.caiyu.in/img/logo_7243.png",
+    "grade": "A",
+    "tag": [
+      "风投系"
+    ],
+    "detectlevel": "正常",
+    "desc": "与华瑞银行签订资金存管协议 注册资本1188万",
+    "ratedesc": "首投综合年化收益率可达35.46%",
+    "specialqa": {},
+    "qa": [true, true, true, true, true, true, true],
+    "hasfutou": true,
+    "process": [true, true, true, false, false],
+    "processdata": {
+      "first": [],
+      "second": [],
+      "third": ["返现一般会在7个工作日内直接发放至财鱼管家app“我的红包”中。","已登记过的手机号请不要在其他财鱼账号上再次登记，否则可能无法收到返现。"]
+    },
+    "shoutoutext": {
+      "topspecilarule": [],
+      "midspecilarule": [],
+      "grayspecilarule": ["＊［新手标能不能参加返现活动？］本平台新手标可参加；","＊［新手优惠券能不能使用？］本平台的新手优惠券可以使用；"],
+      "btmspecilarule": [],
+      "rule": true
+    },
+    "futoutext": {
+      "topspecilarule": [],
+      "midspecilarule": [],
+      "grayspecilarule": ["＊通过财鱼管家首投本平台的用户，才能参加复投活动；点击“去复投”，登记手机号，然后再去投资；","＊可使用本平台的红包或加息券，复投奖励每个账号只能领取一次；"],
+      "btmspecilarule": [],
+      "rule": true
+    },
+    "description": [],
+    "rule": [true, true, true, true, true, true]
+
+
+
+
+  },
+  "tasklist": [{
+      "fanlitype": "0",
+      "title": "首投3000元—4周标的",
+      "fanlimoney": "50",
+      "fanlimoneydesc": "投资收益27.62元，合计收益77.62 元",
+      "futoudesc": "",
+      "fanlistat": "",
+      "baserate": "12.0",
+      "fanlirate": "33.7",
+      "fanlipeople": "92",
+      "fanlistart": "",
+      "fanliend": "",
+      "fanlistatus": true,
+      "jiaxi": {
+        "jiaxititle": "",
+        "jiaxitype": ""
+      }
+    },
+    {
+      "fanlitype": "0",
+      "title": "首投6000元—4周标的",
+      "fanlimoney": "90",
+      "fanlimoneydesc": "投资收益55.23元，合计收益145.23元",
+      "futoudesc": "",
+      "fanlistat": "",
+      "baserate": "12.0",
+      "fanlirate": "31.5",
+      "fanlipeople": "83",
+      "fanlistart": "",
+      "fanliend": "",
+      "fanlistatus": true,
+      "jiaxi": {
+        "jiaxititle": "",
+        "jiaxitype": ""
+      }
+    },
+    {
+      "fanlitype": "0",
+      "title": "首投10000元—4周标的",
+      "fanlimoney": "180",
+      "fanlimoneydesc": "投资收益92.05元，合计收益272.05元",
+      "futoudesc": "",
+      "fanlistat": "",
+      "baserate": "12.0",
+      "fanlirate": "35.5",
+      "fanlipeople": "87",
+      "fanlistart": "",
+      "fanliend": "",
+      "fanlistatus": true,
+      "jiaxi": {
+        "jiaxititle": "",
+        "jiaxitype": ""
+      }
+    },
+    {
+      "fanlitype": "0",
+      "title": "首投20000元—4周标的",
+      "fanlimoney": "300",
+      "fanlimoneydesc": "投资收益184.11元，合计收益484.11元",
+      "futoudesc": "",
+      "fanlistat": "",
+      "baserate": "12.0",
+      "fanlirate": "31.5",
+      "fanlipeople": "45",
+      "fanlistart": "00:00:00",
+      "fanliend": "23:59:59",
+      "fanlistatus": true,
+      "jiaxi": {
+        "jiaxititle": "",
+        "jiaxitype": ""
+      }
+    },
+    {
+      "fanlitype": "1",
+      "title": "复投5000元—2周及以上标的",
+      "fanlimoney": "20",
+      "fanlimoneydesc": "投资收益19.18元，合计收益39.18元",
+      "futoudesc": "",
+      "fanlistat": "",
+      "baserate": "10.0",
+      "fanlirate": "20.43",
+      "fanlipeople": "56",
+      "fanlistart": "",
+      "fanliend": "",
+      "fanlistatus": true,
+      "jiaxi": {
+        "jiaxititle": "",
+        "jiaxitype": ""
+      }
+    },
+    {
+      "fanlitype": "1",
+      "title": "复投10000元—2周及以上标的",
+      "fanlimoney": "50",
+      "fanlimoneydesc": "投资收益38.36元，合计收益88.36元",
+      "futoudesc": "",
+      "fanlistat": "",
+      "baserate": "10.0",
+      "fanlirate": "23.04",
+      "fanlipeople": "56",
+      "fanlistart": "",
+      "fanliend": "",
+      "fanlistatus": true,
+      "jiaxi": {
+        "jiaxititle": "",
+        "jiaxitype": ""
+      }
+    }
+  ]
+}

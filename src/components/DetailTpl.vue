@@ -354,7 +354,8 @@
         data: {
           'url': '/CaiyuPartner/api/v1/invest/platform/valid',
           'data': {
-            'pid': this.$route.params.pid
+            'pid': this.$route.params.pid,
+            'uid': this.uid
           }
         },
         dataType: 'json',
@@ -363,6 +364,7 @@
             _this.status.first = res.data.first
             _this.status.second = res.data.second
             _this.status.super = res.data.super
+            _this.defaulttel = res.data.mobile
             Indicator.close()
           }
         }

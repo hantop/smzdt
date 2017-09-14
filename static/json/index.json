@@ -5,7 +5,32 @@
     "today": {
       "title": "今日推荐",
       "data": [
-        
+                {
+          "pid": "6392",
+          "logo": "http://h5.caiyu.in/img/logo_6392.png",
+          "title": "响当当",
+          "grade": "B",
+          "desc": "海口联合农商银行资金存管 中商国能集团控股平台",
+          "rate": "27.02",
+          "money": "50~650",
+          "isfutou": true,
+          "fanxiantype": "0",
+          "fanxianbottom": "",
+          "fanxiantypetitle": ""
+        },
+                        {
+          "pid": "3203",
+          "logo": "http://h5.caiyu.in/img/logo_3203.png",
+          "title": "百金贷",
+          "grade": "A",
+          "desc": "贵州银行资金存管系统已上线 注册资本5000万元",
+          "rate": "39.42",
+          "money": "180~1800",
+          "isfutou": false,
+          "fanxiantype": "0",
+          "fanxianbottom": "",
+          "fanxiantypetitle": ""
+        },
         {
           "pid": "3712",
           "logo": "http://h5.caiyu.in/img/logo_htyd.png",
@@ -19,19 +44,7 @@
           "fanxianbottom": "",
           "fanxiantypetitle": ""
         },
-        {
-          "pid": "3203",
-          "logo": "http://h5.caiyu.in/img/logo_3203.png",
-          "title": "百金贷",
-          "grade": "A",
-          "desc": "贵州银行资金存管系统已上线 注册资本1亿",
-          "rate": "39.42",
-          "money": "180~1800",
-          "isfutou": false,
-          "fanxiantype": "0",
-          "fanxianbottom": "",
-          "fanxiantypetitle": ""
-        },
+
         {
           "pid": "6056",
           "logo": "http://h5.caiyu.in/img/logo_trj.png",
@@ -98,6 +111,20 @@
           "money": "80~400",
           "isfutou": false,
           "fanxiantype": "1",
+          "fanxianbottom": "",
+          "fanxiantypetitle": ""
+        },
+
+        {
+          "pid": "7243",
+          "logo": "http://h5.caiyu.in/img/logo_7243.png",
+          "title": "悠米钱包",
+          "grade": "A",
+          "desc": "与华瑞银行签订资金存管协议 注册资本1188万",
+          "rate": "35.46",
+          "money": "50~300",
+          "isfutou": true,
+          "fanxiantype": "0",
           "fanxianbottom": "",
           "fanxiantypetitle": ""
         },
@@ -297,6 +324,7 @@
           "fanxianbottom": "",
           "fanxiantypetitle": ""
         },
+
         {
           "pid": "6634",
           "hide":true,
