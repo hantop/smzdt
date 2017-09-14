@@ -29,7 +29,7 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
       '/forward.php': {
-        target: 'http://h5.caiyu.in/forward.php',
+        target: 'http://h5test.caiyu.in/forward.php',
         changeOrigin: true,
         pathRewrite: {
           '^/forward.php': '/forward.php'

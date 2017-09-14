@@ -17,12 +17,15 @@
       </div>
       <!-- <p class="yellow tac">*该手机号码仅用于信息追踪</p> -->
       <input v-if="!result" v-model="tel" class="alert_input tac" type="text" @focus="tel=''" name="" id="" placeholder="请输入注册投资的手机号">
+      <div v-if="hascoupon">
+        <p @click="usecoupon=!usecoupon">券</p>
+      </div>
+      <button @click="dowhat" :class="ischecked?'':'disable'" class="btn_cyan">{{!result?'确定':'正在跳转至'+pname+'...'}}</button>
+      <!-- <div v-if="!result" style=" font-size: 12px;margin-top: 13px;  color: #777; text-align:center; ">您即将投资的是评级为
+                  <router-link :to="'/riskscore/'+pid">{{score}}</router-link> 的平台</div> -->
       <div v-if="!result" class="agree"><input v-model="ischecked" type="checkbox">同意
         <a href="http://h5.caiyu.in/dashboard/agreement.html">返现协议与免责声明</a>
       </div>
-      <button @click="dowhat" :class="ischecked?'':'disable'" class="btn_cyan bbbtn">{{!result?'确定':'正在跳转至'+pname+'...'}}</button>
-      <!-- <div v-if="!result" style=" font-size: 12px;margin-top: 13px;  color: #777; text-align:center; ">您即将投资的是评级为
-          <router-link :to="'/riskscore/'+pid">{{score}}</router-link> 的平台</div> -->
       <a v-if="!result" @click="hideself" class="esc"></a>
     </div>
     <div class="mask"></div>
@@ -34,10 +37,11 @@
     data () {
       return {
         tel: this.defaulttel,
-        ischecked: true
+        ischecked: true,
+        usecoupon: true
       }
     },
-    props: ['data', 'score', 'pid', 'defaulttel', 'result', 'pname'],
+    props: ['data', 'score', 'pid', 'defaulttel', 'result', 'pname', 'cashCoupon'],
     computed: {
       name () {
         switch (this.data) {
@@ -51,6 +55,13 @@
 
             return '超级返'
         }
+      },
+      hascoupon () {
+        if (this.cashCoupon.id) {
+          return true
+        } else {
+          return false
+        }
       }
     },
     methods: {
@@ -59,7 +70,7 @@
       },
       dowhat () {
         if (!this.ischecked || this.result) return
-        this.$emit('dowhat', this.tel)
+        this.$emit('dowhat', { 'tel': this.tel, 'usecoupon': this.usecoupon })
       }
     }
   }
@@ -71,22 +82,15 @@
     margin-top: 4px;
   }
 
-  .bbbtn {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    border-radius: 0;
-  }
 
   .agree {
     font-size: 12px;
-    margin-top: 4px;
+    margin-top: 10px;
     color: rgb(119, 119, 119);
     text-align: center;
     display: flex;
     align-items: center;
-    /* justify-content: center; */
-    margin: 10px 0;
+    justify-content: center;
   }
 
   .yellow {
@@ -104,9 +108,6 @@
     font-size: 12px;
   }
 
-  .alert_input {
-    margin: 4px 0;
-  }
 
   .alert {
     border-radius: 2px;
@@ -121,7 +122,7 @@
     width: 280px;
     min-height: 175px;
     padding-top: 34px;
-    height: 236px;
+    padding-bottom: 10px;
   }
 
   .title {
@@ -134,8 +135,7 @@
     font-size: 24px;
     font-weight: 500;
     color: #2b3242;
-    min-height: 36px;
-    padding-top: 10px;
+    padding-top: 0px;
     padding-bottom: 10px;
   }
 
