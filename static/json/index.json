@@ -4,8 +4,7 @@
   "platforms": {
     "today": {
       "title": "今日推荐",
-      "data": [
-                {
+      "data": [{
           "pid": "6392",
           "logo": "http://h5.caiyu.in/img/logo_6392.png",
           "title": "响当当",
@@ -18,7 +17,7 @@
           "fanxianbottom": "",
           "fanxiantypetitle": ""
         },
-                        {
+        {
           "pid": "3203",
           "logo": "http://h5.caiyu.in/img/logo_3203.png",
           "title": "百金贷",
@@ -46,18 +45,19 @@
         },
 
         {
-          "pid": "6056",
-          "logo": "http://h5.caiyu.in/img/logo_trj.png",
-          "title": "投融家",
+          "pid": "271",
+          "logo": "http://h5.caiyu.in/img/logo_qbm.png",
+          "title": "钱保姆",
           "grade": "AA",
-          "desc": "浙商银行资金存管 注册资本5000万元",
-          "rate": "37.40",
-          "money": "120~450",
+          "desc": "北京银行资金存管，国资企业1亿元战略投资",
+          "rate": "31.29",
+          "money": "80~350",
           "isfutou": false,
-          "fanxiantype": "1",
+          "fanxiantype": "0",
           "fanxianbottom": "",
           "fanxiantypetitle": ""
         },
+
         {
           "pid": "5932",
           "logo": "http://h5test.caiyu.in/dashboard/img/logo_zyxr.png",
@@ -101,46 +101,7 @@
           "fanxiantypetitle": ""
         },
 
-        {
-          "pid": "6475",
-          "logo": "http://h5.caiyu.in/img/logo_6475.png",
-          "title": "中再融",
-          "grade": "B",
-          "desc": "贵州银行存管 注册资本1亿元A轮融资",
-          "rate": "27.21",
-          "money": "80~400",
-          "isfutou": false,
-          "fanxiantype": "1",
-          "fanxianbottom": "",
-          "fanxiantypetitle": ""
-        },
 
-        {
-          "pid": "7243",
-          "logo": "http://h5.caiyu.in/img/logo_7243.png",
-          "title": "悠米钱包",
-          "grade": "A",
-          "desc": "与华瑞银行签订资金存管协议 注册资本1188万",
-          "rate": "35.46",
-          "money": "50~300",
-          "isfutou": true,
-          "fanxiantype": "0",
-          "fanxianbottom": "",
-          "fanxiantypetitle": ""
-        },
-        {
-          "pid": "271",
-          "logo": "http://h5.caiyu.in/img/logo_qbm.png",
-          "title": "钱保姆",
-          "grade": "AA",
-          "desc": "北京银行资金存管，国资企业1亿元战略投资",
-          "rate": "31.29",
-          "money": "80~350",
-          "isfutou": false,
-          "fanxiantype": "0",
-          "fanxianbottom": "",
-          "fanxiantypetitle": ""
-        },
 
         {
           "pid": "6264",
@@ -182,8 +143,8 @@
           "title": "信广立诚贷",
           "grade": "A",
           "desc": "徽商银行资金存管 注册资本5000万",
-          "rate": "21.21",
-          "money": "300~700",
+          "rate": "25.22",
+          "money": "80~700",
           "isfutou": false,
           "fanxiantype": "1",
           "fanxianbottom": "",
@@ -204,7 +165,19 @@
         },
 
 
-
+        {
+          "pid": "30",
+          "logo": "http://h5.caiyu.in/img/logo_30.png",
+          "title": "小牛在线",
+          "grade": "A",
+          "desc": "实缴资本10300万  华兴银行资金存管",
+          "rate": "30.28",
+          "money": "50~100",
+          "isfutou": true,
+          "fanxiantype": "0",
+          "fanxianbottom": "",
+          "fanxiantypetitle": ""
+        },
 
 
         {
@@ -324,10 +297,49 @@
           "fanxianbottom": "",
           "fanxiantypetitle": ""
         },
+        {
+          "pid": "6475",
+          "logo": "http://h5.caiyu.in/img/logo_6475.png",
+          "title": "中再融",
+          "grade": "B",
+          "desc": "贵州银行存管 注册资本1亿元A轮融资",
+          "rate": "27.21",
+          "money": "80~400",
+          "isfutou": false,
+          "fanxiantype": "1",
+          "fanxianbottom": "",
+          "fanxiantypetitle": ""
+        },
 
         {
+          "pid": "6056",
+          "logo": "http://h5.caiyu.in/img/logo_trj.png",
+          "title": "投融家",
+          "grade": "AA",
+          "desc": "浙商银行资金存管 注册资本5000万元",
+          "rate": "37.40",
+          "money": "120~450",
+          "isfutou": false,
+          "fanxiantype": "1",
+          "fanxianbottom": "",
+          "fanxiantypetitle": ""
+        },
+        {
+          "pid": "7243",
+          "logo": "http://h5.caiyu.in/img/logo_7243.png",
+          "title": "悠米钱包",
+          "grade": "A",
+          "desc": "与华瑞银行签订资金存管协议 注册资本1188万",
+          "rate": "35.46",
+          "money": "50~300",
+          "isfutou": true,
+          "fanxiantype": "0",
+          "fanxianbottom": "",
+          "fanxiantypetitle": ""
+        },
+        {
           "pid": "6634",
-          "hide":true,
+          "hide": true,
           "logo": "http://h5.caiyu.in/img/logo_6634.png",
           "title": "聚胜财富",
           "grade": "未评级",
@@ -352,6 +364,8 @@
           "fanxianbottom": "",
           "fanxiantypetitle": ""
         },
+
+
         {
           "pid": "216",
           "logo": "http://h5.caiyu.in/img/logo_216.png",
@@ -380,7 +394,7 @@
 
         {
           "pid": "4270",
-          "hide":true,
+          "hide": true,
           "logo": "http://h5.caiyu.in/img/logo_lmw.png",
           "title": "利民网",
           "grade": "未评级",
@@ -397,7 +411,7 @@
 
         {
           "pid": "100",
-          "hide":true,
+          "hide": true,
           "logo": "http://h5.caiyu.in/img/logo_lcf.png",
           "title": "理财范",
           "grade": "AA",
@@ -414,7 +428,7 @@
 
         {
           "pid": "6113",
-          "hide":true,
+          "hide": true,
           "logo": "http://h5.caiyu.in/img/logo_hyjf.png",
           "title": "汇盈金服",
           "grade": "A",

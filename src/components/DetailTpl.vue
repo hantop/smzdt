@@ -1,6 +1,6 @@
 <template>
   <div style="background-color: #EFEFF0;">
-
+  
     <header>
       <a :href="'http://h5.caiyu.in/dashboard/invite.html?uid='+uid">
         <img src="/img/invite_icon_2.png" class="invite_btn">
@@ -8,17 +8,17 @@
       <router-link style="display: block;" :to="'/riskscore/'+this.$route.params.pid">
         <div class="xbox">
           <!--<div class="top">
-                                                                  <div class="logo">
-                                                                    <img width="100%" :src="data.logo" alt="">
-                                                                  </div>
-                                                                  <div class="right">
-                                                                    <div class="r_top">
-                                                                      <h5 class="namecn">{{data.title}}</h5>
-                                                                      <span v-for="(item,index) in data.tag" :key="index" class="xspan2">{{item}}</span>
-                                                                    </div>
-                                                                    <p class="describe">{{data.desc}}</p>
-                                                                  </div>
-                                                                </div>-->
+                                                                      <div class="logo">
+                                                                        <img width="100%" :src="data.logo" alt="">
+                                                                      </div>
+                                                                      <div class="right">
+                                                                        <div class="r_top">
+                                                                          <h5 class="namecn">{{data.title}}</h5>
+                                                                          <span v-for="(item,index) in data.tag" :key="index" class="xspan2">{{item}}</span>
+                                                                        </div>
+                                                                        <p class="describe">{{data.desc}}</p>
+                                                                      </div>
+                                                                    </div>-->
           <img :src="data.logo" class="xlogo" alt="">
           <div class="xright">
             <div class="xtitle">
@@ -49,6 +49,7 @@
           <li v-for="(item,i) in data.shoutoutext.midspecilarule" :key="i" class="red">{{item}}</li>
           <li v-for="(item,i) in data.shoutoutext.grayspecilarule" :key="i">{{item}}</li>
           <li v-for="(item,i) in data.shoutoutext.btmspecilarule" :key="i" class="red">{{item}}</li>
+          <li style="margin-top:10px">如有疑问可以添加财鱼管家活动群579308502 进行咨询</li>
         </h6>
         <h6 v-show="!btntype" style="color: #909090;padding: 0 1.19444em;">
           <br v-if="data.futoutext.topspecilarule.length>0">
@@ -58,17 +59,19 @@
           <li v-for="(item,i) in data.futoutext.midspecilarule" :key="i" class="red">{{item}}</li>
           <li v-for="(item,i) in data.futoutext.grayspecilarule" :key="i">{{item}}</li>
           <li v-for="(item,i) in data.futoutext.btmspecilarule" :key="i" class="red">{{item}}</li>
+  
         </h6>
       </div>
       <a class="qa_rule" href="/dashboard/qa.html">查看常见问题 ></a>
+  
     </header>
     <section>
-
+  
       <div class="extra setnone" id="extra" style="display: block;text-align:center">
         <h6 style="text-align:left" class="title relative" id="hidden-title">
           <span>返现攻略</span>
         </h6>
-
+  
         <div style="text-align:left;color: #909090;padding: 0 1.19444em; font-size: 13px">
           <div class="rule_box">
             <h5>1.登记手机号后，通过财鱼管家完成平台注册</h5>
@@ -89,10 +92,11 @@
           </div>
         </div>
         <router-link class="speed" :to="'/prize/'+encodeURIComponent(uid)">查看最新返现进度 ></router-link>
+  
         <!--<div class="receive-gift relative btn-receive" data-canuser="0" id="btn-receive">
-                                                                                                                                                                                                                              <a class="toPrize">已参加，我要兑奖</a>
-                                                                                                                                                                                                                              <hr class="divider divider-horizontal divider-top">
-                                                                                                                                                                                                                            </div>-->
+                                                                                                                                                                                                                                  <a class="toPrize">已参加，我要兑奖</a>
+                                                                                                                                                                                                                                  <hr class="divider divider-horizontal divider-top">
+                                                                                                                                                                                                                                </div>-->
       </div>
       <div class="delivery-order">
         <h6 class="title relative" id="see-delivery-order">
@@ -117,7 +121,7 @@
                 <!--<h4 class="tips"><span class="tips_icon">投资收益</span><span class="reward_tips">20%年化+350元返现+100元新手红包</span></h4>-->
               </div>
             </div>
-
+  
           </div>
           <div class="content">
             <h5 class="center">#钱保姆返现#</h5>
@@ -126,36 +130,36 @@
             <ul class="clearfix">
               <li class="left thumb relative">
                 <img class="_thumb thumb-img" src="https://sns.91caiyu.com/data/upload/2017/0704/18/595b6e996b9c359bc104.jpg" alt="thumb">
-
+  
               </li>
               <li class="left thumb relative">
                 <img class="_thumb thumb-img" src="https://sns.91caiyu.com/data/upload/2017/0704/18/595b6e996bdfb184f56c.jpg" alt="thumb">
-
+  
               </li>
             </ul>
           </div>
         </div>
       </div>
       <!--<div class="extra setnone" id="extra" style="display: block">
-                <h6 class="title relative" id="hidden-title">
-                  <span>常见问题</span>
-                </h6>
-                <div style="padding-top:20px">
-                  <div v-for="(v, k, i) in data.specialqa" :key="i">
-                    <div class="question">
-                      <p>{{k}}</p>
+                    <h6 class="title relative" id="hidden-title">
+                      <span>常见问题</span>
+                    </h6>
+                    <div style="padding-top:20px">
+                      <div v-for="(v, k, i) in data.specialqa" :key="i">
+                        <div class="question">
+                          <p>{{k}}</p>
+                        </div>
+                        <div class="answer">
+                          <p>{{v}}</p>
+                        </div>
+                      </div>
                     </div>
-                    <div class="answer">
-                      <p>{{v}}</p>
-                    </div>
-                  </div>
-                </div>
-              </div>-->
+                  </div>-->
       <div style=" font-size: 12px;margin-top: 13px; margin-bottom: 13px; color: #777; text-align:center; ">参与活动则表示同意
         <a href="http://h5.caiyu.in/dashboard/agreement.html">返现协议与免责声明</a>
       </div>
     </section>
-
+  
     <div class="fixed_button relative" id="fixed_button">
       <hr class="divider divider-horizontal divider-top">
       <a href="http://wpa.qq.com/msgrd?v=3&uin=3344813056&site=qq&menu=yes" class="kefu">
@@ -180,13 +184,13 @@
     margin-top: 10px;
     text-align: center;
   }
-
+  
   .rule_box {
     padding-left: 12vw;
     position: relative;
     padding-bottom: 6vw;
   }
-
+  
   .rule_box::after {
     content: '';
     height: 100%;
@@ -196,19 +200,19 @@
     left: 5.4vw;
     top: 3vw;
   }
-
+  
   .rule_box3::after {
     border-left: none;
   }
-
-
+  
+  
   .rule_box h5 {
     font-size: 1.2em;
     font-weight: 600;
     position: relative;
     margin-bottom: 2vw;
   }
-
+  
   .rule_box h5::after {
     content: '1';
     display: block;
@@ -225,15 +229,15 @@
     z-index: 2;
     top: -0.5vw;
   }
-
+  
   .rule_box2 h5::after {
     content: '2'
   }
-
+  
   .rule_box3 h5::after {
     content: '3'
   }
-
+  
   .btntype {
     display: flex;
     width: 100%;
@@ -241,7 +245,7 @@
     padding: 0 5%;
     margin-bottom: 4vw;
   }
-
+  
   .btntype p {
     flex: 1;
     text-align: center;
@@ -249,12 +253,12 @@
     color: #666;
     padding-bottom: 2vw;
   }
-
+  
   .btn_active {
     border-bottom: 2px solid #5f89da!important;
     color: #5f89da!important;
   }
-
+  
   .xfengkong::after {
     content: " ";
     display: inline-block;
@@ -269,7 +273,7 @@
     right: 20px;
     top: 50%;
   }
-
+  
   .speed {
     font-size: 1.4rem;
     background-color: #36bcc1;
@@ -281,7 +285,7 @@
     font-weight: 700;
     margin: 1rem auto .1rem;
   }
-
+  
   .attention {
     margin: 0;
     font-size: 3.5vw;
@@ -531,6 +535,7 @@
             if (res.status === 0 || res.status === '0') {
               statEvent('新什么值得投', '详情页登记成功')
               statEvent('新什么值得投详情页登记', _this.$route.params.pid)
+              _this.cashCoupon = {}
               if (_this.type === 1 || _this.type === '1' || _this.type === 5 || _this.type === '5') {
                 _this.alert = false
                 Toast({

@@ -1,0 +1,139 @@
+{
+  "platform": {
+    "fanxianurl": "https://www.madailicai.com/h5/mobile/lp/2017/09/onlyregister/regist.html?noInvite=true&source=bd_caiyuguanjia",
+    "shoutoustatus": true,
+    "share": "",
+
+    "title": "麻袋理财",
+    "pid": "30",
+    "logo": "http://h5.caiyu.in/img/logo_266.png",
+    "grade": "AA",
+    "tag": [
+      "风投系"
+    ],
+    "detectlevel": "正常",
+    "desc": "中信产业基金控股 厦门银行资金存管",
+    "ratedesc": "首投综合年化收益率可达18.51%",
+    "specialqa": {},
+    "qa": [true, true, true, true, true, true, true],
+    "hasfutou": true,
+    "process": [true, true, true, false, false],
+    "processdata": {
+      "first": [],
+      "second": [],
+      "third": ["返现一般会在3个工作日内直接发放至财鱼管家app“我的红包”中。", "已登记过的手机号请不要在其他财鱼账号上再次登记，否则可能无法收到返现。"]
+    },
+    "shoutoutext": {
+      "topspecilarule": [],
+      "midspecilarule": [],
+      "grayspecilarule": ["＊［新手标能不能参加返现活动？］目前平台没有“优定存”标的的新手标；", "＊［新手优惠券能不能使用？］注册后平台udp 的优惠券，是可以使用的；获得“超级返”名额。然后再去注册投资即可。","特别注意：用户通过财鱼管家进行投资，只能选择平台“优定存”标的，投资其他标的则不享受财鱼管家的返利活动！"],
+      "btmspecilarule": [],
+      "rule": true
+    },
+    "futoutext": {
+      "topspecilarule": [],
+      "midspecilarule": [],
+      "grayspecilarule": ["＊通过财鱼管家首投本平台的用户，才能参加复投活动；点击“去复投”，登记手机号，然后再去投资；", "＊可使用本平台的红包或加息券，复投奖励每个账号只能领取一次；"],
+      "btmspecilarule": [],
+      "rule": true
+    },
+    "description": [],
+    "rule": [true, true, true, true, true, true]
+
+
+
+
+  },
+  "tasklist": [{
+      "fanlitype": "0",
+      "title": "首投5000元—35天及以上“优定存”标的",
+      "fanlimoney": "60",
+      "fanlimoneydesc": "投资收益28.77元，合计收益88.77元",
+      "futoudesc": "",
+      "fanlistat": "",
+      "baserate": "6.0",
+      "fanlirate": "18.5",
+      "fanlipeople": "92",
+      "fanlistart": "",
+      "fanliend": "",
+      "fanlistatus": true,
+      "jiaxi": {
+        "jiaxititle": "",
+        "jiaxitype": ""
+      }
+    },
+    {
+      "fanlitype": "0",
+      "title": "首投10000元—35天及以上“优定存”标的",
+      "fanlimoney": "100",
+      "fanlimoneydesc": "投资收益57.53元，合计收益157.53元",
+      "futoudesc": "",
+      "fanlistat": "",
+      "baserate": "6.0",
+      "fanlirate": "16.43",
+      "fanlipeople": "83",
+      "fanlistart": "",
+      "fanliend": "",
+      "fanlistatus": true,
+      "jiaxi": {
+        "jiaxititle": "",
+        "jiaxitype": ""
+      }
+    },
+
+    {
+      "fanlitype": "0",
+      "title": "首投10000元—95天及以上“优定存”标的",
+      "fanlimoney": "150",
+      "fanlimoneydesc": "投资收益174.38 元，合计收益324.38元",
+      "futoudesc": "",
+      "fanlistat": "",
+      "baserate": "6.7",
+      "fanlirate": "12.46",
+      "fanlipeople": "56",
+      "fanlistart": "",
+      "fanliend": "",
+      "fanlistatus": true,
+      "jiaxi": {
+        "jiaxititle": "",
+        "jiaxitype": ""
+      }
+    },
+    {
+      "fanlitype": "0",
+      "title": "首投20000元—95天及以上“优定存”标的",
+      "fanlimoney": "250",
+      "fanlimoneydesc": "投资收益38.77元，合计收益598.77元",
+      "futoudesc": "",
+      "fanlistat": "",
+      "baserate": "6.7",
+      "fanlirate": "11.5",
+      "fanlipeople": "83",
+      "fanlistart": "",
+      "fanliend": "",
+      "fanlistatus": true,
+      "jiaxi": {
+        "jiaxititle": "",
+        "jiaxitype": ""
+      }
+    },
+    {
+      "fanlitype": "1",
+      "title": "复投5000元—35天及以上“优定存”标的",
+      "fanlimoney": "30",
+      "fanlimoneydesc": "投资收益28.77元，合计收益58.77元",
+      "futoudesc": "",
+      "fanlistat": "",
+      "baserate": "6.0",
+      "fanlirate": "12.26",
+      "fanlipeople": "46",
+      "fanlistart": "",
+      "fanliend": "",
+      "fanlistatus": true,
+      "jiaxi": {
+        "jiaxititle": "",
+        "jiaxitype": ""
+      }
+    }
+  ]
+}
