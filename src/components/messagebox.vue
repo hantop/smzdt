@@ -19,7 +19,7 @@
       </div>
       <!-- <p class="yellow tac">*该手机号码仅用于信息追踪</p> -->
       <input v-if="!result" v-model="tel" class="alert_input tac" type="text" @focus="tel=''" name="" id="" placeholder="请输入注册投资的手机号">
-      <div  v-if="hascoupon" style="padding-top:12px;margin-bottom:38px">
+      <div v-show="!hideCoupon" v-if="hascoupon" style="padding-top:12px;margin-bottom:38px">
         <h5 class="coupon_title tac">返现成功时将提现以下代金券</h5>
         <div @click="usecoupon=!usecoupon" class="coupon_box">
           <span  class="coupon_btn" :class="usecoupon?'':'coupon_btn_false'" ></span>
@@ -57,11 +57,11 @@
     data () {
       return {
         tel: this.defaulttel,
-        ischecked: true,
+        ischecked: false,
         usecoupon: true
       }
     },
-    props: ['data', 'score', 'pid', 'defaulttel', 'result', 'pname', 'cashCoupon'],
+    props: ['data', 'score', 'pid', 'defaulttel', 'result', 'pname', 'cashCoupon', 'hideCoupon'],
     computed: {
       name () {
         switch (this.data) {

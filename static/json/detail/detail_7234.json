@@ -3,7 +3,6 @@
     "fanxianurl": "https://m.renrenaijia.com/app/channel/newuser.html?aj_channel=channel206",
     "shoutoustatus": false,
     "share": "",
-
     "title": "人人爱家",
     "pid": "7234",
     "logo": "http://h5.caiyu.in/img/logo_7234.png",
@@ -15,9 +14,23 @@
     "desc": "恒丰银行存管 中欧国际集团1亿元B轮融资",
     "ratedesc": "首投综合年化收益率可达36.33%",
     "specialqa": {},
-    "qa": [true, true, true, true, true, true, true],
+    "qa": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
     "hasfutou": true,
-    "process": [true, true, true, true, true],
+    "process": [
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
     "processdata": {
       "first": [],
       "second": [],
@@ -26,26 +39,42 @@
     "shoutoutext": {
       "topspecilarule": [],
       "midspecilarule": [],
-      "grayspecilarule": ["＊［新手标能不能参加返现活动？］本平台新手标可参加；","＊［新手优惠券能不能使用？］本平台的新手优惠券可以使用。"],
+      "grayspecilarule": [
+        "＊［新手标能不能参加返现活动？］本平台新手标可参加；",
+        "＊［新手优惠券能不能使用？］本平台的新手优惠券可以使用。"
+      ],
       "btmspecilarule": [],
       "rule": true
     },
     "futoutext": {
       "topspecilarule": [],
       "midspecilarule": [],
-      "grayspecilarule": ["＊通过财鱼管家首投本平台的用户，才能参加复投活动；点击“去复投”，登记手机号，然后再去投资；","＊可使用本平台的红包或加息券，复投奖励每个账号只能领取一次。"],
+      "grayspecilarule": [
+        "＊通过财鱼管家首投本平台的用户，才能参加复投活动；点击“去复投”，登记手机号，然后再去投资；",
+        "＊可使用本平台的红包或加息券，复投奖励每个账号只能领取一次。"
+      ],
       "btmspecilarule": [],
       "rule": true
     },
     "description": [],
-    "rule": [true, true, true, true, true, true],
+    "rule": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
     "topspecilarule": [],
     "midspecilarule": [],
     "grayspecilarule": [],
-    "btmspecilarule": ["［复投规则］只有之前成功通过财鱼管家参加过人人爱家平台首投的用户，才能参加复投，需要点击'去复投'按钮参加复投登记，登记成功之后需要在24小时之内进行投资。每天名额有限，满额即关闭活动入口。可以使用平台的红包和加息券，复投奖励每个账号只能领取一次！"]
-
+    "btmspecilarule": [
+      "［复投规则］只有之前成功通过财鱼管家参加过人人爱家平台首投的用户，才能参加复投，需要点击'去复投'按钮参加复投登记，登记成功之后需要在24小时之内进行投资。每天名额有限，满额即关闭活动入口。可以使用平台的红包和加息券，复投奖励每个账号只能领取一次！"
+    ]
   },
-  "tasklist": [{
+  "tasklist": [
+    {
+      "hideCoupon": true,
       "fanlitype": "0",
       "title": "首投5000元—15天及以上标的",
       "fanlimoney": "50",

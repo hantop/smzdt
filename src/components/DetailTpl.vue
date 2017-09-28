@@ -3,22 +3,22 @@
   
     <header>
       <a :href="'http://h5.caiyu.in/dashboard/invite.html?uid='+uid">
-        <img src="/img/invite_icon_2.png" class="invite_btn">
+        <img src="/img/invite_icon_2.old.png" class="invite_btn">
       </a>
       <router-link style="display: block;" :to="'/riskscore/'+this.$route.params.pid">
         <div class="xbox">
           <!--<div class="top">
-                                                                      <div class="logo">
-                                                                        <img width="100%" :src="data.logo" alt="">
-                                                                      </div>
-                                                                      <div class="right">
-                                                                        <div class="r_top">
-                                                                          <h5 class="namecn">{{data.title}}</h5>
-                                                                          <span v-for="(item,index) in data.tag" :key="index" class="xspan2">{{item}}</span>
+                                                                        <div class="logo">
+                                                                          <img width="100%" :src="data.logo" alt="">
                                                                         </div>
-                                                                        <p class="describe">{{data.desc}}</p>
-                                                                      </div>
-                                                                    </div>-->
+                                                                        <div class="right">
+                                                                          <div class="r_top">
+                                                                            <h5 class="namecn">{{data.title}}</h5>
+                                                                            <span v-for="(item,index) in data.tag" :key="index" class="xspan2">{{item}}</span>
+                                                                          </div>
+                                                                          <p class="describe">{{data.desc}}</p>
+                                                                        </div>
+                                                                      </div>-->
           <img :src="data.logo" class="xlogo" alt="">
           <div class="xright">
             <div class="xtitle">
@@ -49,7 +49,7 @@
           <li v-for="(item,i) in data.shoutoutext.midspecilarule" :key="i" class="red">{{item}}</li>
           <li v-for="(item,i) in data.shoutoutext.grayspecilarule" :key="i">{{item}}</li>
           <li v-for="(item,i) in data.shoutoutext.btmspecilarule" :key="i" class="red">{{item}}</li>
-          <li style="margin-top:10px">如有疑问可以添加财鱼管家活动群579308502 进行咨询</li>
+          <li style="margin-top:10px">如有疑问可以添加财鱼管家活动群329792128 进行咨询</li>
         </h6>
         <h6 v-show="!btntype" style="color: #909090;padding: 0 1.19444em;">
           <br v-if="data.futoutext.topspecilarule.length>0">
@@ -94,9 +94,9 @@
         <router-link class="speed" :to="'/prize/'+encodeURIComponent(uid)">查看最新返现进度 ></router-link>
   
         <!--<div class="receive-gift relative btn-receive" data-canuser="0" id="btn-receive">
-                                                                                                                                                                                                                                  <a class="toPrize">已参加，我要兑奖</a>
-                                                                                                                                                                                                                                  <hr class="divider divider-horizontal divider-top">
-                                                                                                                                                                                                                                </div>-->
+                                                                                                                                                                                                                                    <a class="toPrize">已参加，我要兑奖</a>
+                                                                                                                                                                                                                                    <hr class="divider divider-horizontal divider-top">
+                                                                                                                                                                                                                                  </div>-->
       </div>
       <div class="delivery-order">
         <h6 class="title relative" id="see-delivery-order">
@@ -141,20 +141,20 @@
         </div>
       </div>
       <!--<div class="extra setnone" id="extra" style="display: block">
-                    <h6 class="title relative" id="hidden-title">
-                      <span>常见问题</span>
-                    </h6>
-                    <div style="padding-top:20px">
-                      <div v-for="(v, k, i) in data.specialqa" :key="i">
-                        <div class="question">
-                          <p>{{k}}</p>
-                        </div>
-                        <div class="answer">
-                          <p>{{v}}</p>
+                      <h6 class="title relative" id="hidden-title">
+                        <span>常见问题</span>
+                      </h6>
+                      <div style="padding-top:20px">
+                        <div v-for="(v, k, i) in data.specialqa" :key="i">
+                          <div class="question">
+                            <p>{{k}}</p>
+                          </div>
+                          <div class="answer">
+                            <p>{{v}}</p>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </div>-->
+                    </div>-->
       <div style=" font-size: 12px;margin-top: 13px; margin-bottom: 13px; color: #777; text-align:center; ">参与活动则表示同意
         <a href="http://h5.caiyu.in/dashboard/agreement.html">返现协议与免责声明</a>
       </div>
@@ -170,7 +170,8 @@
         <span class="btn-join xjoin join_f" :class="status.first?'':'disabled'" data-status="1">{{status.first?'参与首投活动':'首投活动已抢光，敬请等待下期'}}</span>
       </a>
     </div>
-    <messagebox :cashCoupon="cashCoupon" :pname="data.title" v-if="alert" @dowhat="doajax" @hideself="hidealert" :score="data.grade" :data="type" :pid="pid" :result="result" :defaulttel="defaulttel"></messagebox>
+    <messagebox :cashCoupon="cashCoupon" :pname="data.title" v-if="alert" @dowhat="doajax" @hideself="hidealert" :score="data.grade" :hideCoupon="hideCoupon"
+ :data="type" :pid="pid" :result="result" :defaulttel="defaulttel"></messagebox>
   </div>
 </template>
 <style scoped src="../assets/css/base.css"></style>
@@ -406,7 +407,8 @@
         defaulttel: '',
         result: false,
         cashCoupon: {},
-        couponid: ''
+        couponid: '',
+        hideCoupon: false
       }
     },
     computed: {
@@ -442,7 +444,7 @@
             return
           }
         }
-        switch (val) {
+        switch (val.fanlitype) {
           case '0':
             if (!this.status.first) {
               Toast({
@@ -492,8 +494,9 @@
         //   })
         //   return
         // }
-        this.type = val
+        this.type = val.fanlitype
         this.alert = true
+        this.hideCoupon = val.hideCoupon
         statEvent('新什么值得投', '详情页弹窗')
         statEvent('新什么值得投', '详情页弹窗' + _this.$route.params.pid)
       },

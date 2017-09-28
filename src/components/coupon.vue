@@ -40,7 +40,8 @@
         s: null,
         m: null,
         h: null,
-        time2: null
+        time2: null,
+        hideCoupon: this.props.hideCoupon
         // status: this.status
       }
     },
@@ -131,12 +132,12 @@
         console.log(this.fir)
         if (this.data.fanlitype === '4') {
           if (this.qiang) {
-            this.$emit('childClick', '4')
+            this.$emit('childClick', {'fanlitype': '4', 'hideCoupon': this.hideCoupon})
           } else {
-            this.$emit('childClick', '44')
+            this.$emit('childClick', { 'fanlitype': '44', 'hideCoupon': this.hideCoupon })
           }
         } else {
-          this.$emit('childClick', this.data.fanlitype)
+          this.$emit('childClick', { 'fanlitype': this.data.fanlitype, 'hideCoupon': this.hideCoupon })
         }
       }
     },

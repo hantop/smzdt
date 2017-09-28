@@ -1,0 +1,103 @@
+{
+  "platform": {
+    "fanxianurl": "https://wap.uter.com/vspecial/eightGift?annalsourceid=1064_cygj",
+    "shoutoustatus": true,
+    "share": "",
+
+    "title": "优投金服",
+    "pid": "7244",
+    "logo": "http://img.caiyu.in/p2p/logo_p2p_6eaff1e434196fe7.jpg",
+    "grade": "A",
+    "tag": [
+      "民企系"
+    ],
+    "detectlevel": "正常",
+    "desc": "实缴资本3000万  海口联合农商银行存管",
+    "ratedesc": "首投综合年化收益率可达21.14%",
+    "specialqa": {},
+    "qa": [true, true, true, true, true, true, true],
+    "hasfutou": true,
+    "process": [true, true, true, false, false],
+    "processdata": {
+      "first": [],
+      "second": [],
+      "third": ["返现一般会在3个工作日内直接发放至财鱼管家app“我的红包”中。", "已登记过的手机号请不要在其他财鱼账号上再次登记，否则可能无法收到返现。"]
+    },
+    "shoutoutext": {
+      "topspecilarule": [],
+      "midspecilarule": [],
+      "grayspecilarule": ["＊［新手标能不能参加返现活动？］目前不可以，平台暂时没有3个月的新手标的；", "＊［新手优惠券能不能使用？］本平台的新手优惠券可以使用；"],
+      "btmspecilarule": [],
+      "rule": true
+    },
+    "futoutext": {
+      "topspecilarule": [],
+      "midspecilarule": [],
+      "grayspecilarule": ["＊通过财鱼管家首投本平台的用户，才能参加复投活动；点击“去复投”，登记手机号，然后再去投资；", "＊＊可使用本平台的红包或加息券，复投奖励每个账号只能领取一次；"],
+      "btmspecilarule": [],
+      "rule": true
+    },
+    "description": [],
+    "rule": [true, true, true, true, true, true]
+
+
+
+
+  },
+  "tasklist": [{
+      "fanlitype": "0",
+      "title": "首投5050元—3月及以上标的",
+      "fanlimoney": "120",
+      "fanlimoneydesc": "投资收益143.2元，合计收益263.2元",
+      "futoudesc": "",
+      "fanlistat": "",
+      "baserate": "11.5",
+      "fanlirate": "21.14",
+      "fanlipeople": "92",
+      "fanlistart": "",
+      "fanliend": "",
+      "fanlistatus": true,
+      "jiaxi": {
+        "jiaxititle": "",
+        "jiaxitype": ""
+      }
+    },
+    {
+      "fanlitype": "0",
+      "title": "首投10100元—3月及以上标的",
+      "fanlimoney": "200",
+      "fanlimoneydesc": "投资收益286.40元，合计收益486.40元",
+      "futoudesc": "",
+      "fanlistat": "",
+      "baserate": "11.5",
+      "fanlirate": "19.5",
+      "fanlipeople": "83",
+      "fanlistart": "",
+      "fanliend": "",
+      "fanlistatus": true,
+      "jiaxi": {
+        "jiaxititle": "",
+        "jiaxitype": ""
+      }
+    },
+
+    {
+      "fanlitype": "1",
+      "title": "复投5000元—1月及以上标的",
+      "fanlimoney": "50",
+      "fanlimoneydesc": "投资收益39.04元，合计收益89.04元",
+      "futoudesc": "",
+      "fanlistat": "",
+      "baserate": "9.5",
+      "fanlirate": "21.67",
+      "fanlipeople": "46",
+      "fanlistart": "",
+      "fanliend": "",
+      "fanlistatus": true,
+      "jiaxi": {
+        "jiaxititle": "",
+        "jiaxitype": ""
+      }
+    }
+  ]
+}
