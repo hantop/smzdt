@@ -145,7 +145,7 @@
       fanxian () {
         if (this.data.fanlitype === '0') {
           if (this.fi) {
-            return this.open ? '去奖励' : '10:00开抢'
+            return this.open ? '领奖励' : '10:00开抢'
           }
           return '已抢光'
         } else if (this.data.fanlitype === '1') {

@@ -36,8 +36,8 @@
       </router-link>
       <div class="xcoupon">
         <div v-if="data.hasfutou == true" class="btntype">
-          <p :class="btntype?'btn_active':''" @click="btntype=true" class="btn_left">首投奖励奖励</p>
-          <p :class="btntype?'':'btn_active'" @click="btntype=false" class="btn_right">复投奖励奖励</p>
+          <p :class="btntype?'btn_active':''" @click="btntype=true" class="btn_left">首投奖励</p>
+          <p :class="btntype?'':'btn_active'" @click="btntype=false" class="btn_right">复投奖励</p>
         </div>
         <p class="tac attention">请根据自身风险承受能力谨慎考察后投资</p>
         <coupon :fi="status.first" :se="status.second" :su="status.super" :props="item" v-for="(item, i) in items"
