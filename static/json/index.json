@@ -1,9 +1,49 @@
 {
-  "totalmoney": "6600900.00",
+  "totalmoney": "7080090.00",
   "platforms": {
     "today": {
       "title": "今日推荐",
       "data": [
+                {
+                  "ad":true,
+                  "pid": "3203",
+                  "logo": "http://h5.caiyu.in/img/logo_3203.png",
+                  "title": "百金贷",
+                  "grade": "B",
+                  "desc": "贵州银行资金存管系统已上线 注册资本5000万元",
+                  "rate": "39.42",
+                  "money": "180~1800",
+                  "isfutou": false,
+                  "fanxiantype": "0",
+                  "fanxianbottom": "",
+                  "fanxiantypetitle": ""
+                },
+        {
+          "pid": "271",
+          "logo": "http://h5.caiyu.in/img/logo_qbm.png",
+          "title": "钱保姆",
+          "grade": "AA",
+          "desc": "北京银行资金存管，国资企业1亿元战略投资",
+          "rate": "31.29",
+          "money": "80~350",
+          "isfutou": true,
+          "fanxiantype": "0",
+          "fanxianbottom": "",
+          "fanxiantypetitle": ""
+        },
+        {
+          "pid": "266",
+          "logo": "http://h5.caiyu.in/img/logo_266.png",
+          "title": "麻袋理财",
+          "grade": "AA",
+          "desc": "中信产业基金控股  厦门银行资金存管",
+          "rate": "18.51",
+          "money": "60~250",
+          "isfutou": true,
+          "fanxiantype": "0",
+          "fanxianbottom": "",
+          "fanxiantypetitle": ""
+        },
         {
           "pid": "7234",
           "logo": "http://h5.caiyu.in/img/logo_rraj.png",
@@ -44,6 +84,19 @@
           "fanxiantypetitle": ""
         },
         {
+          "pid": "30",
+          "logo": "http://h5.caiyu.in/img/logo_30.png",
+          "title": "小牛在线",
+          "grade": "A",
+          "desc": "实缴资本10300万",
+          "rate": "26.22",
+          "money": "40~100",
+          "isfutou": true,
+          "fanxiantype": "0",
+          "fanxianbottom": "",
+          "fanxiantypetitle": ""
+        },
+        {
           "pid": "182",
           "logo": "http://h5.caiyu.in/img/logo_182.png",
           "title": "和云筹",
@@ -64,19 +117,6 @@
           "desc": "实缴资本3000万  海口联合农商银行存管",
           "rate": "21.14",
           "money": "120~200",
-          "isfutou": true,
-          "fanxiantype": "0",
-          "fanxianbottom": "",
-          "fanxiantypetitle": ""
-        },
-        {
-          "pid": "271",
-          "logo": "http://h5.caiyu.in/img/logo_qbm.png",
-          "title": "钱保姆",
-          "grade": "AA",
-          "desc": "北京银行资金存管，国资企业1亿元战略投资",
-          "rate": "31.29",
-          "money": "80~350",
           "isfutou": true,
           "fanxiantype": "0",
           "fanxianbottom": "",
@@ -114,23 +154,10 @@
           "title": "信广立诚贷",
           "grade": "A",
           "desc": "徽商银行资金存管 注册资本5000万",
-          "rate": "25.22",
-          "money": "80~700",
+          "rate": "21.20",
+          "money": "300~700",
           "isfutou": false,
           "fanxiantype": "1",
-          "fanxianbottom": "",
-          "fanxiantypetitle": ""
-        },
-        {
-          "pid": "266",
-          "logo": "http://h5.caiyu.in/img/logo_266.png",
-          "title": "麻袋理财",
-          "grade": "AA",
-          "desc": "中信产业基金控股  厦门银行资金存管",
-          "rate": "18.51",
-          "money": "60~250",
-          "isfutou": true,
-          "fanxiantype": "0",
           "fanxianbottom": "",
           "fanxiantypetitle": ""
         },
@@ -200,6 +227,7 @@
           "fanxiantypetitle": ""
         },
         {
+          "hide": true,
           "pid": "5932",
           "logo": "http://h5test.caiyu.in/dashboard/img/logo_zyxr.png",
           "title": "中业兴融",
@@ -213,6 +241,7 @@
           "fanxiantypetitle": ""
         },
         {
+          "hide": true,
           "pid": "3712",
           "logo": "http://h5.caiyu.in/img/logo_htyd.png",
           "title": "汇通易贷",
@@ -226,6 +255,7 @@
           "fanxiantypetitle": ""
         },
         {
+          "hide": true,
           "pid": "6475",
           "logo": "http://h5.caiyu.in/img/logo_6475.png",
           "title": "中再融",
@@ -235,19 +265,6 @@
           "money": "80~400",
           "isfutou": false,
           "fanxiantype": "1",
-          "fanxianbottom": "",
-          "fanxiantypetitle": ""
-        },
-        {
-          "pid": "30",
-          "logo": "http://h5.caiyu.in/img/logo_30.png",
-          "title": "小牛在线",
-          "grade": "A",
-          "desc": "实缴资本10300万  华兴银行资金存管",
-          "rate": "26.22",
-          "money": "40~100",
-          "isfutou": true,
-          "fanxiantype": "0",
           "fanxianbottom": "",
           "fanxiantypetitle": ""
         },
@@ -265,6 +282,7 @@
           "fanxiantypetitle": ""
         },
         {
+          "hide": true,
           "pid": "7243",
           "logo": "http://h5.caiyu.in/img/logo_7243.png",
           "title": "悠米钱包",
@@ -385,21 +403,9 @@
           "fanxianbottom": "",
           "fanxiantypetitle": ""
         },
+
         {
           "hide": true,
-          "pid": "3203",
-          "logo": "http://h5.caiyu.in/img/logo_3203.png",
-          "title": "百金贷",
-          "grade": "A",
-          "desc": "贵州银行资金存管系统已上线 注册资本5000万元",
-          "rate": "39.42",
-          "money": "180~1800",
-          "isfutou": false,
-          "fanxiantype": "0",
-          "fanxianbottom": "",
-          "fanxiantypetitle": ""
-        },
-        {
           "pid": "7242",
           "logo": "http://h5.caiyu.in/img/logo_7242.png",
           "title": "宏亚金融",
@@ -407,6 +413,20 @@
           "desc": "注册资本8000万元",
           "rate": "36.87",
           "money": "150~400",
+          "isfutou": true,
+          "fanxiantype": "0",
+          "fanxianbottom": "",
+          "fanxiantypetitle": ""
+        },
+        {
+          "hide": true,
+          "pid": "6568",
+          "logo": "http://h5.caiyu.in/img/logo_6568.png",
+          "title": "民爱贷",
+          "grade": "未评级",
+          "desc": "上海银行资金存管 注册资本5000万",
+          "rate": "40.44",
+          "money": "80~300",
           "isfutou": true,
           "fanxiantype": "0",
           "fanxianbottom": "",

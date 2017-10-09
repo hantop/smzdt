@@ -22,10 +22,10 @@
             </router-link>
           </div>
           <p class="total_money">
-            已返现到账
+            已奖励到账
             <span class="num org">{{data.totalmoney}}</span>元
           </p>
-          <router-link :to="'/prize/'+uid" class="speed">查看最新返现进度</router-link>
+          <router-link :to="'/prize/'+uid" class="speed">查看最新奖励进度</router-link>
         </div>
       </header>
       <platform-list v-for="(obj, i) in data.platforms" :uid="uid" :key="i" :data="obj"></platform-list>
@@ -34,7 +34,7 @@
                             <span v-show="topStatus === 'loading'" :class="{ 'rotate': topStatus === 'drop' }">↓</span>
                             <span v-show="topStatus === 'loading'">Loading...</span>
                           </div>-->
-        <div style=" font-size: 12px;margin-top: 13px; margin-bottom: 13px; color: #777; text-align:center; ">参与活动则表示同意 <a href="http://h5.caiyu.in/dashboard/agreement.html">返现协议与免责声明</a></div>
+        <div style=" font-size: 12px;margin-top: 13px; margin-bottom: 13px; color: #777; text-align:center; ">参与活动则表示同意 <a href="http://h5.caiyu.in/dashboard/agreement.html">奖励协议与免责声明</a></div>
 
     </loadmore>
   </div>

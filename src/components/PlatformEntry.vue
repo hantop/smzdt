@@ -25,7 +25,7 @@
           <div class="red num">{{data.money}}
             <span style="font-size: 1.2rem">元</span>
           </div>
-          <div class="gray">返现金额</div>
+          <div class="gray">奖励金额</div>
         </div>
   
         <img class="to_detail" width="100%" :src="url" alt="">

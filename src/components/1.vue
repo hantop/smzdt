@@ -33,8 +33,8 @@
           <li v-for="(item,i) in data.midspecilarule" :key="i" class="red">{{item}}</li>
           <li v-for="(item,i) in data.grayspecilarule" :key="i">{{item}}</li>
           <li v-if="data.rule[1]"> ＊已经通过财鱼管家注册的用户，可以直接去{{data.title}}官网或app中投资。</li>
-          <li v-if="data.rule[2]"> ＊通过本页面进行注册的理财平台新用户有资格获得返现，首投满足奖励的条件与对应的奖励以本页面活动规则为准。</li>
-          <li v-if="data.rule[3]"> ＊符合条件的用户，财鱼管家将在7个工作日内会发放返现红包至财鱼管家“我的-提醒”页面中。</li>
+          <li v-if="data.rule[2]"> ＊通过本页面进行注册的理财平台新用户有资格获得奖励，首投满足奖励的条件与对应的奖励以本页面活动规则为准。</li>
+          <li v-if="data.rule[3]"> ＊符合条件的用户，财鱼管家将在7个工作日内会发放奖励红包至财鱼管家“我的-提醒”页面中。</li>
           <li v-if="data.rule[4]"> ＊禁止任何形式的刷单行为，如果发现（如同一IP刷单等），平台将不予结算。</li>
           <li v-if="data.rule[5]"> ＊如果活动期间奖励规则变动，则以注册时间（且注册后24小时内完成投资）的奖励规则为准。</li>
           <li v-for="(item,i) in data.btmspecilarule" :key="i" class="red">{{item}}</li>
@@ -46,7 +46,7 @@
         <h6 class="title relative" id="see-delivery-order">
           <span class="benift-plan">投资晒单</span>
           <!--<span style="left:80px" class="title-right">共15人晒单</span>-->
-          <a :href="'https://sns.91caiyu.com/index.php?app=h5&mod=topic&act=index&name=' + encodeURIComponent(data.title + '返现') + '&uid=' + uid" style="color:gray!important" class="toShare title-right">查看全部晒单
+          <a :href="'https://sns.91caiyu.com/index.php?app=h5&mod=topic&act=index&name=' + encodeURIComponent(data.title + '奖励') + '&uid=' + uid" style="color:gray!important" class="toShare title-right">查看全部晒单
             <i></i>
           </a>
           <hr class="divider divider-horizontal divider-bottom">
@@ -62,13 +62,13 @@
                 <h6 class="right"></h6>
               </div>
               <div class="info_bottom">
-                <!--<h4 class="tips"><span class="tips_icon">投资收益</span><span class="reward_tips">20%年化+350元返现+100元新手红包</span></h4>-->
+                <!--<h4 class="tips"><span class="tips_icon">投资收益</span><span class="reward_tips">20%年化+350元奖励+100元新手红包</span></h4>-->
               </div>
             </div>
   
           </div>
           <div class="content">
-            <h5 class="center">#钱保姆返现#</h5>
+            <h5 class="center">#钱保姆奖励#</h5>
           </div>
           <div class="screenshot">
             <ul class="clearfix">
@@ -93,7 +93,7 @@
         </div>
         <div v-else style="color: #909090;padding: 0 1.19444em; font-size: 13px">
           <li>1.点击活动按钮，在平台活动页面注册账号。注册成功后在24小时内投资活动标的。</li>
-          <li> 2.投资成功后，7个工作日内，将会在财鱼管家app“我的-提醒”中收到返现红包。</li>
+          <li> 2.投资成功后，7个工作日内，将会在财鱼管家app“我的-提醒”中收到奖励红包。</li>
           <li> 3.务必注意，在通过本活动页面注册的理财平台账户才有效，通过其他渠道进行的注册与投资行为无效。</li>
           <li> 4.如果中间奖励规则变动，则已注册时间（且在注册后24小时内完成投资）的奖励规则为准。</li>
           <li>5.如有疑问可以添加财鱼管家活动群329792128 进行咨询。</li>
@@ -146,7 +146,7 @@
               <p>一个平台能投几个方案？</p>
             </div>
             <div class="answer">
-              <p>每个平台只有首次投资是能获得返现的。</p>
+              <p>每个平台只有首次投资是能获得奖励的。</p>
             </div>
           </div>
           <div v-if="data.qa[4]">
@@ -154,7 +154,7 @@
               <p>投资之后要交单（登记）吗？</p>
             </div>
             <div class="answer">
-              <p>不需要。投资后会按活动规定的时间进行返现。如超时未收到返现，可以在活动QQ群（467258481）联系客服查询。</p>
+              <p>不需要。投资后会按活动规定的时间进行奖励。如超时未收到奖励，可以在活动QQ群（467258481）联系客服查询。</p>
             </div>
           </div>
           <div v-if="data.qa[5]">
@@ -167,16 +167,16 @@
           </div>
           <div v-if="data.qa[6]">
             <div class="question">
-              <p>投资金额或期限大于方案规定的可以返现吗？</p>
+              <p>投资金额或期限大于方案规定的可以奖励吗？</p>
             </div>
             <div class="answer">
-              <p>是可以返现的。</p>
+              <p>是可以奖励的。</p>
             </div>
           </div>
         </div>
       </div>
       <div style=" font-size: 12px;margin-top: 13px; margin-bottom: 13px; color: #777; text-align:center; ">参与活动则表示同意
-        <a href="http://h5.caiyu.in/dashboard/agreement.html">返现协议与免责声明</a>
+        <a href="http://h5.caiyu.in/dashboard/agreement.html">奖励协议与免责声明</a>
       </div>
     </section>
   

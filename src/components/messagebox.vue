@@ -4,7 +4,7 @@
   
       <h5 v-if="!result" class="title tac">{{name}}名额登记</h5>
       <h5 v-if="result" class="title tac">恭喜您登记成功
-        <br>获得返现名额</h5>
+        <br>获得奖励名额</h5>
       <!-- <p class="title_message tac">lalala</p> -->
       <div v-if="!result" class="message">
         <p class="text tac">
@@ -14,13 +14,13 @@
       <div v-if="result" class="message">
         <p class="text2 tac">
           请使用手机号{{tel}}
-          <br>注册{{pname}}平台，并按活动规则投资，即可获得返现。
+          <br>注册{{pname}}平台，并按活动规则投资，即可获得奖励。
         </p>
       </div>
       <!-- <p class="yellow tac">*该手机号码仅用于信息追踪</p> -->
       <input v-if="!result" v-model="tel" class="alert_input tac" type="text" @focus="tel=''" name="" id="" placeholder="请输入注册投资的手机号">
       <div v-show="!hideCoupon" v-if="hascoupon" style="padding-top:12px;margin-bottom:38px">
-        <h5 class="coupon_title tac">返现成功时将提现以下代金券</h5>
+        <h5 class="coupon_title tac">奖励成功时将提现以下代金券</h5>
         <div @click="usecoupon=!usecoupon" class="coupon_box">
           <span  class="coupon_btn" :class="usecoupon?'':'coupon_btn_false'" ></span>
           <div class="box_top">
@@ -29,7 +29,7 @@
             </div>
             <div class="box_top_right">
               <h5>现金券</h5>
-              <p>参与返现活动即可提现</p>
+              <p>参与奖励活动即可提现</p>
             </div>
           </div>
           <div class="box_btm">
@@ -38,13 +38,13 @@
         </div>
   
       </div>
-      <button @click="dowhat" :class="ischecked?'':'disable'" class="btn_cyan">{{!result?'确定':'正在跳转至'+pname+'...'}}</button>
+      <button @click="dowhat" class="btn_cyan">{{!result?'确定':'正在跳转至'+pname+'...'}}</button>
       <!-- <div v-if="!result" style=" font-size: 12px;margin-top: 13px;  color: #777; text-align:center; ">您即将投资的是评级为
                                                   <router-link :to="'/riskscore/'+pid">{{score}}</router-link> 的平台</div> -->
       <div v-if="!result" class="agree">
         <span @click="ischecked=!ischecked" class="coupon_btn2" :class="ischecked?'':'coupon_btn2_false'" ></span>
         同意 
-        <a href="http://h5.caiyu.in/dashboard/agreement.html">&nbsp;返现协议与免责声明</a>
+        <a href="http://h5.caiyu.in/dashboard/agreement.html">&nbsp;奖励协议与免责声明</a>
       </div>
       <a v-if="!result" @click="hideself" class="esc"></a>
     </div>
@@ -53,6 +53,7 @@
   </div>
 </template>
 <script>
+  import { Toast } from 'mint-ui'
   export default {
     data () {
       return {
@@ -89,7 +90,15 @@
         this.$emit('hideself')
       },
       dowhat () {
-        if (!this.ischecked || this.result) return
+        if (this.result) return
+        if (!this.ischecked) {
+          Toast({
+            message: '请先勾选“同意免责声明”',
+            position: 'middle',
+            duration: 1000
+          })
+          return
+        }
         this.$emit('dowhat', { 'tel': this.tel, 'usecoupon': this.usecoupon })
       }
     }

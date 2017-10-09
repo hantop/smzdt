@@ -6,8 +6,8 @@
         <h5 class="xh5">{{data.title}}
           <span v-if="data.fanlitype == '4'" class="cjf">超级返</span>
         </h5>
-        <div v-if="data.fanlitype == '5'" class="xmoney" :class="'xmoney5'">返现<span class="num spa">{{data.fanlimoney}}</span>元<span class="item">{{data.jiaxi.jiaxititle}}</span></div>
-        <div v-else class="xmoney" :class="'xmoney'+data.fanlitype">返现<span class="num spa">{{data.fanlimoney}}</span>元<span v-if="data.fanlitype=='4'" class="item">{{data.jiaxi.jiaxititle}}</span></div>
+        <div v-if="data.fanlitype == '5'" class="xmoney" :class="'xmoney5'">奖励<span class="num spa">{{data.fanlimoney}}</span>元<span class="item">{{data.jiaxi.jiaxititle}}</span></div>
+        <div v-else class="xmoney" :class="'xmoney'+data.fanlitype">奖励<span class="num spa">{{data.fanlimoney}}</span>元<span v-if="data.fanlitype=='4'" class="item">{{data.jiaxi.jiaxititle}}</span></div>
         <p v-if="data.fanlitype=='1'" style="color: #e64d3f;position: relative;top: -2px;">{{data.futoudesc}}</p>
         <p>{{data.fanlimoneydesc}}</p>
         <div class="xbottom">
@@ -145,7 +145,7 @@
       fanxian () {
         if (this.data.fanlitype === '0') {
           if (this.fi) {
-            return this.open ? '去返现' : '10:00开抢'
+            return this.open ? '去奖励' : '10:00开抢'
           }
           return '已抢光'
         } else if (this.data.fanlitype === '1') {

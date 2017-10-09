@@ -4,27 +4,27 @@
     <div class="big_cell">
   
       <div style="border-bottom:none" class="title">
-        我的返现
+        我的奖励
       </div>
-      <p class="gray">8月8日之后的投资登记信息将显示在此。之前的投资不在此展示，并不影响返现发放。</p>
+      <p class="gray">8月8日之后的投资登记信息将显示在此。之前的投资不在此展示，并不影响奖励发放。</p>
       <div>
         <table cellspacing="0" cellpadding="0" class="table_1">
           <tr class="title">
             <td> 登记日期</td>
             <td> 平台</td>
             <td> 登记账号</td>
-            <td> 返现状态</td>
+            <td> 奖励状态</td>
           </tr>
           <tr v-for="(obj,i) in  data" :key="i" v-if="i<11||showall">
             <td>{{obj.createtime.substr(0,10)}}</td>
             <td>{{obj.pnamecn}}{{obj.source == '1'?'（复）':''}}</td>
             <td>{{obj.mobile}}</td>
             <td>
-              <a @click="showalert" :id="i" class="link blue">{{obj.status=='0'?'已登记':'已返现'}}</a>
+              <a @click="showalert" :id="i" class="link blue">{{obj.status=='0'?'已登记':'已奖励'}}</a>
             </td>
           </tr>
         </table>
-        <!--<div @click="showlist" class="load_more blue">{{showall?'收起':'查看'}}全部返现信息</div>-->
+        <!--<div @click="showlist" class="load_more blue">{{showall?'收起':'查看'}}全部奖励信息</div>-->
       </div>
   
     </div>
@@ -32,8 +32,8 @@
     <div class="big_cell">
   
       <div class="title">
-        最新返现进度
-        <p class="gray">8月8日后的投资，如果规定时间内未返现，请在活动群中联系客服登记。登记后2个工作日内未及时发放，将获得额外5元超时补贴。</p>
+        最新奖励进度
+        <p class="gray">8月8日后的投资，如果规定时间内未奖励，请在活动群中联系客服登记。登记后2个工作日内未及时发放，将获得额外5元超时补贴。</p>
   
       </div>
   
@@ -41,8 +41,8 @@
         <table cellspacing="0" cellpadding="0" class="table_2" style="padding-bottom: 20px">
           <tr class="title">
             <td> 平台</td>
-            <td> 返现时效</td>
-            <td> 返现进度</td>
+            <td> 奖励时效</td>
+            <td> 奖励进度</td>
           </tr>
           <tr v-for="(v, i) in list" :key="i">
             <td>{{v.name}}</td>
@@ -75,7 +75,7 @@
       }
     })
   }
-  statEvent('新什么值得投', '返现进度页')
+  statEvent('新什么值得投', '奖励进度页')
   export default {
     data () {
       return {
@@ -140,7 +140,7 @@
         }
         document.body.appendChild(i)
       }
-      document.setTitle('最新返现进度')
+      document.setTitle('最新奖励进度')
       $.ajax({
         type: 'POST',
         url: '/forward.php',

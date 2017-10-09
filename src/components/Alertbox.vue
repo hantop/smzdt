@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="alert">
-      <h5 class="title tac">返现进度</h5>
+      <h5 class="title tac">奖励进度</h5>
       <p class="title_message tac">{{obj.pnamecn}} {{obj.source == '1'?'复投':'首投'}}</p>
       <div class="message">
         <div class="message_box done">
@@ -24,14 +24,14 @@
           </p>
         </div>
         <div class="message_box" :class="obj.status=='1'?'done':''">
-          <h6>{{obj.status=='0'?'符合返现要求，发放返现':'符合返现要求，返现已发放'}}</h6>
+          <h6>{{obj.status=='0'?'符合奖励要求，发放奖励':'符合奖励要求，奖励已发放'}}</h6>
           <p v-if="obj.status!='0'">
             登记手机号：{{obj.mobile}}
           </p>
         </div>
       </div>
       <button @click="hideself" class="btn_cyan">确定</button>
-      <p v-if="cui" class="bottom_message tac">返现太慢？
+      <p v-if="cui" class="bottom_message tac">奖励太慢？
         <a @click="cuidan">点此催单</a>
       </p>
       <p v-if="!cui" class="bottom_message tac">已催单，运营小妹辛苦处理中

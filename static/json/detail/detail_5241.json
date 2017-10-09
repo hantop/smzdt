@@ -13,7 +13,7 @@
     ],
     "detectlevel": "正常",
     "desc": "徽商银行资金存管  注册资本5000万",
-    "ratedesc": "首投立返 当日到账",
+    "ratedesc": "首投立奖 当日到账",
     "specialqa": {
       "可以投资新手标吗？": "活动标的是3月标起的，如果平台有3月标期的新手标是可以的！",
       "用券还可以得奖励吗？": "首投无法使用券。"
@@ -22,14 +22,14 @@
     "hasfutou": true,
     "process": [false, false, false, false, false],
     "processdata": {
-      "first": ["只有通过财鱼管家注册的平台账号才能参加返现活动。"],
-      "second": ["平台账号注册成功后，请在48小时内前往平台完成投资，超时将无法返现。", "如果活动过程中奖励规则出现变化，以登记时的奖励规则为准。"],
-      "third": ["首投为当日投资即返现，复投现一般会在3个工作日内内直接发放至财鱼管家app“我的红包”中。", "已登记过的手机号请不要在其他财鱼账号上再次登记，否则可能无法收到返现。"]
+      "first": ["只有通过财鱼管家注册的平台账号才能参加奖励活动。"],
+      "second": ["平台账号注册成功后，请在48小时内前往平台完成投资，超时将无法奖励。", "如果活动过程中奖励规则出现变化，以登记时的奖励规则为准。"],
+      "third": ["首投为当日投资即奖励，复投现一般会在3个工作日内内直接发放至财鱼管家app“我的红包”中。", "已登记过的手机号请不要在其他财鱼账号上再次登记，否则可能无法收到奖励。"]
     },
     "shoutoutext": {
       "topspecilarule": [],
       "midspecilarule": [],
-      "grayspecilarule": ["＊［新手标能不能参加返现活动？］目前活动标的是3月标起的，如将来平台有3月标期的新手标是可以的；", "＊［新手优惠券能不能使用？］首投目前无法使用优惠券；"],
+      "grayspecilarule": ["＊［新手标能不能参加奖励活动？］目前活动标的是3月标起的，如将来平台有3月标期的新手标是可以的；", "＊［新手优惠券能不能使用？］首投目前无法使用优惠券；"],
       "btmspecilarule": [],
       "rule": true
     },
@@ -48,42 +48,8 @@
     "btmspecilarule": []
 
   },
-  "tasklist": [{
-      "fanlitype": "0",
-      "title": "首投6000元—1个月及以上标的",
-      "fanlimoney": "80",
-      "fanlimoneydesc": "投资收益:44.38 元，合计收益:124.38 元",
-      "futoudesc": "",
-      "fanlistat": "",
-      "baserate": "9.0",
-      "fanlirate": "25.22",
-      "fanlipeople": "92",
-      "fanlistart": "",
-      "fanliend": "",
-      "fanlistatus": true,
-      "jiaxi": {
-        "jiaxititle": "",
-        "jiaxitype": ""
-      }
-    },
-    {
-      "fanlitype": "0",
-      "title": "首投10000元—1个月及以上标的",
-      "fanlimoney": "120",
-      "fanlimoneydesc": "投资收益:73.97 元，合计收益:193.97 元",
-      "futoudesc": "",
-      "fanlistat": "",
-      "baserate": "9.0",
-      "fanlirate": "23.6",
-      "fanlipeople": "74",
-      "fanlistart": "",
-      "fanliend": "",
-      "fanlistatus": true,
-      "jiaxi": {
-        "jiaxititle": "",
-        "jiaxitype": ""
-      }
-    },
+  "tasklist": [
+
     {
       "fanlitype": "0",
       "title": "首投10000元—90天及以上标的",

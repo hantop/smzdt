@@ -113,5 +113,5 @@ $('.toPrize').on('click', function () {
 
 })
 $('.toShare').on('click', function () {
-  location.href = 'https://sns.91caiyu.com/index.php?app=h5&mod=topic&act=index&name=' + encodeURIComponent(p + '返现') + '&uid=' + uid
+  location.href = 'https://sns.91caiyu.com/index.php?app=h5&mod=topic&act=index&name=' + encodeURIComponent(p + '奖励') + '&uid=' + uid
 })
