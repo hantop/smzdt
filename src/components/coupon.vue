@@ -6,7 +6,12 @@
         <h5 class="xh5">{{data.title}}
           <span v-if="data.fanlitype == '4'" class="cjf">超级返</span>
         </h5>
-        <div v-if="data.fanlitype == '5'" class="xmoney" :class="'xmoney5'">奖励<span class="num spa">{{data.fanlimoney}}</span>元<span class="item">{{data.jiaxi.jiaxititle}}</span></div>
+        <div v-if="data.spa" style="color: #e64d3f;    font-size: 9.2vw;
+    line-height: 16vw;
+    position: relative;
+    top: 1vw;" class="xmoney xmoney4">{{data.spa}}<span style="font-size: 4.5vw;
+    position: relative;
+    top: 2.1vw;" class="item">{{data.jiaxi.jiaxititle}}</span></div>
         <div v-else class="xmoney" :class="'xmoney'+data.fanlitype">奖励<span class="num spa">{{data.fanlimoney}}</span>元<span v-if="data.fanlitype=='4'" class="item">{{data.jiaxi.jiaxititle}}</span></div>
         <p v-if="data.fanlitype=='1'" style="color: #e64d3f;position: relative;top: -2px;">{{data.futoudesc}}</p>
         <p>{{data.fanlimoneydesc}}</p>

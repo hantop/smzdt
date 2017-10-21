@@ -66,6 +66,7 @@
     },
     {
       "fanlitype": "0",
+      "spa":"奖励200元",
       "title": "首投30000元—30天及以上标的",
       "fanlimoney": "450",
       "fanlimoneydesc": "投资收益:221.92元，合计收益671.92 元",
@@ -78,7 +79,7 @@
       "fanliend": "",
       "fanlistatus": false,
       "jiaxi": {
-        "jiaxititle": "",
+        "jiaxititle": "+投资金额的1%",
         "jiaxitype": ""
       }
     },
