@@ -7,18 +7,6 @@
       </a>
       <router-link style="display: block;" :to="'/riskscore/'+this.$route.params.pid">
         <div class="xbox">
-          <!--<div class="top">
-                                                                          <div class="logo">
-                                                                            <img width="100%" :src="data.logo" alt="">
-                                                                          </div>
-                                                                          <div class="right">
-                                                                            <div class="r_top">
-                                                                              <h5 class="namecn">{{data.title}}</h5>
-                                                                              <span v-for="(item,index) in data.tag" :key="index" class="xspan2">{{item}}</span>
-                                                                            </div>
-                                                                            <p class="describe">{{data.desc}}</p>
-                                                                          </div>
-                                                                        </div>-->
           <img :src="data.logo" class="xlogo" alt="">
           <div class="xright">
             <div class="xtitle">
