@@ -39,6 +39,7 @@
           <p :class="btntype?'btn_active':''" @click="btntype=true" class="btn_left">首投奖励</p>
           <p :class="btntype?'':'btn_active'" @click="btntype=false" class="btn_right">复投奖励</p>
         </div>
+        <router-link class="top_speed" :to="'/prize/'+encodeURIComponent(uid)">查看最新奖励进度 ></router-link>
         <p class="tac attention">请根据自身风险承受能力谨慎考察后投资</p>
         <coupon :fi="status.first" :se="status.second" :su="status.super" :props="item" v-for="(item, i) in items" :key="i" v-if="showlisttype?item.fanlitype !=1 &&item.fanlitype !=5:item.fanlitype ==1||item.fanlitype ==5" v-on:childClick="alertBox"></coupon>
         <h6 v-show="btntype" style="color: #909090;padding: 0 1.19444em;">
@@ -86,7 +87,7 @@
           </div>
           <div class="rule_box rule_box3">
             <h5>3.等待发放奖励</h5>
-            <li v-if="data.process[3]">奖励一般会在3个工作日内直接发放至财鱼管家app“我的红包”中。</li>
+            <li v-if="data.process[3]">奖励一般会在7个工作日内直接发放至财鱼管家app“我的红包”中。</li>
             <li v-if="data.process[4]">已登记过的手机号请不要在其他财鱼账号上再次登记，否则可能无法收到奖励。</li>
             <li v-for="(item,i) in data.processdata.third" :key="i">{{item}}</li>
           </div>
@@ -190,7 +191,14 @@
     position: relative;
     padding-bottom: 6vw;
   }
-
+  .top_speed{
+    font-size: 1.4rem;
+    /* background-color: #36bcc1; */
+    display: block;
+    text-align: center;
+    transform: translateY(-2vw);
+    margin-bottom: 1vw;
+  }
   .rule_box::after {
     content: '';
     height: 100%;
