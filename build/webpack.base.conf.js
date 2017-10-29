@@ -9,9 +9,10 @@ function resolve(dir) {
 }
 
 module.exports = {
-  entry: {
-    app: './src/main.js'
-  },
+  // entry: {
+  //   app: './src/main.js'
+  // },
+  entry: utils.entries(),
   output: {
     path: config.build.assetsRoot,
     filename: '[name].js',
@@ -73,7 +74,10 @@ module.exports = {
     ]
   },
   plugins: [
-    new webpack.optimize.CommonsChunkPlugin('common.js'),
+    new webpack.optimize.CommonsChunkPlugin({
+        name: 'vendor',
+        filename: 'vendor.[hash:7].js',
+    }),
     new webpack.ProvidePlugin({
       jQuery: "jquery",
       $: "jquery"

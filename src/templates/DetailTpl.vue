@@ -303,11 +303,11 @@
 </style>
 
 <script>
-  import messagebox from './messagebox'
+  import messagebox from '@/components/messagebox'
   import { Indicator, Toast } from 'mint-ui'
   // import { toUrlQuery } from '../assets/js/tool'
   import $ from 'jquery'
-  import coupon from './coupon'
+  import coupon from '@/components/coupon'
 
   function statEvent (active, type) {
     $.ajax({

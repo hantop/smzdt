@@ -57,7 +57,7 @@
   </div>
 </template>
 <script>
-  import Alertbox from './Alertbox'
+  import Alertbox from '@/components/Alertbox'
   // import { toUrlQuery } from '../assets/js/tool'
   import { Indicator, Toast } from 'mint-ui'
   import $ from 'jquery'
